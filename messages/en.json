@@ -1,0 +1,393 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog"
+  },
+  "header": {
+    "login": "Log in",
+    "register": "Sign up",
+    "trial": "Free Trial"
+  },
+  "hero": {
+    "badge": "HR Management System",
+    "titleLine1": "All-in-one platform for",
+    "titleHighlight": "HR Management",
+    "description": "Time tracking, leave, payroll, and employee records — all in one app built for your business.",
+    "cta": "Start free now",
+    "freeNote": "Free for businesses with fewer than 5 employees",
+    "notification": "You have 1 new notification",
+    "notificationNew": "You have new notifications",
+    "viewing": "Viewing"
+  },
+  "socialProof": {
+    "trustedBy": "500+",
+    "suffix": "businesses trust and grow with AZON"
+  },
+  "features": {
+    "title": "Everything in one platform",
+    "subtitle": "9 core modules to run HR operations efficiently",
+    "items": {
+      "dashboard": {
+        "title": "Dashboard",
+        "description": "Visual control center with realtime metrics and task management"
+      },
+      "organization": {
+        "title": "Organization",
+        "description": "Manage branches, departments, and positions in a hierarchical structure"
+      },
+      "hr": {
+        "title": "HR Management",
+        "description": "Employee records, transfers, rewards/discipline, and salary proposals"
+      },
+      "contract": {
+        "title": "Labor Contracts",
+        "description": "Custom templates, e-signing, addendums, and full change history"
+      },
+      "timekeeping": {
+        "title": "Time & Shifts",
+        "description": "Multi-method check-in/out, shift planning, scheduling, overtime, timesheets"
+      },
+      "leave": {
+        "title": "Leave",
+        "description": "Submit requests, multi-level approval, automatic annual leave tracking"
+      },
+      "payroll": {
+        "title": "Payroll & Income",
+        "description": "Automatic payroll, social insurance, personal income tax, allowances, payslips"
+      },
+      "ess": {
+        "title": "Employee Self-Service (ESS)",
+        "description": "Employees view their own records, attendance, leave, payroll, contracts"
+      },
+      "reports": {
+        "title": "Reports & Analytics",
+        "description": "Analyze HR structure, turnover, payroll cost, and performance"
+      }
+    }
+  },
+  "deepDive": {
+    "title": "Feature deep dive",
+    "subtitle": "Explore AZON's core modules in detail",
+    "hr": {
+      "title": "HR Management",
+      "bullets": [
+        "Complete employee profiles (personal info, ID, emergency contacts)",
+        "Track work stages (probation → official → offboarding)",
+        "Employee transitions (promotions, department changes, restructuring)",
+        "Rewards & discipline decisions with decision numbers",
+        "Salary proposal workflow — 3-level approval: HR → Director → Execution",
+        "Company-wide periodic salary increases",
+        "Register dependents for personal income tax deduction"
+      ]
+    },
+    "contract": {
+      "title": "Labor Contracts",
+      "bullets": [
+        "Template builder with dynamic variables (name, salary, department auto-filled)",
+        "5 contract types: Probation, Fixed-term, Indefinite, Seasonal, Project-based",
+        "Internal e-signing workflow (Draft → Sign → Approve → Active)",
+        "Addendums for amendments and additions",
+        "Audit log tracking every change",
+        "Export professional PDF contracts"
+      ]
+    },
+    "timekeeping": {
+      "title": "Time & Shifts",
+      "bullets": [
+        "Multi-method check-in/out: GPS, WiFi, IP, fingerprint, face, card, app",
+        "Flexible shift creation (morning, afternoon, night, custom)",
+        "Assign employees to shifts by week/month",
+        "Shift-change requests with approval workflow",
+        "Aggregate timesheets by department/branch",
+        "Holiday management — automatic workday calculation",
+        "Register & approve overtime"
+      ]
+    },
+    "payroll": {
+      "title": "Payroll & Income",
+      "bullets": [
+        "Automatic monthly payroll calculation",
+        "Configure social/health/unemployment insurance per Vietnam regulations",
+        "Progressive personal income tax, family & dependent deductions",
+        "Flexible allowances: fixed / daily / hourly / percentage",
+        "Payroll approval flow: Draft → Calculate → Approve → Pay → Close period",
+        "Full salary-increase history across employees",
+        "Export detailed payslip PDFs"
+      ]
+    }
+  },
+  "essHighlight": {
+    "title": "Employee Self-Service — cut 80% of admin work",
+    "subtitle": "Employees look up and act on their own — HR focuses on strategy",
+    "items": {
+      "profile": "My profile",
+      "checkIn": "Check In / Out",
+      "leave": "My leave",
+      "payslip": "Payslip",
+      "timesheet": "Timesheet",
+      "overtime": "Register overtime",
+      "schedule": "Work schedule",
+      "contract": "My contract"
+    }
+  },
+  "appFeatures": {
+    "appLabel": "App",
+    "title": "A dedicated app for employees",
+    "subtitle": "Every HR action on your phone — time tracking, leave requests, payslips, contracts — without going through HR",
+    "smartCheckIn": {
+      "title": "Smart Check-in",
+      "subtitle": "Smart Check-in",
+      "bullets": [
+        "Clock in/out with a single tap right from the home screen.",
+        "Track real working hours in real time.",
+        "Check-in reminders so you never miss a workday."
+      ]
+    },
+    "scheduleLeave": {
+      "title": "Schedule & Leave Management",
+      "bullets": [
+        "View detailed shift schedules by week/month so you can plan your personal time.",
+        "Request leave online: submit and track approval status instantly.",
+        "Check remaining leave days transparently."
+      ]
+    },
+    "overtime": {
+      "title": "Overtime & Performance Tracking",
+      "bullets": [
+        "Register overtime easily and have it accurately recorded on your timesheet.",
+        "View detailed attendance history to reconcile whenever needed."
+      ]
+    },
+    "payroll": {
+      "title": "Payslips & Analytics",
+      "bullets": [
+        "Receive a detailed digital payslip every month: base salary, allowances, deductions, and net pay.",
+        "Workday and hour charts give you an overview of your income and effort."
+      ]
+    },
+    "documents": {
+      "title": "Personal Records & Contracts",
+      "bullets": [
+        "Store and look up personal info, email, and contact records.",
+        "Manage digital labor contracts: view your contract list, signing status, and addendums as convenient PDFs."
+      ]
+    },
+    "notifications": {
+      "title": "Instant Notifications",
+      "bullets": [
+        "Get instant notifications about important company news, holiday schedules, or approval decisions right on your lock screen."
+      ]
+    }
+  },
+  "midCta": {
+    "titleLine1": "Optimize HR operations",
+    "titleLine2": "sustainably with AZON",
+    "description": "Unify time tracking, leave, payroll, contracts, and reporting — all in a single platform that runs lean!",
+    "button": "Start with a free account",
+    "totalEmployees": "Total employees",
+    "workToday": "At work today",
+    "onLeave": "On leave",
+    "overtime": "Overtime",
+    "attendanceRate": "Attendance rate",
+    "payrollCost": "Payroll cost"
+  },
+  "differentiators": {
+    "title": "Why choose AZON?",
+    "multiTenant": {
+      "title": "Multi-tenant",
+      "bullets": [
+        "Each business has its own separate workspace",
+        "Data fully isolated between tenants",
+        "Absolute security — no cross-data leaks"
+      ]
+    },
+    "permissions": {
+      "title": "Granular permissions",
+      "bullets": [
+        "Create unlimited role groups",
+        "Permissions down to each action: View, Create, Edit, Delete, Approve, Execute",
+        "Every module has its own permission set"
+      ]
+    },
+    "multilingual": {
+      "title": "Multi-language",
+      "bullets": [
+        "Supports Vietnamese & English",
+        "Instant language switch — no page reload",
+        "Ready to add more languages"
+      ]
+    }
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "Free for small teams — scale flexibly as your business grows",
+    "popularBadge": "Most popular",
+    "addonsTitle": "Add-on Services",
+    "freeTierNote": "Fewer than 5 employees? Use it completely free, with no time limit!",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "description": "For businesses/organizations with fewer than 5 employees",
+        "features": [
+          "Up to 5 employees",
+          "All core modules included",
+          "GPS & WiFi check-in",
+          "Leave & overtime management",
+          "Digital payslips",
+          "Labor contract management",
+          "Employee Self-Service (ESS)",
+          "Basic reports & analytics",
+          "Email support"
+        ],
+        "cta": "Get started free"
+      },
+      "standard": {
+        "name": "Standard",
+        "price": "Contact us",
+        "description": "For growing businesses",
+        "features": [
+          "Unlimited employees",
+          "Everything in Free",
+          "Multi-method check-in (fingerprint, face, card)",
+          "Automatic multi-level approvals",
+          "Automatic payroll (SI, PIT)",
+          "Advanced reports & Excel/PDF export",
+          "Multi-branch management",
+          "Real-time push notifications",
+          "Priority chat & phone support"
+        ],
+        "cta": "Contact sales"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "description": "End-to-end solution for large organizations",
+        "features": [
+          "Everything in Standard",
+          "On-premise or private cloud deployment",
+          "API integrations with internal systems (ERP, CRM)",
+          "Granular permissions by module & action",
+          "Multi-tenant management for groups",
+          "99.9% uptime SLA",
+          "Dedicated training & onboarding",
+          "Dedicated Account Manager"
+        ],
+        "cta": "Contact sales"
+      }
+    },
+    "addons": {
+      "customDomain": {
+        "title": "Custom Domain",
+        "description": "Use your own company domain (e.g. hr.yourcompany.com) — boost brand trust and professionalism.",
+        "price": "$10/year"
+      }
+    }
+  },
+  "blog": {
+    "pageTitle": "News & Articles",
+    "pageSubtitle": "Latest updates from AZON — policies, awards, partnerships and promotions",
+    "readMore": "Read more",
+    "backToList": "Back",
+    "publishedOn": "Published on",
+    "relatedTitle": "Related posts",
+    "posts": {
+      "notice": {
+        "title": "AZON announcement — free e-invoice and digital signature",
+        "excerpt": "Dear customers, in the context of Decree 70/2025/NĐ-CP taking effect on June 1, 2026...",
+        "content": "<p>Dear customers,</p><p>In the context of Decree 70/2025/NĐ-CP taking effect on June 1, 2026, AZON is pleased to announce <strong>fully free</strong> e-invoice and digital signature services for all customers on our platform.</p><h2>Eligibility</h2><ul><li>All businesses on AZON Standard plan or above</li><li>New sign-ups during the promotion period</li><li>Household businesses needing digital transformation per the Decree</li></ul><h2>Benefits</h2><ul><li>100% fee waiver for e-invoice issuance in the first year</li><li>Free business digital signature service</li><li>Free implementation and onboarding support</li></ul><p>For details, please contact AZON's consulting team via hotline or email listed in the Contact section.</p><p>Best regards,<br/>The AZON team</p>"
+      },
+      "award": {
+        "title": "AZON ranked TOP 10 products & services of 2025 — Technology category",
+        "excerpt": "On December 20, at the Vietnam Trusted Products & Services 2025 program hosted by Vietnam Economic Magazine...",
+        "content": "<p>On December 20, at the <strong>Vietnam Trusted Products & Services 2025</strong> program hosted by Vietnam Economic Magazine in partnership with VnEconomy, AZON was proudly named among the TOP 10 trusted products and services in the technology category.</p><h2>The award was voted by</h2><ul><li>More than 20,000 consumers and businesses nationwide</li><li>Expert council of Vietnam Economic Magazine</li><li>Evaluation criteria including product quality, reliability, and market impact</li></ul><h2>What this means for AZON</h2><p>This milestone recognizes AZON's efforts in digitally transforming Vietnam's HR industry. In 2025, AZON has served <strong>500+</strong> businesses with over 200,000 employees using the platform daily.</p><p>We sincerely thank all our customers, partners, and team members for trusting and walking this journey with us.</p>"
+      },
+      "partnerBank1": {
+        "title": "Vietinbank account holders now receive payment notifications on AZON",
+        "excerpt": "AZON officially integrates the payment notification service via Vietinbank accounts directly in the app.",
+        "content": "<p>AZON officially integrates the payment notification service via Vietinbank accounts directly in the app.</p><h2>New features</h2><ul><li>Receive real-time balance change notifications in AZON</li><li>Automatic reconciliation with payroll and internal invoices</li><li>Bank-grade security — no password sharing required</li></ul><p>Users only need to link their Vietinbank account once to start using this feature.</p>"
+      },
+      "partnerBank2": {
+        "title": "Vietcombank balance change notifications integrated directly on AZON",
+        "excerpt": "After Vietinbank, AZON continues to expand its banking ecosystem with Vietcombank.",
+        "content": "<p>After the success with Vietinbank, AZON expands its integrated banking ecosystem with Vietcombank — one of Vietnam's largest commercial banks.</p><h2>Benefits for businesses</h2><ul><li>Automatic reconciliation of company cash flows</li><li>Instant notifications on balance changes</li><li>Connected to the Payroll module for salary disbursement cross-check</li></ul>"
+      },
+      "promo": {
+        "title": "Save 5,370,000đ instantly with the 3-year AZON Professional combo",
+        "excerpt": "Our biggest promotion of the year for businesses committing to a long-term partnership with AZON.",
+        "content": "<p>Our biggest promotion of the year for businesses committing to a long-term partnership with AZON.</p><h2>Offer details</h2><ul><li>Instant discount of <strong>5,370,000đ</strong> when signing up for the 3-year Standard plan</li><li>Includes 12 months of premium technical support</li><li>Free implementation and onboarding for all employees</li></ul><p>Promotion runs through December 31, 2025.</p>"
+      },
+      "partnerMb": {
+        "title": "AZON partners with MBBank on a 1,000 billion VND loan package",
+        "excerpt": "AZON and MBBank sign a strategic partnership offering preferential loans worth 1,000 billion VND to SMEs.",
+        "content": "<p>AZON and MBBank have officially signed a strategic partnership, providing preferential loans of up to <strong>1,000 billion VND</strong> for SMEs using the AZON platform.</p><h2>Eligibility</h2><ul><li>Businesses using AZON for at least 3 months</li><li>Clear payroll history on the system</li><li>Streamlined loan process — disbursement within 48 hours</li></ul><p>For details, please contact AZON's consulting team or your nearest MBBank branch.</p>"
+      }
+    }
+  },
+  "news": {
+    "title": "Latest news",
+    "readMore": "Read more",
+    "items": {
+      "notice": {
+        "title": "AZON announcement — free e-invoice and digital signature",
+        "excerpt": "Dear customers, in the context of Decree 70/2025/NĐ-CP taking effect..."
+      },
+      "award": {
+        "title": "AZON ranked TOP 10 products & services of 2025 — Technology category",
+        "excerpt": "On December 20, at the Vietnam Trusted Products & Services 2025 program hosted by Vietnam Economic Magazine..."
+      },
+      "partnerBank1": {
+        "title": "Vietinbank account holders now receive payment notifications on AZON"
+      },
+      "partnerBank2": {
+        "title": "Vietcombank balance change notifications integrated directly on AZON"
+      },
+      "promo": {
+        "title": "Save 5,370,000đ instantly with the 3-year AZON Professional combo"
+      },
+      "partnerMb": {
+        "title": "AZON partners with MBBank on a 1,000 billion VND loan package"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to digitize HR?",
+    "description": "Start for free — no credit card required",
+    "register": "Start free trial",
+    "contact": "Contact sales"
+  },
+  "footer": {
+    "columns": {
+      "azon": {
+        "title": "AZON",
+        "links": ["About", "Blog", "Careers"]
+      },
+      "product": {
+        "title": "Product",
+        "links": ["Features", "Pricing", "Changelog", "API Docs"]
+      },
+      "support": {
+        "title": "Support",
+        "links": ["Documentation", "FAQ", "Contact Support"]
+      },
+      "legal": {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy Policy", "href": "/privacy-policy" },
+          { "label": "Terms & Conditions", "href": "/terms" }
+        ]
+      }
+    },
+    "contactTitle": "Contact",
+    "email": "Email: support@azonsolution.com",
+    "hotline": "Hotline: +84 329 300 677",
+    "address": "Address: Ho Chi Minh City",
+    "copyright": "© 2026 AZON. All rights reserved."
+  },
+  "languageSwitch": {
+    "vi": "Tiếng Việt",
+    "en": "English"
+  }
+}

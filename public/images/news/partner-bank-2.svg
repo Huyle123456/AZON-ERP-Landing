@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pb2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F5E97"/>
+      <stop offset="100%" stop-color="#5487c1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#pb2-bg)"/>
+  <circle cx="340" cy="60" r="80" fill="white" opacity="0.06"/>
+  <circle cx="40" cy="240" r="70" fill="white" opacity="0.06"/>
+
+  <!-- logos row -->
+  <g transform="translate(60, 70)">
+    <rect x="0" y="0" width="90" height="34" rx="8" fill="white"/>
+    <text x="45" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="15" fill="#2F5E97">AZON</text>
+  </g>
+  <text x="170" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-weight="600" font-size="20" fill="white" opacity="0.7">×</text>
+  <g transform="translate(190, 70)">
+    <rect x="0" y="0" width="150" height="34" rx="8" fill="#4caf50"/>
+    <text x="75" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="13" fill="white">Vietcombank</text>
+  </g>
+
+  <!-- balance change icon -->
+  <g transform="translate(130, 140)">
+    <circle cx="70" cy="60" r="58" fill="white" opacity="0.95"/>
+    <!-- coin -->
+    <circle cx="70" cy="60" r="32" fill="#fde68a"/>
+    <text x="70" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="30" fill="#c4931f">₫</text>
+    <!-- up arrow -->
+    <g transform="translate(110, 30)">
+      <circle cx="0" cy="0" r="14" fill="#4caf50"/>
+      <path d="M-5,3 L0,-5 L5,3 Z" fill="white"/>
+      <rect x="-1.5" y="-2" width="3" height="7" fill="white"/>
+    </g>
+  </g>
+
+  <text x="200" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="white" opacity="0.85">Biến động tài khoản</text>
+</svg>

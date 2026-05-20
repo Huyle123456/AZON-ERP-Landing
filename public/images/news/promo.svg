@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="promo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f3f65"/>
+      <stop offset="100%" stop-color="#2F5E97"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#promo-bg)"/>
+
+  <!-- giant discount badge -->
+  <g transform="translate(200, 110)">
+    <circle cx="0" cy="0" r="92" fill="#fde68a"/>
+    <circle cx="0" cy="0" r="78" fill="none" stroke="#c4931f" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="0" y="-12" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#1f3f65">GIẢM NGAY</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#1f3f65">5.370K</text>
+    <text x="0" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-weight="600" font-size="12" fill="#1f3f65">VNĐ</text>
+  </g>
+
+  <!-- sparkle decorations -->
+  <g fill="#fde68a" opacity="0.8">
+    <path d="M60,60 L65,70 L75,75 L65,80 L60,90 L55,80 L45,75 L55,70 Z"/>
+    <path d="M330,70 L334,78 L342,82 L334,86 L330,94 L326,86 L318,82 L326,78 Z"/>
+    <path d="M70,220 L74,228 L82,232 L74,236 L70,244 L66,236 L58,232 L66,228 Z"/>
+    <path d="M340,230 L343,236 L349,239 L343,242 L340,248 L337,242 L331,239 L337,236 Z"/>
+  </g>
+
+  <!-- caption -->
+  <text x="200" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="white">Combo 3 năm AZON</text>
+  <text x="200" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-weight="400" font-size="12" fill="#aac3e0">Chuyên nghiệp — Toàn diện</text>
+</svg>

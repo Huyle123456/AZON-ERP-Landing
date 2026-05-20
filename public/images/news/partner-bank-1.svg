@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pb1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#274e7e"/>
+      <stop offset="100%" stop-color="#2F5E97"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#pb1-bg)"/>
+  <circle cx="50" cy="50" r="80" fill="white" opacity="0.05"/>
+  <circle cx="350" cy="260" r="60" fill="white" opacity="0.05"/>
+
+  <!-- AZON logo pill -->
+  <g transform="translate(60, 80)">
+    <rect x="0" y="0" width="100" height="36" rx="8" fill="white"/>
+    <text x="50" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="16" fill="#2F5E97">AZON</text>
+  </g>
+
+  <!-- x -->
+  <text x="180" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-weight="600" font-size="22" fill="white" opacity="0.7">×</text>
+
+  <!-- partner bank pill -->
+  <g transform="translate(200, 80)">
+    <rect x="0" y="0" width="140" height="36" rx="8" fill="#fde68a"/>
+    <text x="70" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="14" fill="#1f3f65">VietinBank</text>
+  </g>
+
+  <!-- phone with notification -->
+  <g transform="translate(140, 150)">
+    <rect x="0" y="0" width="120" height="120" rx="14" fill="white"/>
+    <rect x="10" y="22" width="100" height="30" rx="6" fill="#eef3f9"/>
+    <circle cx="26" cy="37" r="8" fill="#2F5E97"/>
+    <rect x="40" y="30" width="60" height="4" rx="2" fill="#2F5E97"/>
+    <rect x="40" y="40" width="40" height="3" rx="1.5" fill="#aac3e0"/>
+    <rect x="10" y="62" width="100" height="4" rx="2" fill="#d5e1f0"/>
+    <rect x="10" y="72" width="80" height="4" rx="2" fill="#d5e1f0"/>
+    <rect x="10" y="90" width="100" height="20" rx="4" fill="#2F5E97"/>
+  </g>
+
+  <!-- caption -->
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="white" opacity="0.8">Thông báo thanh toán</text>
+</svg>
