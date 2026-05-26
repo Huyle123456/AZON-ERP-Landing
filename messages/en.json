@@ -18,11 +18,56 @@
     "freeNote": "Free for businesses with fewer than 5 employees",
     "notification": "You have 1 new notification",
     "notificationNew": "You have new notifications",
-    "viewing": "Viewing"
+    "viewing": "Viewing",
+    "cards": {
+      "attendance": "Attendance",
+      "leave": "Leave",
+      "payslip": "Payslip",
+      "hr": "HR",
+      "contract": "Contract",
+      "notification": "Notification",
+      "report": "Reports"
+    },
+    "browserMock": {
+      "title": "Departments",
+      "breadcrumb": "HR › Organization › Departments",
+      "url": "app.azon.vn/departments",
+      "headers": ["NAME", "CODE", "BRANCH", "REPORTS TO", "LEVEL", "STATUS"],
+      "statusActive": "Active",
+      "rows": [
+        ["FT Test", "FT Test", "FT District 7", "–", "1"],
+        ["Leadership", "FT01", "FutureTech", "–", "1"],
+        ["Kitchen", "Kitchen", "–", "HR 1", "3"],
+        ["Accounting", "Finance", "FutureTech", "Leadership", "2"],
+        ["HR 1", "HR-FT", "FutureTech", "Leadership", "2"]
+      ]
+    }
   },
   "socialProof": {
-    "trustedBy": "500+",
-    "suffix": "businesses trust and grow with AZON"
+    "heading": "Why teams pick AZON today",
+    "subheading": "Newly launched — built from the ground up for Vietnamese businesses",
+    "items": [
+      {
+        "icon": "rocket",
+        "title": "Live in 5 minutes",
+        "desc": "Sign up, claim your own subdomain and start tracking attendance — no install required."
+      },
+      {
+        "icon": "shield",
+        "title": "Data stays in Vietnam",
+        "desc": "Hosted on local data centers, TLS encryption end-to-end."
+      },
+      {
+        "icon": "scale",
+        "title": "Compliance-ready",
+        "desc": "Built for the new Social Insurance law, TT13/2025 and Decree 70 on e-invoicing."
+      },
+      {
+        "icon": "gift",
+        "title": "Free for teams of ≤ 4",
+        "desc": "No credit card, no time limit — use it as long as you like."
+      }
+    ]
   },
   "features": {
     "title": "Everything in one platform",
@@ -359,18 +404,24 @@
     "contact": "Contact sales"
   },
   "footer": {
+    "tagline": "All-in-one HR platform built for Vietnamese businesses — attendance, leave and payroll in a single app.",
     "columns": {
-      "azon": {
-        "title": "AZON",
-        "links": ["About", "Blog", "Careers"]
-      },
       "product": {
         "title": "Product",
-        "links": ["Features", "Pricing", "Changelog", "API Docs"]
+        "links": [
+          { "label": "Features", "href": "/#features" },
+          { "label": "App features", "href": "/#app-features" },
+          { "label": "Pricing", "href": "/#pricing" },
+          { "label": "Start free trial", "href": "/register" }
+        ]
       },
-      "support": {
-        "title": "Support",
-        "links": ["Documentation", "FAQ", "Contact Support"]
+      "company": {
+        "title": "AZON",
+        "links": [
+          { "label": "Blog & News", "href": "/blog" },
+          { "label": "Sign in", "href": "/login" },
+          { "label": "Create account", "href": "/register" }
+        ]
       },
       "legal": {
         "title": "Legal",
@@ -381,13 +432,170 @@
       }
     },
     "contactTitle": "Contact",
-    "email": "Email: support@azonsolution.com",
-    "hotline": "Hotline: +84 329 300 677",
-    "address": "Address: Ho Chi Minh City",
+    "emailLabel": "Email",
+    "email": "support@azonsolution.com",
+    "hotlineLabel": "Hotline",
+    "hotline": "+84 329 300 677",
+    "addressLabel": "Address",
+    "address": "Ho Chi Minh City, Vietnam",
     "copyright": "© 2026 AZON. All rights reserved."
   },
   "languageSwitch": {
     "vi": "Tiếng Việt",
     "en": "English"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again — if the problem persists, head back home and contact us.",
+    "digestLabel": "Error code:",
+    "retry": "Try again",
+    "home": "Back to home"
+  },
+  "notFound": {
+    "metaTitle": "Page not found · AZON ERP",
+    "metaDescription": "The page you’re looking for doesn’t exist or has been moved.",
+    "title": "Page not found",
+    "description": "The page you requested doesn’t exist or has been moved. Please double-check the URL or return to the home page.",
+    "home": "Back to home",
+    "register": "Create an account"
+  },
+  "auth": {
+    "back": "Back to home",
+    "tabs": {
+      "login": "Sign in",
+      "register": "Sign up"
+    },
+    "login": {
+      "metaTitle": "Sign in",
+      "metaDescription": "Sign in to AZON ERP",
+      "title": "Welcome back",
+      "subtitle": "Sign in to keep managing your system",
+      "domainLabel": "Domain name",
+      "domainPlaceholder": ".ftech.ltd",
+      "domainHint": "Enter your system’s domain to continue.",
+      "submit": "Access system →",
+      "noAccount": "Don’t have an account?",
+      "registerFree": "Sign up for free"
+    },
+    "register": {
+      "metaTitle": "Sign up",
+      "metaDescription": "Create a free AZON ERP account",
+      "title": "Create your account",
+      "subtitle": "Spin up your own HR management system in minutes",
+      "stepPlanTitle": "Plan",
+      "stepPlanDesc": "Free / Standard / Enterprise",
+      "stepSystemTitle": "System",
+      "stepSystemDesc": "Name & domain",
+      "stepAdminTitle": "Admin",
+      "stepAdminDesc": "Super Admin account",
+      "stepDoneTitle": "Done",
+      "stepDoneFreeDesc": "Get started",
+      "stepContactTitle": "Contact",
+      "stepContactDesc": "Contact details",
+      "stepDonePaidDesc": "Awaiting sales",
+      "planIntroLead": "Sign up now",
+      "planIntroMiddle": " and try AZON ERP — ",
+      "planIntroFree": "free",
+      "planIntroSuffix": " for systems with ",
+      "planIntroLimit": "≤ 4 employees",
+      "paidIntroPrefix": "You selected the ",
+      "paidIntroSuffix": " plan. Please leave your contact details — the FTECH ERP team will reach out to you shortly.",
+      "adminIntroPrefix": "Create the default ",
+      "adminIntroHighlight": "Super Admin account",
+      "adminIntroSuffix": " that will manage your system.",
+      "personalInfo": "Your personal info",
+      "fSystemName": "System name",
+      "fSystemNamePh": "e.g. ABC Company",
+      "fDomain": "Domain name",
+      "fDomainPh": "your-company",
+      "fDomainHint": "Lowercase letters, numbers and hyphens only.",
+      "fYourName": "Your name",
+      "fYourNamePh": "Jane Doe",
+      "fContactName": "Contact full name",
+      "fPhone": "Phone number",
+      "fPhonePh": "0912345678",
+      "fEmail": "Email",
+      "fEmailPh": "email@example.com",
+      "fAdminUsername": "Username",
+      "fAdminUsernamePh": "admin",
+      "fAdminUsernameHint": "Lowercase letters, numbers and underscore, at least 3 characters.",
+      "fAdminEmail": "Email",
+      "fAdminEmailPh": "admin@company.com",
+      "fPassword": "Password",
+      "fPasswordPh": "At least 8 characters",
+      "fPasswordHint": "At least 8 characters. Mix upper, lower, numbers and symbols for a strong password.",
+      "fRePassword": "Confirm password",
+      "fRePasswordPh": "Re-enter the password above",
+      "fRePasswordHint": "Re-enter the exact same password.",
+      "vTenantRequired": "Please enter the company name",
+      "vMax255": "Maximum 255 characters",
+      "vMax240": "Maximum 240 characters",
+      "vMax32": "Maximum 32 characters",
+      "vDomainRequired": "Please enter the domain",
+      "vDomainFormat": "Lowercase letters, numbers and hyphens only",
+      "vNameRequired": "Please enter the full name",
+      "vPhoneRequired": "Please enter the phone number",
+      "vPhoneFormat": "Phone number must contain digits only",
+      "vEmailRequired": "Please enter the email",
+      "vEmailFormat": "Invalid email",
+      "vUsernameRequired": "Please enter a username",
+      "vUsernameMin": "Username must be at least 3 characters",
+      "vUsernameFormat": "Lowercase letters, numbers and underscore only",
+      "vPasswordRequired": "Please enter a password",
+      "vPasswordMin": "Password must be at least 8 characters",
+      "vRePasswordRequired": "Please re-enter the password",
+      "vPasswordMismatch": "The two passwords don’t match",
+      "dAvailable": "Domain is available",
+      "dUnavailable": "This domain is already taken",
+      "dInvalid": "Invalid domain format",
+      "bNext": "Continue →",
+      "bBack": "← Back",
+      "bCreateAccount": "Create account →",
+      "bSendRequest": "Send request →",
+      "bCreating": "Creating...",
+      "bSending": "Sending...",
+      "bHome": "Back to home",
+      "eRateLimit": "Too many attempts — please try again in a few minutes.",
+      "eValidation": "Some fields are invalid, please review.",
+      "eGeneric": "Something went wrong. Please try again later.",
+      "eNetwork": "Can’t reach the server. Please try again.",
+      "doneFreeTitle": "Your system request has been received",
+      "doneFreeBodyPre": "Please wait a few minutes for approval. Your account credentials and access instructions will be sent to ",
+      "donePaidTitle": "Thanks for your interest in AZON ERP",
+      "donePaidBodyPre": "Our sales team will reach out to you at ",
+      "donePaidBodySuf": " soon to help you pick the right plan.",
+      "doneFallbackEmail": "your email"
+    },
+    "planSelector": {
+      "free": {
+        "name": "Free",
+        "badge": "Starter",
+        "price": "$0",
+        "priceNote": "up to 4 employees",
+        "features": ["Basic check-in", "Profile management", "1 administrator"]
+      },
+      "standard": {
+        "name": "Standard",
+        "badge": "Popular",
+        "price": "Contact us",
+        "priceNote": "≤ 100 employees",
+        "features": [
+          "Everything in Free",
+          "Advanced payroll & leave",
+          "Reports & permissions"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Custom",
+        "price": "Contact us",
+        "priceNote": "Unlimited",
+        "features": [
+          "On-premise deployment",
+          "HRIS / SSO integration",
+          "Priority 24/7 support"
+        ]
+      }
+    }
   }
 }

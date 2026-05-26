@@ -1,23 +1,25 @@
 "use client";
 
 import Button from "@/components/ui/Button";
-import { setLocale } from "@/i18n/actions";
 import { NAV_LINKS } from "@/lib/constants";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState, useTransition } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const router = useRouter();
+  // Strip any leading /en or /vie segment for "is this the home page?" logic.
+  const localelessPath =
+    pathname.replace(/^\/(en|vie)(?=\/|$)/, "") || "/";
+  const isHome = localelessPath === "/";
 
   const [scrollY, setScrollY] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [, startTransition] = useTransition();
   const locale = useLocale();
   const tNav = useTranslations("nav");
   const tHeader = useTranslations("header");
@@ -32,10 +34,17 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
-  const changeLocale = (newLocale: "vi" | "en") => {
-    startTransition(() => {
-      setLocale(newLocale);
-    });
+  const changeLocale = (newLocale: "en" | "vie") => {
+    // Replace the leading locale segment. Both /en/* and /vie/* are rewritten
+    // by middleware to the same internal path, so client-side navigation
+    // alone won't refetch the layout (which holds NextIntlClientProvider's
+    // messages). router.refresh() invalidates the cache and pulls fresh RSC
+    // for the new URL, so the language swaps without a full page reload.
+    const stripped =
+      pathname.replace(/^\/(en|vie)(?=\/|$)/, "") || "/";
+    const target = `/${newLocale}${stripped === "/" ? "" : stripped}`;
+    router.push(target);
+    router.refresh();
   };
 
   return (
@@ -102,7 +111,7 @@ export default function Header() {
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-3 ml-auto">
           <button
-            onClick={() => changeLocale(locale === "vi" ? "en" : "vi")}
+            onClick={() => changeLocale(locale === "vie" ? "en" : "vie")}
             className={`text-xs font-medium cursor-pointer px-3 py-2 rounded-lg transition-colors ${
               scrolled
                 ? "text-gray-500 hover:bg-gray-100 hover:text-primary-500"
@@ -110,15 +119,17 @@ export default function Header() {
             }`}
             aria-label="Đổi ngôn ngữ"
           >
-            {locale === "vi" ? "EN" : "VI"}
+            {locale === "vie" ? "EN" : "VI"}
           </button>
           <Button
+            href="/login"
             variant={scrolled ? "outline" : "outline-white"}
             className="py-2 px-0! w-24 text-xs"
           >
             {tHeader("login")}
           </Button>
           <Button
+            href="/register"
             variant="gradient"
             gradient={{
               from: "from-yellow-300",
@@ -137,7 +148,7 @@ export default function Header() {
         {/* Mobile Hamburger */}
         <div className="flex md:hidden items-center gap-2 ml-auto">
           <button
-            onClick={() => changeLocale(locale === "vi" ? "en" : "vi")}
+            onClick={() => changeLocale(locale === "vie" ? "en" : "vie")}
             className={`text-xs font-medium p-2 rounded-lg transition-colors ${
               scrolled
                 ? "text-gray-600 hover:bg-gray-100"
@@ -145,7 +156,7 @@ export default function Header() {
             }`}
             aria-label="Đổi ngôn ngữ"
           >
-            {locale === "vi" ? "EN" : "VI"}
+            {locale === "vie" ? "EN" : "VI"}
           </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -180,10 +191,10 @@ export default function Header() {
                 </Link>
               ))}
               <div className="flex gap-3 pt-2">
-                <Button variant="outline" className="flex-1 py-2 text-xs">
+                <Button href="/login" variant="outline" className="flex-1 py-2 text-xs">
                   {tHeader("login")}
                 </Button>
-                <Button className="flex-1 py-2 text-xs">
+                <Button href="/register" className="flex-1 py-2 text-xs">
                   {tHeader("trial")}
                 </Button>
               </div>

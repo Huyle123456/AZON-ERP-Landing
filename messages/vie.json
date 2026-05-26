@@ -1,0 +1,601 @@
+{
+  "nav": {
+    "features": "Tính năng",
+    "pricing": "Bảng giá",
+    "blog": "Blog"
+  },
+  "header": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "trial": "Dùng thử miễn phí"
+  },
+  "hero": {
+    "badge": "Hệ thống quản lý nhân sự",
+    "titleLine1": "Nền tảng toàn diện cho",
+    "titleHighlight": "Quản lý Nhân sự",
+    "description": "Chấm công, nghỉ phép, lương thưởng và quản lý hồ sơ nhân viên — tất cả trong một ứng dụng dành riêng cho doanh nghiệp của bạn.",
+    "cta": "Bắt đầu miễn phí ngay",
+    "freeNote": "Miễn phí cho doanh nghiệp dưới 5 nhân viên",
+    "notification": "Bạn có 1 thông báo mới",
+    "notificationNew": "Bạn có thông báo mới",
+    "viewing": "Đang xem",
+    "cards": {
+      "attendance": "Chấm công",
+      "leave": "Nghỉ phép",
+      "payslip": "Phiếu lương",
+      "hr": "Nhân sự",
+      "contract": "Hợp đồng",
+      "notification": "Thông báo",
+      "report": "Báo cáo"
+    },
+    "browserMock": {
+      "title": "Phòng ban",
+      "breadcrumb": "Nhân sự › Cơ cấu tổ chức › Phòng ban",
+      "url": "app.azon.vn/phong-ban",
+      "headers": ["TÊN", "MÃ", "CHI NHÁNH", "TRỰC THUỘC", "CẤP BẬC", "TRẠNG THÁI"],
+      "statusActive": "Hoạt động",
+      "rows": [
+        ["FT Test", "FT Test", "FT Quận 7", "–", "1"],
+        ["Lãnh đạo", "FT01", "FutureTech", "–", "1"],
+        ["Nhà bếp", "Nhabep", "–", "Nhân sự 1", "3"],
+        ["Kế toán", "Tài chính", "FutureTech", "Lãnh đạo", "2"],
+        ["Nhân sự 1", "HR-FT", "FutureTech", "Lãnh đạo", "2"]
+      ]
+    }
+  },
+  "socialProof": {
+    "heading": "Vì sao bạn nên chọn AZON ngay hôm nay",
+    "subheading": "Mới ra mắt — nhưng được xây dựng cho doanh nghiệp Việt từ nền tảng đầu tiên",
+    "items": [
+      {
+        "icon": "rocket",
+        "title": "Khởi tạo trong 5 phút",
+        "desc": "Đăng ký, đặt tên domain riêng và bắt đầu chấm công ngay, không cần cài đặt."
+      },
+      {
+        "icon": "shield",
+        "title": "Dữ liệu tại Việt Nam",
+        "desc": "Hạ tầng đặt tại data center trong nước, mã hoá TLS toàn tuyến."
+      },
+      {
+        "icon": "scale",
+        "title": "Tuân thủ pháp lý",
+        "desc": "Sẵn sàng theo Luật BHXH, TT13/2025 và Nghị định 70 về hoá đơn điện tử."
+      },
+      {
+        "icon": "gift",
+        "title": "Miễn phí cho đội ≤ 4 người",
+        "desc": "Không cần thẻ tín dụng, không giới hạn thời gian — dùng thoải mái."
+      }
+    ]
+  },
+  "features": {
+    "title": "Tất cả trong một nền tảng",
+    "subtitle": "9 module cốt lõi giúp doanh nghiệp vận hành nhân sự hiệu quả",
+    "items": {
+      "dashboard": {
+        "title": "Dashboard",
+        "description": "Bảng điều khiển trực quan, tổng hợp số liệu realtime, quản lý việc cần làm"
+      },
+      "organization": {
+        "title": "Cơ cấu tổ chức",
+        "description": "Quản lý chi nhánh, phòng ban, chức vụ theo cấu trúc phân cấp"
+      },
+      "hr": {
+        "title": "Quản lý nhân sự",
+        "description": "Hồ sơ nhân viên, điều chuyển, khen thưởng/kỷ luật, đề xuất tăng lương"
+      },
+      "contract": {
+        "title": "Hợp đồng lao động",
+        "description": "Mẫu hợp đồng tùy chỉnh, ký điện tử, phụ lục, nhật ký thay đổi"
+      },
+      "timekeeping": {
+        "title": "Chấm công & Ca làm việc",
+        "description": "Check-in/out đa phương thức, quản lý ca, phân công, tăng ca, bảng công"
+      },
+      "leave": {
+        "title": "Nghỉ phép",
+        "description": "Tạo đơn nghỉ, phê duyệt đa cấp, quản lý phép năm tự động"
+      },
+      "payroll": {
+        "title": "Lương & Thu nhập",
+        "description": "Tính lương tự động, BHXH, thuế TNCN, phụ cấp/khấu trừ, xuất phiếu lương"
+      },
+      "ess": {
+        "title": "Cổng nhân viên (ESS)",
+        "description": "Nhân viên tự xem hồ sơ, chấm công, nghỉ phép, lương, hợp đồng"
+      },
+      "reports": {
+        "title": "Báo cáo & Thống kê",
+        "description": "Phân tích cơ cấu nhân sự, biến động, chi phí lương, hiệu suất"
+      }
+    }
+  },
+  "deepDive": {
+    "title": "Chi tiết tính năng",
+    "subtitle": "Khám phá sâu hơn các module cốt lõi của AZON",
+    "hr": {
+      "title": "Quản lý nhân sự",
+      "bullets": [
+        "Hồ sơ nhân viên đầy đủ (thông tin cá nhân, CMND/CCCD, liên hệ khẩn cấp)",
+        "Theo dõi giai đoạn làm việc (thử việc → chính thức → nghỉ việc)",
+        "Điều chuyển nhân sự (thăng chức, chuyển phòng ban, tái cấu trúc)",
+        "Quyết định khen thưởng / kỷ luật với số quyết định",
+        "Đề xuất tăng lương — phê duyệt 3 cấp: HR → Giám đốc → Thi hành",
+        "Đợt tăng lương định kỳ toàn công ty",
+        "Đăng ký người phụ thuộc giảm trừ thuế TNCN"
+      ]
+    },
+    "contract": {
+      "title": "Hợp đồng lao động",
+      "bullets": [
+        "Tạo mẫu hợp đồng với biến động (tên, lương, phòng ban tự fill)",
+        "5 loại hợp đồng: Thử việc, Xác định thời hạn, Vô thời hạn, Thời vụ, Theo dự án",
+        "Quy trình ký điện tử nội bộ (Draft → Ký → Duyệt → Active)",
+        "Phụ lục hợp đồng sửa đổi/bổ sung",
+        "Nhật ký theo dõi mọi thay đổi",
+        "Xuất hợp đồng PDF chuyên nghiệp"
+      ]
+    },
+    "timekeeping": {
+      "title": "Chấm công & Ca làm việc",
+      "bullets": [
+        "Check-in/out đa phương thức: GPS, WiFi, IP, vân tay, khuôn mặt, thẻ từ, app",
+        "Tạo ca linh hoạt (sáng, chiều, đêm, custom)",
+        "Phân công nhân viên vào ca theo tuần/tháng",
+        "Yêu cầu đổi ca với quy trình phê duyệt",
+        "Bảng chấm công tổng hợp theo phòng ban/chi nhánh",
+        "Quản lý ngày lễ, tết — tự động tính công",
+        "Đăng ký & duyệt tăng ca"
+      ]
+    },
+    "payroll": {
+      "title": "Lương & Thu nhập",
+      "bullets": [
+        "Tính lương tự động theo kỳ (tháng)",
+        "Cấu hình BHXH/BHYT/BHTN theo quy định pháp luật Việt Nam",
+        "Thuế TNCN lũy tiến, giảm trừ gia cảnh + người phụ thuộc",
+        "Phụ cấp linh hoạt: cố định / theo ngày / theo giờ / phần trăm",
+        "Quy trình duyệt lương: Draft → Tính lương → Duyệt → Trả lương → Khóa kỳ",
+        "Lịch sử tăng lương toàn bộ nhân viên",
+        "Xuất phiếu lương PDF chi tiết"
+      ]
+    }
+  },
+  "essHighlight": {
+    "title": "Cổng nhân viên — Giảm 80% công việc hành chính",
+    "subtitle": "Nhân viên tự tra cứu, tự thao tác — HR tập trung vào chiến lược",
+    "items": {
+      "profile": "Hồ sơ cá nhân",
+      "checkIn": "Check In / Out",
+      "leave": "Nghỉ phép của tôi",
+      "payslip": "Phiếu lương",
+      "timesheet": "Bảng chấm công",
+      "overtime": "Đăng ký tăng ca",
+      "schedule": "Lịch làm việc",
+      "contract": "Hợp đồng của tôi"
+    }
+  },
+  "appFeatures": {
+    "appLabel": "App",
+    "title": "App Dành Riêng Cho Nhân Viên",
+    "subtitle": "Mọi thao tác nhân sự ngay trên điện thoại — chấm công, xin nghỉ phép, xem lương, quản lý hợp đồng — không cần qua HR",
+    "smartCheckIn": {
+      "title": "Chấm Công Thông Minh",
+      "subtitle": "Smart Check-in",
+      "bullets": [
+        "Thực hiện chấm công Vào/Ra chỉ với một chạm ngay tại màn hình chính.",
+        "Theo dõi thời gian làm việc thực tế theo thời gian thực.",
+        "Nhắc nhở chấm công giúp bạn không bao giờ quên ghi nhận ngày công."
+      ]
+    },
+    "scheduleLeave": {
+      "title": "Quản Lý Lịch Làm Việc & Nghỉ Phép",
+      "bullets": [
+        "Xem lịch phân ca chi tiết theo tuần/tháng, giúp bạn chủ động sắp xếp thời gian cá nhân.",
+        "Đăng ký nghỉ phép trực tuyến: Gửi đơn và theo dõi trạng thái phê duyệt từ quản lý ngay tức thì.",
+        "Kiểm tra số ngày phép còn lại minh bạch."
+      ]
+    },
+    "overtime": {
+      "title": "Tăng Ca & Theo Dõi Hiệu Suất",
+      "bullets": [
+        "Đăng ký tăng ca dễ dàng và được hệ thống ghi nhận chính xác vào bảng công.",
+        "Xem lịch sử chấm công chi tiết để đối soát khi cần thiết."
+      ]
+    },
+    "payroll": {
+      "title": "Tra Cứu Lương & Thống Kê",
+      "bullets": [
+        "Nhận phiếu lương điện tử chi tiết hàng tháng: Lương cơ bản, phụ cấp, các khoản giảm trừ và thực nhận.",
+        "Biểu đồ thống kê ngày công, giờ làm giúp bạn có cái nhìn tổng quát về thu nhập và nỗ lực của bản thân."
+      ]
+    },
+    "documents": {
+      "title": "Quản Lý Hồ Sơ & Hợp Đồng Cá Nhân",
+      "bullets": [
+        "Lưu trữ và tra cứu thông tin cá nhân, email và hồ sơ liên hệ.",
+        "Quản lý hợp đồng lao động điện tử: Xem danh sách hợp đồng, trạng thái ký kết và các phụ lục đi kèm dưới dạng file PDF tiện lợi."
+      ]
+    },
+    "notifications": {
+      "title": "Thông Báo Tức Thời",
+      "bullets": [
+        "Nhận ngay thông báo về các tin tức quan trọng từ công ty, lịch nghỉ lễ Tết hoặc các quyết định phê duyệt đơn từ ngay trên màn hình khóa."
+      ]
+    }
+  },
+  "midCta": {
+    "titleLine1": "Tối ưu vận hành nhân sự",
+    "titleLine2": "bền vững cùng AZON",
+    "description": "Hợp nhất các tính năng chấm công, nghỉ phép, lương thưởng, hợp đồng và báo cáo — tất cả trong một nền tảng duy nhất, vận hành tinh gọn!",
+    "button": "Bắt đầu với tài khoản miễn phí",
+    "totalEmployees": "Tổng nhân viên",
+    "workToday": "Đi làm hôm nay",
+    "onLeave": "Nghỉ phép",
+    "overtime": "Tăng ca",
+    "attendanceRate": "Tỷ lệ chấm công",
+    "payrollCost": "Chi phí lương"
+  },
+  "differentiators": {
+    "title": "Tại sao chọn AZON?",
+    "multiTenant": {
+      "title": "Multi-tenant",
+      "bullets": [
+        "Mỗi doanh nghiệp có không gian riêng biệt",
+        "Dữ liệu cách ly hoàn toàn giữa các tenant",
+        "Bảo mật tuyệt đối, không lo lộ dữ liệu chéo"
+      ]
+    },
+    "permissions": {
+      "title": "Phân quyền chi tiết",
+      "bullets": [
+        "Tạo nhóm quyền (Roles) không giới hạn",
+        "Phân quyền đến từng hành động: Xem, Tạo, Sửa, Xóa, Phê duyệt, Thi hành",
+        "Mỗi module đều có quyền riêng biệt"
+      ]
+    },
+    "multilingual": {
+      "title": "Đa ngôn ngữ",
+      "bullets": [
+        "Hỗ trợ Tiếng Việt & English",
+        "Chuyển đổi ngôn ngữ tức thì, không reload trang",
+        "Sẵn sàng mở rộng thêm ngôn ngữ"
+      ]
+    }
+  },
+  "pricing": {
+    "title": "Bảng Giá Minh Bạch",
+    "subtitle": "Miễn phí cho đội nhỏ — mở rộng linh hoạt khi doanh nghiệp tăng trưởng",
+    "popularBadge": "Phổ biến nhất",
+    "addonsTitle": "Dịch Vụ Bổ Sung",
+    "freeTierNote": "Dưới 5 nhân viên? Sử dụng hoàn toàn miễn phí, không giới hạn thời gian!",
+    "plans": {
+      "free": {
+        "name": "Miễn Phí",
+        "price": "0đ",
+        "period": "mãi mãi",
+        "description": "Dành cho doanh nghiệp/tổ chức dưới 5 nhân viên",
+        "features": [
+          "Tối đa 5 nhân viên",
+          "Đầy đủ tất cả module cốt lõi",
+          "Chấm công GPS, WiFi",
+          "Quản lý nghỉ phép & tăng ca",
+          "Phiếu lương điện tử",
+          "Quản lý hợp đồng lao động",
+          "Cổng nhân viên (ESS)",
+          "Báo cáo & thống kê cơ bản",
+          "Hỗ trợ qua email"
+        ],
+        "cta": "Bắt đầu miễn phí"
+      },
+      "standard": {
+        "name": "Tiêu Chuẩn",
+        "price": "Liên hệ",
+        "description": "Dành cho doanh nghiệp đang phát triển",
+        "features": [
+          "Không giới hạn nhân viên",
+          "Tất cả tính năng gói Miễn Phí",
+          "Chấm công đa phương thức (vân tay, khuôn mặt, thẻ từ)",
+          "Phê duyệt đa cấp tự động",
+          "Tính lương tự động (BHXH, thuế TNCN)",
+          "Báo cáo nâng cao & xuất Excel/PDF",
+          "Quản lý đa chi nhánh",
+          "Thông báo đẩy tức thời",
+          "Hỗ trợ ưu tiên qua chat & điện thoại"
+        ],
+        "cta": "Liên hệ tư vấn"
+      },
+      "enterprise": {
+        "name": "Doanh Nghiệp",
+        "price": "Tùy chỉnh",
+        "description": "Giải pháp toàn diện cho tổ chức lớn",
+        "features": [
+          "Tất cả tính năng gói Tiêu Chuẩn",
+          "Triển khai on-premise hoặc private cloud",
+          "Tích hợp API với hệ thống nội bộ (ERP, CRM)",
+          "Phân quyền chi tiết theo module & hành động",
+          "Quản lý multi-tenant cho tập đoàn",
+          "SLA cam kết uptime 99.9%",
+          "Đào tạo & onboarding riêng",
+          "Account Manager chuyên trách"
+        ],
+        "cta": "Liên hệ tư vấn"
+      }
+    },
+    "addons": {
+      "customDomain": {
+        "title": "Custom Domain",
+        "description": "Sử dụng tên miền riêng của doanh nghiệp (ví dụ: hr.congty.vn) — nâng tầm thương hiệu, chuyên nghiệp hơn.",
+        "price": "200.000đ/năm"
+      }
+    }
+  },
+  "blog": {
+    "pageTitle": "Tin tức & Bài viết",
+    "pageSubtitle": "Cập nhật mới nhất từ AZON — chính sách, giải thưởng, hợp tác và khuyến mãi",
+    "readMore": "Xem thêm",
+    "backToList": "Quay lại",
+    "publishedOn": "Đăng ngày",
+    "relatedTitle": "Bài viết liên quan",
+    "posts": {
+      "notice": {
+        "title": "Thông báo của AZON về việc miễn phí hóa đơn điện tử và chữ ký số",
+        "excerpt": "Quý Khách hàng thân mến, trong bối cảnh Nghị định 70/2025/NĐ-CP có hiệu lực từ ngày 01/06/2026...",
+        "content": "<p>Quý Khách hàng thân mến,</p><p>Trong bối cảnh Nghị định 70/2025/NĐ-CP có hiệu lực từ ngày 01/06/2026, AZON trân trọng thông báo chính sách <strong>miễn phí hoàn toàn</strong> dịch vụ hóa đơn điện tử và chữ ký số cho tất cả khách hàng đang sử dụng nền tảng.</p><h2>Đối tượng áp dụng</h2><ul><li>Tất cả doanh nghiệp đang sử dụng gói AZON Tiêu Chuẩn trở lên</li><li>Doanh nghiệp mới đăng ký trong thời gian khuyến mãi</li><li>Hộ kinh doanh có nhu cầu chuyển đổi số theo quy định của Nghị định</li></ul><h2>Quyền lợi</h2><ul><li>Miễn phí 100% phí phát hành hóa đơn điện tử trong năm đầu tiên</li><li>Miễn phí dịch vụ chữ ký số doanh nghiệp</li><li>Hỗ trợ triển khai và đào tạo sử dụng miễn phí</li></ul><p>Để biết thêm thông tin chi tiết, vui lòng liên hệ đội ngũ tư vấn của AZON qua hotline hoặc email được ghi trong phần Liên hệ.</p><p>Trân trọng,<br/>Đội ngũ AZON</p>"
+      },
+      "award": {
+        "title": "AZON đạt TOP 10 sản phẩm & dịch vụ tin dùng 2025 - Nhóm ngành sản phẩm, dịch vụ công nghệ",
+        "excerpt": "Ngày 20/12 vừa qua, tại chương trình Tin Dùng Việt Nam 2025 do Tạp chí Kinh tế Việt Nam tổ chức...",
+        "content": "<p>Ngày 20/12 vừa qua, tại chương trình <strong>Tin Dùng Việt Nam 2025</strong> do Tạp chí Kinh tế Việt Nam phối hợp cùng VnEconomy tổ chức, AZON vinh dự được xướng tên trong TOP 10 sản phẩm và dịch vụ tin dùng thuộc nhóm ngành công nghệ.</p><h2>Giải thưởng được bình chọn bởi</h2><ul><li>Hơn 20.000 người tiêu dùng và doanh nghiệp trên cả nước</li><li>Hội đồng chuyên gia của Tạp chí Kinh tế Việt Nam</li><li>Tiêu chí đánh giá bao gồm chất lượng sản phẩm, độ tin cậy và mức độ ảnh hưởng tới thị trường</li></ul><h2>Ý nghĩa với AZON</h2><p>Đây là cột mốc ghi nhận nỗ lực của AZON trong hành trình chuyển đổi số ngành nhân sự tại Việt Nam. Trong năm 2025, AZON đã phục vụ hơn <strong>500+</strong> doanh nghiệp với hơn 200.000 nhân viên sử dụng nền tảng hàng ngày.</p><p>Chúng tôi xin gửi lời cảm ơn chân thành đến tất cả khách hàng, đối tác và đội ngũ nhân sự đã tin tưởng, đồng hành cùng AZON.</p>"
+      },
+      "partnerBank1": {
+        "title": "Chủ tài khoản Vietinbank đã được nhận thông báo thanh toán trên AZON",
+        "excerpt": "AZON chính thức tích hợp dịch vụ nhận thông báo thanh toán qua tài khoản Vietinbank trực tiếp trên ứng dụng.",
+        "content": "<p>AZON chính thức tích hợp dịch vụ nhận thông báo thanh toán qua tài khoản Vietinbank trực tiếp trên ứng dụng.</p><h2>Tính năng mới</h2><ul><li>Nhận thông báo biến động số dư real-time ngay trên app AZON</li><li>Đối soát tự động với bảng lương, hoá đơn nội bộ</li><li>Bảo mật theo chuẩn của ngân hàng, không cần chia sẻ mật khẩu</li></ul><p>Người dùng chỉ cần liên kết tài khoản Vietinbank một lần duy nhất để sử dụng tính năng này.</p>"
+      },
+      "partnerBank2": {
+        "title": "Tích hợp giải pháp nhận thông báo biến động tài khoản Vietcombank ngay trên AZON",
+        "excerpt": "Sau Vietinbank, AZON tiếp tục mở rộng hệ sinh thái ngân hàng với Vietcombank.",
+        "content": "<p>Sau thành công với Vietinbank, AZON tiếp tục mở rộng hệ sinh thái ngân hàng tích hợp với Vietcombank — một trong những ngân hàng thương mại lớn nhất Việt Nam.</p><h2>Lợi ích cho doanh nghiệp</h2><ul><li>Tự động đối soát giao dịch thu chi của công ty</li><li>Thông báo tức thì khi có biến động số dư</li><li>Kết nối với module Lương & Thu nhập để đối chiếu việc chi lương</li></ul>"
+      },
+      "promo": {
+        "title": "Giảm ngay 5.370.000đ khi mua combo 3 năm AZON chuyên nghiệp",
+        "excerpt": "Ưu đãi lớn nhất năm dành cho các doanh nghiệp cam kết đồng hành dài hạn cùng AZON.",
+        "content": "<p>Ưu đãi lớn nhất năm dành cho các doanh nghiệp cam kết đồng hành dài hạn cùng AZON.</p><h2>Chi tiết ưu đãi</h2><ul><li>Giảm trực tiếp <strong>5.370.000đ</strong> khi đăng ký combo 3 năm gói Tiêu Chuẩn</li><li>Tặng kèm 12 tháng bảo trì kỹ thuật nâng cao</li><li>Miễn phí triển khai và onboarding cho toàn bộ nhân viên</li></ul><p>Chương trình áp dụng đến hết ngày 31/12/2025.</p>"
+      },
+      "partnerMb": {
+        "title": "AZON hợp tác MBBank giải ngân gói vay 1.000 tỷ tiếp sức doanh nghiệp",
+        "excerpt": "AZON và MBBank ký kết hợp tác chiến lược, cung cấp gói vay ưu đãi 1.000 tỷ cho doanh nghiệp SME.",
+        "content": "<p>AZON và MBBank chính thức ký kết hợp tác chiến lược, cung cấp gói vay ưu đãi lên tới <strong>1.000 tỷ đồng</strong> dành cho các doanh nghiệp SME đang sử dụng nền tảng AZON.</p><h2>Điều kiện tham gia</h2><ul><li>Doanh nghiệp đã sử dụng AZON ít nhất 3 tháng</li><li>Có lịch sử trả lương rõ ràng trên hệ thống</li><li>Thủ tục vay rút gọn — giải ngân trong 48 giờ</li></ul><p>Chi tiết vui lòng liên hệ đội ngũ tư vấn AZON hoặc chi nhánh MBBank gần nhất.</p>"
+      }
+    }
+  },
+  "news": {
+    "title": "Tin tức nổi bật",
+    "readMore": "Xem thêm",
+    "items": {
+      "notice": {
+        "title": "Thông báo của AZON về việc miễn phí hóa đơn điện tử và chữ ký số",
+        "excerpt": "Quý Khách hàng thân mến, trong bối cảnh Nghị định 70/2025/NĐ-CP có hiệu lực từ ngày..."
+      },
+      "award": {
+        "title": "AZON đạt TOP 10 sản phẩm & dịch vụ tin dùng 2025 - Nhóm ngành sản phẩm, dịch vụ công nghệ",
+        "excerpt": "Ngày 20/12 vừa qua, tại chương trình Tin Dùng Việt Nam 2025 do Tạp chí Kinh tế Việt..."
+      },
+      "partnerBank1": {
+        "title": "Chủ tài khoản Vietinbank đã được nhận thông báo thanh toán trên AZON"
+      },
+      "partnerBank2": {
+        "title": "Tích hợp giải pháp nhận thông báo biến động tài khoản Vietcombank ngay trên AZON"
+      },
+      "promo": {
+        "title": "Giảm ngay 5.370.000đ khi mua combo 3 năm AZON chuyên nghiệp"
+      },
+      "partnerMb": {
+        "title": "AZON hợp tác MBBank giải ngân gói vay 1.000 tỷ tiếp sức"
+      }
+    }
+  },
+  "cta": {
+    "title": "Sẵn sàng số hóa quản lý nhân sự?",
+    "description": "Bắt đầu miễn phí, không cần thẻ tín dụng",
+    "register": "Đăng ký dùng thử miễn phí",
+    "contact": "Liên hệ tư vấn"
+  },
+  "footer": {
+    "tagline": "Nền tảng quản lý nhân sự toàn diện dành cho doanh nghiệp Việt — chấm công, nghỉ phép, lương thưởng trong một ứng dụng duy nhất.",
+    "columns": {
+      "product": {
+        "title": "Sản phẩm",
+        "links": [
+          { "label": "Tính năng", "href": "/#features" },
+          { "label": "Tính năng ứng dụng", "href": "/#app-features" },
+          { "label": "Bảng giá", "href": "/#pricing" },
+          { "label": "Đăng ký dùng thử", "href": "/register" }
+        ]
+      },
+      "company": {
+        "title": "AZON",
+        "links": [
+          { "label": "Blog & Tin tức", "href": "/blog" },
+          { "label": "Đăng nhập", "href": "/login" },
+          { "label": "Đăng ký tài khoản", "href": "/register" }
+        ]
+      },
+      "legal": {
+        "title": "Pháp lý",
+        "links": [
+          { "label": "Chính sách bảo mật", "href": "/privacy-policy" },
+          { "label": "Điều khoản sử dụng", "href": "/terms" }
+        ]
+      }
+    },
+    "contactTitle": "Liên hệ",
+    "emailLabel": "Email",
+    "email": "support@azonsolution.com",
+    "hotlineLabel": "Hotline",
+    "hotline": "+84 329 300 677",
+    "addressLabel": "Địa chỉ",
+    "address": "TP. Hồ Chí Minh, Việt Nam",
+    "copyright": "© 2026 AZON. All rights reserved."
+  },
+  "languageSwitch": {
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "errorPage": {
+    "title": "Đã có lỗi xảy ra",
+    "description": "Hệ thống gặp sự cố không mong muốn. Vui lòng thử lại — nếu lỗi vẫn tiếp diễn, hãy quay về trang chủ và liên hệ chúng tôi.",
+    "digestLabel": "Mã sự cố:",
+    "retry": "Thử lại",
+    "home": "Về Trang chủ"
+  },
+  "notFound": {
+    "metaTitle": "Không tìm thấy trang · AZON ERP",
+    "metaDescription": "Trang bạn tìm không tồn tại hoặc đã bị di chuyển.",
+    "title": "Không tìm thấy trang",
+    "description": "Trang bạn yêu cầu không tồn tại hoặc đã được di chuyển. Vui lòng kiểm tra lại đường dẫn hoặc quay về trang chủ.",
+    "home": "Về Trang chủ",
+    "register": "Đăng ký tài khoản"
+  },
+  "auth": {
+    "back": "Quay về Trang chủ",
+    "tabs": {
+      "login": "Đăng nhập",
+      "register": "Đăng ký"
+    },
+    "login": {
+      "metaTitle": "Đăng nhập",
+      "metaDescription": "Đăng nhập vào hệ thống AZON ERP",
+      "title": "Chào mừng trở lại",
+      "subtitle": "Đăng nhập để tiếp tục quản lý hệ thống của bạn",
+      "domainLabel": "Tên domain",
+      "domainPlaceholder": ".ftech.ltd",
+      "domainHint": "Nhập tên domain hệ thống của bạn để truy cập.",
+      "submit": "Truy cập hệ thống →",
+      "noAccount": "Chưa có tài khoản?",
+      "registerFree": "Đăng ký miễn phí"
+    },
+    "register": {
+      "metaTitle": "Đăng ký",
+      "metaDescription": "Đăng ký tài khoản AZON ERP miễn phí",
+      "title": "Tạo tài khoản",
+      "subtitle": "Khởi tạo hệ thống quản lý nhân sự của riêng bạn trong vài phút",
+      "stepPlanTitle": "Chọn gói",
+      "stepPlanDesc": "Free / Standard / Enterprise",
+      "stepSystemTitle": "Hệ thống",
+      "stepSystemDesc": "Tên & domain",
+      "stepAdminTitle": "Quản trị viên",
+      "stepAdminDesc": "Tài khoản Super Admin",
+      "stepDoneTitle": "Hoàn tất",
+      "stepDoneFreeDesc": "Bắt đầu trải nghiệm",
+      "stepContactTitle": "Liên hệ",
+      "stepContactDesc": "Thông tin liên hệ",
+      "stepDonePaidDesc": "Chờ tư vấn",
+      "planIntroLead": "Đăng ký ngay",
+      "planIntroMiddle": " và trải nghiệm — ",
+      "planIntroFree": "miễn phí",
+      "planIntroSuffix": " đối với hệ thống có ",
+      "planIntroLimit": "≤ 4 nhân viên",
+      "paidIntroPrefix": "Bạn đã chọn gói ",
+      "paidIntroSuffix": ". Vui lòng để lại thông tin liên hệ, đội ngũ FTECH ERP sẽ liên hệ với bạn trong thời gian sớm nhất.",
+      "adminIntroPrefix": "Tạo ",
+      "adminIntroHighlight": "tài khoản Super Admin",
+      "adminIntroSuffix": " mặc định để quản trị hệ thống của bạn.",
+      "personalInfo": "Thông tin cá nhân của bạn",
+      "fSystemName": "Tên hệ thống",
+      "fSystemNamePh": "VD: Công ty TNHH ABC",
+      "fDomain": "Tên domain",
+      "fDomainPh": "ten-cong-ty",
+      "fDomainHint": "Chỉ chứa chữ thường, số và dấu gạch ngang.",
+      "fYourName": "Tên của bạn",
+      "fYourNamePh": "Nguyễn Văn A",
+      "fContactName": "Họ tên người liên hệ",
+      "fPhone": "Số điện thoại",
+      "fPhonePh": "0912345678",
+      "fEmail": "Email",
+      "fEmailPh": "email@example.com",
+      "fAdminUsername": "Username",
+      "fAdminUsernamePh": "admin",
+      "fAdminUsernameHint": "Chữ thường, số và dấu gạch dưới, tối thiểu 3 ký tự.",
+      "fAdminEmail": "Email",
+      "fAdminEmailPh": "admin@company.com",
+      "fPassword": "Password",
+      "fPasswordPh": "Tối thiểu 8 ký tự",
+      "fPasswordHint": "Tối thiểu 8 ký tự. Nên kết hợp chữ hoa, chữ thường, số và ký tự đặc biệt.",
+      "fRePassword": "Re-password",
+      "fRePasswordPh": "Nhập lại mật khẩu phía trên",
+      "fRePasswordHint": "Nhập lại đúng mật khẩu ở trên.",
+      "vTenantRequired": "Vui lòng nhập tên doanh nghiệp",
+      "vMax255": "Tối đa 255 ký tự",
+      "vMax240": "Tối đa 240 ký tự",
+      "vMax32": "Tối đa 32 ký tự",
+      "vDomainRequired": "Vui lòng nhập domain",
+      "vDomainFormat": "Chỉ chứa chữ thường, số và dấu gạch ngang",
+      "vNameRequired": "Vui lòng nhập họ tên",
+      "vPhoneRequired": "Vui lòng nhập số điện thoại",
+      "vPhoneFormat": "Số điện thoại chỉ được chứa chữ số",
+      "vEmailRequired": "Vui lòng nhập email",
+      "vEmailFormat": "Email không hợp lệ",
+      "vUsernameRequired": "Vui lòng nhập username",
+      "vUsernameMin": "Username tối thiểu 3 ký tự",
+      "vUsernameFormat": "Chỉ chứa chữ thường, số và dấu gạch dưới",
+      "vPasswordRequired": "Vui lòng nhập mật khẩu",
+      "vPasswordMin": "Mật khẩu tối thiểu 8 ký tự",
+      "vRePasswordRequired": "Vui lòng nhập lại mật khẩu",
+      "vPasswordMismatch": "Mật khẩu nhập lại không khớp",
+      "dAvailable": "Domain có thể sử dụng",
+      "dUnavailable": "Domain đã được sử dụng",
+      "dInvalid": "Định dạng domain không hợp lệ",
+      "bNext": "Tiếp tục →",
+      "bBack": "← Quay lại",
+      "bCreateAccount": "Tạo tài khoản →",
+      "bSendRequest": "Gửi yêu cầu →",
+      "bCreating": "Đang tạo...",
+      "bSending": "Đang gửi...",
+      "bHome": "Về trang chủ",
+      "eRateLimit": "Bạn gửi quá nhanh, vui lòng thử lại sau ít phút.",
+      "eValidation": "Thông tin không hợp lệ, vui lòng kiểm tra lại.",
+      "eGeneric": "Đã có lỗi xảy ra. Vui lòng thử lại sau.",
+      "eNetwork": "Không kết nối được tới máy chủ. Vui lòng thử lại.",
+      "doneFreeTitle": "Yêu cầu khởi tạo hệ thống đã được tiếp nhận",
+      "doneFreeBodyPre": "Vui lòng chờ vài phút để được duyệt. Thông tin tài khoản và hướng dẫn truy cập sẽ được gửi tới email ",
+      "donePaidTitle": "Cảm ơn bạn đã quan tâm tới AZON ERP",
+      "donePaidBodyPre": "Đội ngũ tư vấn sẽ liên hệ với bạn qua email ",
+      "donePaidBodySuf": " trong thời gian sớm nhất để tư vấn gói phù hợp.",
+      "doneFallbackEmail": "của bạn"
+    },
+    "planSelector": {
+      "free": {
+        "name": "Free",
+        "badge": "Khởi đầu",
+        "price": "0₫",
+        "priceNote": "đến 4 nhân viên",
+        "features": ["Chấm công cơ bản", "Quản lý hồ sơ", "1 quản trị viên"]
+      },
+      "standard": {
+        "name": "Standard",
+        "badge": "Phổ biến",
+        "price": "Liên hệ",
+        "priceNote": "≤ 100 nhân viên",
+        "features": [
+          "Toàn bộ tính năng Free",
+          "Tính lương, nghỉ phép nâng cao",
+          "Báo cáo & phân quyền"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Tuỳ biến",
+        "price": "Liên hệ",
+        "priceNote": "Không giới hạn",
+        "features": [
+          "Triển khai on-premise",
+          "Tích hợp HRIS / SSO",
+          "Hỗ trợ 24/7 ưu tiên"
+        ]
+      }
+    }
+  }
+}

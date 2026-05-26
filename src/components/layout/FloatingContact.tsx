@@ -4,8 +4,14 @@ import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const HIDDEN_PREFIXES = ["/login", "/register"];
 
 export default function FloatingContact() {
+  const pathname = usePathname() ?? "";
+  if (HIDDEN_PREFIXES.some((p) => pathname.startsWith(p))) return null;
+
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
       <Link href="tel:+84329300677" className="relative" aria-label="Gọi điện">

@@ -12,76 +12,76 @@ import { useEffect, useState } from "react";
 
 const FLOATING_CARDS = [
   {
+    key: "attendance",
     icon: (
       <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    label: "Chấm công",
     color: "bg-linear-to-br from-primary-400 to-primary-500",
     position: "top-4 right-8",
   },
   {
+    key: "leave",
     icon: (
       <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
       </svg>
     ),
-    label: "Nghỉ phép",
     color: "bg-linear-to-br from-emerald-400 to-emerald-500",
     position: "top-24 right-52",
   },
   {
+    key: "payslip",
     icon: (
       <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
       </svg>
     ),
-    label: "Phiếu lương",
     color: "bg-linear-to-br from-violet-400 to-purple-500",
     position: "top-44 right-4",
   },
   {
+    key: "hr",
     icon: (
       <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     ),
-    label: "Nhân sự",
     color: "bg-linear-to-br from-orange-400 to-orange-500",
     position: "top-74 right-74",
   },
   {
+    key: "contract",
     icon: (
       <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
       </svg>
     ),
-    label: "Hợp đồng",
     color: "bg-linear-to-br from-pink-400 to-rose-500",
     position: "top-80 right-8",
   },
   {
+    key: "notification",
     icon: (
       <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
       </svg>
     ),
-    label: "Thông báo",
     color: "bg-linear-to-br from-amber-400 to-amber-500",
     position: "top-12 right-[22rem]",
   },
   {
+    key: "report",
     icon: (
       <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
       </svg>
     ),
-    label: "Báo cáo",
     color: "bg-linear-to-br from-cyan-400 to-cyan-500",
     position: "top-52 right-[25rem]",
   },
-];
+] as const;
 
 function FloatingCardsSlide() {
   // Cards orbit around the center logo like satellites around Earth.
@@ -144,7 +144,7 @@ function FloatingCardsSlide() {
 
         return (
           <motion.div
-            key={card.label}
+            key={card.key}
             className="absolute top-1/2 left-1/2"
             initial={{ x: startX, y: startY, scale: 0, opacity: 0 }}
             animate={{
@@ -171,7 +171,7 @@ function FloatingCardsSlide() {
               <div className={`w-9 h-9 ${card.color} rounded-lg flex items-center justify-center shrink-0`}>
                 {card.icon}
               </div>
-              <span className="text-sm font-medium text-gray-700">{card.label}</span>
+              <span className="text-sm font-medium text-gray-700">{t(`cards.${card.key}`)}</span>
             </div>
           </motion.div>
         );
@@ -185,22 +185,28 @@ function FloatingCardsSlide() {
    SLIDE 2+ — Browser Mockup Screens
    ══════════════════════════════════════ */
 
-const SCREENS = [
-  {
-    title: "Phòng ban",
-    breadcrumb: "Nhân sự › Cơ cấu tổ chức › Phòng ban",
-    headers: ["TÊN", "MÃ", "CHI NHÁNH", "TRỰC THUỘC", "CẤP BẬC", "TRẠNG THÁI"],
-    rows: [
-      { cells: ["FT Test", "FT Test", "FT quận 7", "–", "1", "Hoạt động"], status: "green" },
-      { cells: ["Lãnh Đạo", "FT01", "FutureTech", "–", "1", "Hoạt động"], status: "green" },
-      { cells: ["Nhà bếp", "Nhàbếp", "–", "Nhân Sự 1", "3", "Hoạt động"], status: "green" },
-      { cells: ["Kế toán", "Tài chính", "FutureTech", "Lãnh Đạo", "2", "Hoạt động"], status: "green" },
-      { cells: ["Nhân Sự 1", "HR-FT", "FutureTech", "Lãnh Đạo", "2", "Hoạt động"], status: "green" },
-    ],
-  },
-];
+interface ScreenData {
+  title: string;
+  breadcrumb: string;
+  url: string;
+  headers: string[];
+  rows: string[][];
+  statusActive: string;
+}
 
-function BrowserMockup({ screen }: { screen: (typeof SCREENS)[0] }) {
+function useScreenData(): ScreenData {
+  const t = useTranslations("hero.browserMock");
+  return {
+    title: t("title"),
+    breadcrumb: t("breadcrumb"),
+    url: t("url"),
+    headers: t.raw("headers") as string[],
+    rows: t.raw("rows") as string[][],
+    statusActive: t("statusActive"),
+  };
+}
+
+function BrowserMockup({ screen }: { screen: ScreenData }) {
   return (
     <div className="bg-white rounded-xl shadow-2xl shadow-gray-300/40 border border-gray-200 overflow-hidden w-full">
       {/* Browser top bar */}
@@ -212,7 +218,7 @@ function BrowserMockup({ screen }: { screen: (typeof SCREENS)[0] }) {
         </div>
         <div className="flex-1 mx-3">
           <div className="bg-white rounded-md border border-gray-200 px-3 py-1 text-[9px] text-gray-400 truncate">
-            app.azon.vn/{screen.title.toLowerCase().replace(/\s/g, "-")}
+            {screen.url}
           </div>
         </div>
       </div>
@@ -240,33 +246,29 @@ function BrowserMockup({ screen }: { screen: (typeof SCREENS)[0] }) {
                 </div>
               ))}
             </div>
-            {screen.rows.map((row, ri) => (
-              <div
-                key={ri}
-                className="grid gap-0 border-b border-gray-50 last:border-0"
-                style={{ gridTemplateColumns: `repeat(${screen.headers.length}, 1fr)` }}
-              >
-                {row.cells.map((cell, ci) => (
-                  <div key={ci} className="px-1.5 py-1.5 text-[7px] text-gray-600 truncate">
-                    {ci === row.cells.length - 1 ? (
-                      <span
-                        className={`inline-block px-1.5 py-0.5 rounded text-[6px] font-medium ${
-                          row.status === "green"
-                            ? "bg-emerald-50 text-emerald-600"
-                            : row.status === "orange"
-                              ? "bg-amber-50 text-amber-600"
-                              : "bg-red-50 text-red-600"
-                        }`}
-                      >
-                        {cell}
-                      </span>
-                    ) : (
-                      cell
-                    )}
-                  </div>
-                ))}
-              </div>
-            ))}
+            {screen.rows.map((row, ri) => {
+              // Each row has N-1 plain cells; the last column is the status badge.
+              const cells = [...row, screen.statusActive];
+              return (
+                <div
+                  key={ri}
+                  className="grid gap-0 border-b border-gray-50 last:border-0"
+                  style={{ gridTemplateColumns: `repeat(${screen.headers.length}, 1fr)` }}
+                >
+                  {cells.map((cell, ci) => (
+                    <div key={ci} className="px-1.5 py-1.5 text-[7px] text-gray-600 truncate">
+                      {ci === cells.length - 1 ? (
+                        <span className="inline-block px-1.5 py-0.5 rounded text-[6px] font-medium bg-emerald-50 text-emerald-600">
+                          {cell}
+                        </span>
+                      ) : (
+                        cell
+                      )}
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -274,11 +276,12 @@ function BrowserMockup({ screen }: { screen: (typeof SCREENS)[0] }) {
   );
 }
 
-function BrowserSlide({ screenIndex }: { screenIndex: number }) {
+function BrowserSlide({ screenIndex: _screenIndex }: { screenIndex: number }) {
   const t = useTranslations("hero");
+  const screen = useScreenData();
   return (
     <div className="relative w-full">
-      <BrowserMockup screen={SCREENS[screenIndex]} />
+      <BrowserMockup screen={screen} />
 
       {/* Floating tooltip cards around the browser */}
       <motion.div
@@ -292,7 +295,7 @@ function BrowserSlide({ screenIndex }: { screenIndex: number }) {
           </svg>
         </div>
         <div>
-          <p className="text-[9px] font-bold text-gray-800">{SCREENS[screenIndex].title}</p>
+          <p className="text-[9px] font-bold text-gray-800">{screen.title}</p>
           <p className="text-[7px] text-gray-400">{t("viewing")}</p>
         </div>
       </motion.div>
@@ -361,8 +364,8 @@ function IllustrationSlide({ src, alt }: { src: string; alt: string }) {
    MAIN HERO — Auto-switching slides
    ══════════════════════════════════════ */
 
-// Total slides: ILLUSTRATIONS + 1 (floating cards) + SCREENS.length (browser mockups)
-const TOTAL_SLIDES = ILLUSTRATIONS.length + 1 + SCREENS.length;
+// Total slides: ILLUSTRATIONS + 1 (floating cards) + 1 (browser mockup screen)
+const TOTAL_SLIDES = ILLUSTRATIONS.length + 1 + 1;
 
 export default function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -485,6 +488,7 @@ export default function HeroSection() {
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
               <Button
+                href="/register"
                 variant="gradient"
                 gradient={{
                   from: "from-yellow-300",

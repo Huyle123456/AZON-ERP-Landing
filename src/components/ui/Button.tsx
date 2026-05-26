@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ButtonHTMLAttributes } from "react";
 
 type Variant = "primary" | "outline" | "outline-white" | "gradient";
@@ -51,10 +52,18 @@ export default function Button({
   const cls = `inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 cursor-pointer ${variantClasses} ${className}`;
 
   if (href) {
+    const isExternal = /^https?:\/\//i.test(href);
+    if (isExternal) {
+      return (
+        <a href={href} className={cls} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    }
     return (
-      <a href={href} className={cls}>
+      <Link href={href} className={cls}>
         {children}
-      </a>
+      </Link>
     );
   }
 

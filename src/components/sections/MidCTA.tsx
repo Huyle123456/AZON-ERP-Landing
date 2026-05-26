@@ -45,7 +45,7 @@ export default function MidCTA() {
               <p className="text-primary-100 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
                 {t("description")}
               </p>
-              <Button variant="outline-white" className="px-6! py-3!">
+              <Button href="/register" variant="outline-white" className="px-6! py-3!">
                 {t("button")}
               </Button>
             </motion.div>

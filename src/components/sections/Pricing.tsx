@@ -134,6 +134,7 @@ export default function Pricing() {
                 </ul>
 
                 <Button
+                  href={`/register?plan=${plan.key}`}
                   variant={plan.highlight ? "outline-white" : plan.ctaVariant}
                   className="w-full"
                 >

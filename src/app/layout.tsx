@@ -28,7 +28,7 @@ const inter = Inter({
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
-  const isVi = locale === "vi";
+  const isVi = locale === "vie";
   const description = isVi ? SITE_DESCRIPTION_VI : SITE_DESCRIPTION_EN;
   const keywords = isVi ? SITE_KEYWORDS_VI : SITE_KEYWORDS_EN;
   const title = isVi
@@ -119,7 +119,7 @@ export default async function RootLayout({
 
   return (
     <html
-      lang={locale}
+      lang={locale === "vie" ? "vi" : locale}
       className={`${inter.variable} h-full antialiased`}
       suppressHydrationWarning
       style={{

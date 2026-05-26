@@ -21,6 +21,7 @@ export default function CTASection() {
           <p className="text-lg text-gray-200 mb-8">{t("description")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
+              href="/register?plan=free"
               variant="gradient"
               gradient={{
                 from: "from-yellow-300",
@@ -34,7 +35,11 @@ export default function CTASection() {
             >
               {t("register")}
             </Button>
-            <Button variant="outline-white" className="px-8! py-3.5! text-base!">
+            <Button
+              href="/register?plan=standard"
+              variant="outline-white"
+              className="px-8! py-3.5! text-base!"
+            >
               {t("contact")}
             </Button>
           </div>
