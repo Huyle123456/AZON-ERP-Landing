@@ -44,28 +44,28 @@
     }
   },
   "socialProof": {
-    "heading": "Why teams pick AZON today",
-    "subheading": "Newly launched — built from the ground up for Vietnamese businesses",
+    "heading": "Why teams choose AZON today",
+    "subheading": "Newly launched — engineered from the ground up for Vietnamese businesses.",
     "items": [
       {
         "icon": "rocket",
         "title": "Live in 5 minutes",
-        "desc": "Sign up, claim your own subdomain and start tracking attendance — no install required."
+        "desc": "Sign up, claim your subdomain, and start tracking attendance — no installation required."
       },
       {
         "icon": "shield",
         "title": "Data stays in Vietnam",
-        "desc": "Hosted on local data centers, TLS encryption end-to-end."
+        "desc": "Hosted on local servers with end-to-end TLS encryption."
       },
       {
         "icon": "scale",
         "title": "Compliance-ready",
-        "desc": "Built for the new Social Insurance law, TT13/2025 and Decree 70 on e-invoicing."
+        "desc": "Fully compliant with the new Social Insurance Law, TT13/2025, and Decree 70 on e-invoicing."
       },
       {
         "icon": "gift",
-        "title": "Free for teams of ≤ 4",
-        "desc": "No credit card, no time limit — use it as long as you like."
+        "title": "Free for teams of 4 or fewer",
+        "desc": "No credit card required, no time limit — use it free forever."
       }
     ]
   },

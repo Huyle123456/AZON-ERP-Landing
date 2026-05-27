@@ -45,27 +45,27 @@
   },
   "socialProof": {
     "heading": "Vì sao bạn nên chọn AZON ngay hôm nay",
-    "subheading": "Mới ra mắt — nhưng được xây dựng cho doanh nghiệp Việt từ nền tảng đầu tiên",
+    "subheading": "Mới ra mắt — được xây dựng từ nền tảng đầu tiên dành riêng cho doanh nghiệp Việt Nam.",
     "items": [
       {
         "icon": "rocket",
         "title": "Khởi tạo trong 5 phút",
-        "desc": "Đăng ký, đặt tên domain riêng và bắt đầu chấm công ngay, không cần cài đặt."
+        "desc": "Đăng ký, nhận subdomain riêng và bắt đầu chấm công ngay — không cần cài đặt."
       },
       {
         "icon": "shield",
-        "title": "Dữ liệu tại Việt Nam",
-        "desc": "Hạ tầng đặt tại data center trong nước, mã hoá TLS toàn tuyến."
+        "title": "Dữ liệu lưu tại Việt Nam",
+        "desc": "Đặt trên máy chủ nội địa, mã hoá TLS toàn tuyến đầu cuối."
       },
       {
         "icon": "scale",
         "title": "Tuân thủ pháp lý",
-        "desc": "Sẵn sàng theo Luật BHXH, TT13/2025 và Nghị định 70 về hoá đơn điện tử."
+        "desc": "Đáp ứng đầy đủ Luật BHXH mới, TT13/2025 và Nghị định 70 về hoá đơn điện tử."
       },
       {
         "icon": "gift",
-        "title": "Miễn phí cho đội ≤ 4 người",
-        "desc": "Không cần thẻ tín dụng, không giới hạn thời gian — dùng thoải mái."
+        "title": "Miễn phí cho đội từ 4 người trở xuống",
+        "desc": "Không cần thẻ tín dụng, không giới hạn thời gian — dùng miễn phí trọn đời."
       }
     ]
   },
