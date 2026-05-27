@@ -2,7 +2,7 @@
 
 import Button from "@/components/ui/Button";
 import { AnimatePresence, motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -370,6 +370,7 @@ const TOTAL_SLIDES = ILLUSTRATIONS.length + 1 + 1;
 export default function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0);
   const t = useTranslations("hero");
+  const locale = useLocale();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -488,7 +489,7 @@ export default function HeroSection() {
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
               <Button
-                href="/register"
+                href={`/${locale}/register`}
                 variant="gradient"
                 gradient={{
                   from: "from-yellow-300",

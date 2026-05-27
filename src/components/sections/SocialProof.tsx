@@ -97,7 +97,7 @@ export default function SocialProof() {
                 <div
                   className={`absolute -inset-0.5 rounded-2xl bg-linear-to-br ${accent.from} ${accent.to} opacity-0 blur-md group-hover:opacity-40 transition-opacity duration-500`}
                 />
-                <div className="relative h-full rounded-2xl bg-white border border-slate-200/80 p-6 md:p-7 hover:border-transparent transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-full flex flex-col rounded-2xl bg-white border border-slate-200/80 p-6 md:p-7 hover:border-transparent transition-all duration-300 hover:-translate-y-1">
                   {/* Step number */}
                   <span className="absolute top-5 right-5 text-xs font-mono font-semibold text-slate-300 group-hover:text-slate-400 transition-colors">
                     0{idx + 1}
@@ -117,10 +117,13 @@ export default function SocialProof() {
                     {item.desc}
                   </p>
 
-                  {/* Bottom accent line */}
-                  <div
-                    className={`mt-5 h-0.5 w-10 rounded-full bg-linear-to-r ${accent.from} ${accent.to} opacity-60 group-hover:w-full transition-all duration-500`}
-                  />
+                  {/* Bottom accent line — pinned to bottom so it sits at the
+                      same position across cards regardless of text length. */}
+                  <div className="mt-auto pt-5">
+                    <div
+                      className={`h-0.5 w-10 rounded-full bg-linear-to-r ${accent.from} ${accent.to} opacity-60 group-hover:w-1/2 transition-all duration-500`}
+                    />
+                  </div>
                 </div>
               </motion.div>
             );

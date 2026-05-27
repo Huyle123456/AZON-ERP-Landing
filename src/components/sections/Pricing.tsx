@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { motion } from "framer-motion";
 import { Check, Crown, Globe, Sparkles, Users, Zap } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const PLAN_CONFIG = [
   {
@@ -35,6 +35,7 @@ const ADDON_CONFIG = [{ key: "customDomain", icon: Globe }];
 
 export default function Pricing() {
   const t = useTranslations("pricing");
+  const locale = useLocale();
 
   return (
     <section id="pricing" className="py-16 md:py-24 bg-white">
@@ -134,7 +135,7 @@ export default function Pricing() {
                 </ul>
 
                 <Button
-                  href={`/register?plan=${plan.key}`}
+                  href={`/${locale}/register?plan=${plan.key}`}
                   variant={plan.highlight ? "outline-white" : plan.ctaVariant}
                   className="w-full"
                 >

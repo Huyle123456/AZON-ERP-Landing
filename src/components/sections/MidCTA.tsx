@@ -2,11 +2,12 @@
 
 import Button from "@/components/ui/Button";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function MidCTA() {
   const t = useTranslations("midCta");
+  const locale = useLocale();
   return (
     <section className="py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,7 +46,7 @@ export default function MidCTA() {
               <p className="text-primary-100 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
                 {t("description")}
               </p>
-              <Button href="/register" variant="outline-white" className="px-6! py-3!">
+              <Button href={`/${locale}/register`} variant="outline-white" className="px-6! py-3!">
                 {t("button")}
               </Button>
             </motion.div>

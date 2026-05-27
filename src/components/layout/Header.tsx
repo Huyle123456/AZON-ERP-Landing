@@ -122,14 +122,14 @@ export default function Header() {
             {locale === "vie" ? "EN" : "VI"}
           </button>
           <Button
-            href="/login"
+            href={`/${locale}/login`}
             variant={scrolled ? "outline" : "outline-white"}
             className="py-2 px-0! w-24 text-xs"
           >
             {tHeader("login")}
           </Button>
           <Button
-            href="/register"
+            href={`/${locale}/register`}
             variant="gradient"
             gradient={{
               from: "from-yellow-300",
@@ -191,10 +191,10 @@ export default function Header() {
                 </Link>
               ))}
               <div className="flex gap-3 pt-2">
-                <Button href="/login" variant="outline" className="flex-1 py-2 text-xs">
+                <Button href={`/${locale}/login`} variant="outline" className="flex-1 py-2 text-xs">
                   {tHeader("login")}
                 </Button>
-                <Button href="/register" className="flex-1 py-2 text-xs">
+                <Button href={`/${locale}/register`} className="flex-1 py-2 text-xs">
                   {tHeader("trial")}
                 </Button>
               </div>

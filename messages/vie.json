@@ -49,23 +49,23 @@
     "items": [
       {
         "icon": "rocket",
-        "title": "Khởi tạo trong 5 phút",
-        "desc": "Đăng ký, nhận subdomain riêng và bắt đầu chấm công ngay — không cần cài đặt."
+        "title": "Kích hoạt sau 5 phút",
+        "desc": "Đăng ký, thiết lập tên miền phụ và bắt đầu chấm công ngay — không cần cài đặt phần mềm."
       },
       {
         "icon": "shield",
-        "title": "Dữ liệu lưu tại Việt Nam",
-        "desc": "Đặt trên máy chủ nội địa, mã hoá TLS toàn tuyến đầu cuối."
+        "title": "Dữ liệu lưu trữ tại Việt Nam",
+        "desc": "Hệ thống được vận hành trên máy chủ nội địa với công nghệ mã hoá đầu cuối TLS bảo mật tuyệt đối."
       },
       {
         "icon": "scale",
         "title": "Tuân thủ pháp lý",
-        "desc": "Đáp ứng đầy đủ Luật BHXH mới, TT13/2025 và Nghị định 70 về hoá đơn điện tử."
+        "desc": "Đáp ứng hoàn toàn Luật Bảo hiểm xã hội mới, Thông tư 13/2025 và Nghị định 70 về hoá đơn điện tử."
       },
       {
         "icon": "gift",
-        "title": "Miễn phí cho đội từ 4 người trở xuống",
-        "desc": "Không cần thẻ tín dụng, không giới hạn thời gian — dùng miễn phí trọn đời."
+        "title": "Miễn phí cho đội ngũ từ 4 nhân sự trở xuống",
+        "desc": "Không cần thẻ tín dụng, không giới hạn thời gian — trải nghiệm miễn phí trọn đời."
       }
     ]
   },
