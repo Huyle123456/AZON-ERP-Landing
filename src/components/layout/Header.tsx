@@ -29,8 +29,16 @@ export default function Header() {
 
   useEffect(() => {
     if (!isHome) return;
-    const onScroll = () => setScrollY(window.scrollY > 10);
-    window.addEventListener("scroll", onScroll);
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setScrollY(window.scrollY > 10);
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
@@ -119,7 +127,7 @@ export default function Header() {
             }`}
             aria-label="Đổi ngôn ngữ"
           >
-            {locale === "vie" ? "EN" : "VI"}
+            {locale === "vie" ? "VI" : "EN"}
           </button>
           <Button
             href={`/${locale}/login`}
@@ -156,7 +164,7 @@ export default function Header() {
             }`}
             aria-label="Đổi ngôn ngữ"
           >
-            {locale === "vie" ? "EN" : "VI"}
+            {locale === "vie" ? "VI" : "EN"}
           </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}

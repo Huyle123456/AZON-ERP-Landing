@@ -5,16 +5,18 @@ import ScreenSlider from "@/components/ui/ScreenSlider";
 import { DEEP_DIVE_BLOCKS } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-/* ── Screen data per feature block ── */
-const FEATURE_SCREENS: Record<
+type FeatureScreensMap = Record<
   string,
   {
     screens: Parameters<typeof ScreenSlider>[0]["screens"];
     badges: Parameters<typeof ScreenSlider>[0]["badges"];
   }
-> = {
+>;
+
+/* ── Vietnamese screen data (default locale) ── */
+const FEATURE_SCREENS_VI: FeatureScreensMap = {
   hr: {
     screens: [
       {
@@ -193,8 +195,191 @@ const FEATURE_SCREENS: Record<
   },
 };
 
+/* ── English screen data ── */
+const FEATURE_SCREENS_EN: FeatureScreensMap = {
+  hr: {
+    screens: [
+      {
+        title: "Employee directory",
+        breadcrumb: "HR › Workforce › Employee directory",
+        headers: ["ID", "FULL NAME", "GENDER", "EMAIL", "PHONE", "DATE OF BIRTH"],
+        rows: [
+          { cells: ["NVTEST-2010", "NVTEST 2010", "Male", "nvtest2010@yopmail.com", "–", "01/04/2026"] },
+          { cells: ["admin-check", "admin-check", "–", "admincheck@yopmail.com", "–", "–"] },
+          { cells: ["check-79", "check", "–", "check@yopmail.com", "–", "–"] },
+          { cells: ["HRTEST-01", "HR 01", "–", "hrtest01@yopmail.com", "–", "08/04/2026"] },
+          { cells: ["minhpro", "Mingg", "–", "ming@gmail.com", "0975949121", "05/11/2000"] },
+          { cells: ["KIEN2", "Kien 2", "–", "kien@gmail.com", "0778714060", "30/08/2001"] },
+        ],
+      },
+      {
+        title: "Employment periods",
+        breadcrumb: "HR › Workforce › Employment periods",
+        headers: ["EMPLOYEE", "JOIN DATE", "BRANCH", "DEPARTMENT", "TITLE", "STATUS"],
+        rows: [
+          { cells: ["NVTEST 2010", "16/04/2026", "FT District 7", "FT Test", "Developer", "Active"], status: "green" },
+          { cells: ["admin-check", "16/04/2026", "FT District 7", "FT Test", "Developer", "Active"], status: "green" },
+          { cells: ["check", "14/04/2026", "FT District 7", "Accounting", "Operating Director", "Active"], status: "green" },
+          { cells: ["HR 01", "14/04/2026", "FT District 7", "FT Test", "HR", "Active"], status: "green" },
+          { cells: ["Leader 01", "14/04/2026", "FT District 7", "FT Test", "Operating Director", "Active"], status: "green" },
+          { cells: ["Mingg", "10/04/2026", "FutureTech", "Lifestyle", "Developer", "Active"], status: "green" },
+        ],
+      },
+      {
+        title: "Rewards & Discipline",
+        breadcrumb: "HR › Workforce › Rewards / Discipline",
+        headers: ["TYPE", "EMPLOYEE", "EFFECTIVE DATE", "FORM", "AMOUNT", "CREATED BY"],
+        rows: [
+          { cells: ["Discipline", "Test Employee – NV01", "14/03/2026", "–", "200,000 đ", "admin"], status: "red" },
+          { cells: ["Discipline", "Employee 02 – nv02", "13/02/2026", "–", "–", "admin"], status: "red" },
+          { cells: ["Reward", "Test Employee – NV01", "13/02/2026", "–", "–", "admin"], status: "green" },
+        ],
+      },
+      {
+        title: "Salary raise proposals",
+        breadcrumb: "HR › Workforce › Salary raise proposals",
+        headers: ["EMPLOYEE", "DEPARTMENT", "CURRENT SALARY", "PROPOSED", "REASON", "STATUS"],
+        rows: [
+          { cells: ["Test Employee", "FT Test", "12,000,000đ", "15,000,000đ", "Strong performance", "Pending"], status: "orange" },
+          { cells: ["Mingg", "Lifestyle", "10,000,000đ", "12,500,000đ", "KPI completed", "Approved"], status: "green" },
+          { cells: ["Kien 2", "HR 1", "8,000,000đ", "9,500,000đ", "Tenure", "Pending"], status: "orange" },
+          { cells: ["kien123", "HR 1", "9,000,000đ", "11,000,000đ", "A+ rating", "Rejected"], status: "red" },
+        ],
+      },
+      {
+        title: "Dependents",
+        breadcrumb: "HR › Workforce › Dependents",
+        headers: ["EMPLOYEE", "DEPENDENT NAME", "RELATIONSHIP", "DATE OF BIRTH", "ID NUMBER", "STATUS"],
+        rows: [
+          { cells: ["Test Employee", "Nguyen Van A", "Child", "15/06/2018", "–", "Active"], status: "green" },
+          { cells: ["Test Employee", "Tran Thi B", "Spouse", "22/03/1995", "079123456789", "Active"], status: "green" },
+          { cells: ["Mingg", "Le Van C", "Parent", "10/01/1960", "024987654321", "Active"], status: "green" },
+          { cells: ["Kien 2", "Pham Thi D", "Child", "01/09/2020", "–", "Pending confirmation"], status: "orange" },
+        ],
+      },
+    ],
+    badges: [
+      { label: "Total employees", value: "1,247", color: "from-primary-400 to-primary-500", position: "-top-5 -right-3", floatDuration: 4 },
+      { label: "Currently working", value: "1,189", color: "from-emerald-400 to-emerald-500", position: "top-[40%] -left-5", floatDuration: 4.5 },
+      { label: "Raise proposals", value: "23 pending", color: "from-amber-400 to-orange-500", position: "-bottom-4 -right-2", floatDuration: 5 },
+    ],
+  },
+
+  contract: {
+    screens: [
+      {
+        title: "Contract list",
+        breadcrumb: "HR › Labor contracts › Contract list",
+        headers: ["CONTRACT NO.", "EMPLOYEE", "TYPE", "START DATE", "END DATE", "STATUS"],
+        rows: [
+          { cells: ["HD-2026-001", "Test Employee", "Permanent", "01/01/2026", "31/12/2026", "Active"], status: "green" },
+          { cells: ["HD-2026-002", "Mingg", "Probation", "10/04/2026", "10/06/2026", "Active"], status: "green" },
+          { cells: ["HD-2026-003", "Kien 2", "Permanent", "01/03/2026", "28/02/2027", "Active"], status: "green" },
+          { cells: ["HD-2025-015", "Leader 01", "Indefinite", "01/06/2025", "–", "Active"], status: "green" },
+          { cells: ["HD-2025-008", "Employee 02", "Seasonal", "01/11/2025", "31/01/2026", "Expired"], status: "red" },
+        ],
+      },
+      {
+        title: "Contract templates",
+        breadcrumb: "HR › Labor contracts › Templates",
+        headers: ["TEMPLATE", "TYPE", "VARIABLES", "CREATED", "UPDATED", "STATUS"],
+        rows: [
+          { cells: ["Permanent v2", "Fixed-term", "12 vars", "01/01/2026", "15/03/2026", "Active"], status: "green" },
+          { cells: ["Probation", "Probation", "8 vars", "01/01/2026", "01/01/2026", "Active"], status: "green" },
+          { cells: ["Seasonal", "Seasonal", "10 vars", "15/02/2026", "15/02/2026", "Active"], status: "green" },
+          { cells: ["Project-based", "Per project", "14 vars", "01/03/2026", "20/03/2026", "Draft"], status: "orange" },
+        ],
+      },
+    ],
+    badges: [
+      { label: "Active contracts", value: "892", color: "from-primary-400 to-primary-500", position: "-top-5 -right-3", floatDuration: 4 },
+      { label: "Expiring soon", value: "15 contracts", color: "from-amber-400 to-orange-500", position: "-bottom-4 -left-3", floatDuration: 5 },
+    ],
+  },
+
+  timekeeping: {
+    screens: [
+      {
+        title: "Attendance sheet",
+        breadcrumb: "HR › Attendance & Shifts › Attendance sheet",
+        headers: ["NAME", "ID", "BRANCH", "DEPARTMENT", "WORKED", "TOTAL HOURS"],
+        rows: [
+          { cells: ["admin", "admin", "FutureTech", "Leadership", "0/20 days", "0h/0h"], status: "red" },
+          { cells: ["Kien 2", "KIEN2", "FutureTech", "HR 1", "15/15 days", "120h 54m"], status: "green" },
+          { cells: ["kien123", "kienpro", "FutureTech", "HR 1", "18/20 days", "142h 30m"], status: "green" },
+          { cells: ["Mingg", "minhpro", "FutureTech", "Lifestyle", "20/20 days", "170h 15m"], status: "green" },
+          { cells: ["Kien Tran", "NV Dev", "FutureTech", "HR 1", "16/16 days", "135h 20m"], status: "green" },
+        ],
+      },
+      {
+        title: "Shift management",
+        breadcrumb: "HR › Attendance & Shifts › Shifts",
+        headers: ["SHIFT", "START", "END", "BREAK", "TOTAL", "STATUS"],
+        rows: [
+          { cells: ["Morning", "08:00", "12:00", "–", "4h", "Active"], status: "green" },
+          { cells: ["Afternoon", "13:00", "17:00", "–", "4h", "Active"], status: "green" },
+          { cells: ["Office hours", "08:00", "17:00", "12:00-13:00", "8h", "Active"], status: "green" },
+          { cells: ["Night", "22:00", "06:00", "02:00-02:30", "7.5h", "Active"], status: "green" },
+          { cells: ["Flexible", "Custom", "Custom", "–", "8h", "Draft"], status: "orange" },
+        ],
+      },
+      {
+        title: "Overtime requests",
+        breadcrumb: "HR › Attendance & Shifts › Overtime requests",
+        headers: ["EMPLOYEE", "DATE", "BASE SHIFT", "OT HOURS", "DURATION", "STATUS"],
+        rows: [
+          { cells: ["Kien 2", "15/04/2026", "Office hours", "17:00 - 20:00", "3h", "Approved"], status: "green" },
+          { cells: ["Mingg", "14/04/2026", "Morning", "12:00 - 14:00", "2h", "Approved"], status: "green" },
+          { cells: ["Kien Tran", "16/04/2026", "Office hours", "17:00 - 19:00", "2h", "Pending"], status: "orange" },
+          { cells: ["admin-check", "16/04/2026", "Afternoon", "17:00 - 21:00", "4h", "Rejected"], status: "red" },
+        ],
+      },
+    ],
+    badges: [
+      { label: "On duty today", value: "1,189 / 1,247", color: "from-emerald-400 to-emerald-500", position: "-top-5 -right-3", floatDuration: 4 },
+      { label: "Overtime this month", value: "356 entries", color: "from-primary-400 to-primary-500", position: "top-[45%] -left-5", floatDuration: 4.5 },
+      { label: "Late arrivals", value: "12 employees", color: "from-rose-400 to-red-500", position: "-bottom-4 -right-2", floatDuration: 5 },
+    ],
+  },
+
+  payroll: {
+    screens: [
+      {
+        title: "Payroll · April 2026",
+        breadcrumb: "HR › Payroll & Income › Payroll",
+        headers: ["EMPLOYEE", "BASE", "ALLOWANCE", "INSURANCE", "INCOME TAX", "NET PAY"],
+        rows: [
+          { cells: ["Test Employee", "15,000,000", "2,500,000", "1,575,000", "750,000", "15,175,000"], status: "green" },
+          { cells: ["Mingg", "12,000,000", "1,500,000", "1,260,000", "350,000", "11,890,000"], status: "green" },
+          { cells: ["Kien 2", "9,500,000", "1,000,000", "997,500", "0", "9,502,500"], status: "green" },
+          { cells: ["Leader 01", "25,000,000", "5,000,000", "2,625,000", "2,100,000", "25,275,000"], status: "green" },
+          { cells: ["kien123", "11,000,000", "1,500,000", "1,155,000", "200,000", "11,145,000"], status: "green" },
+        ],
+      },
+      {
+        title: "Raise history",
+        breadcrumb: "HR › Payroll & Income › Raise history",
+        headers: ["EMPLOYEE", "PREVIOUS", "NEW", "DELTA", "EFFECTIVE", "TYPE"],
+        rows: [
+          { cells: ["Test Employee", "12,000,000", "15,000,000", "+25%", "01/04/2026", "Proposal"], status: "green" },
+          { cells: ["Mingg", "10,000,000", "12,000,000", "+20%", "01/03/2026", "Scheduled"], status: "green" },
+          { cells: ["Kien 2", "8,000,000", "9,500,000", "+18.7%", "01/01/2026", "Proposal"], status: "green" },
+          { cells: ["Leader 01", "22,000,000", "25,000,000", "+13.6%", "01/01/2026", "Scheduled"], status: "green" },
+        ],
+      },
+    ],
+    badges: [
+      { label: "Total payroll", value: "2.4B / month", color: "from-primary-400 to-primary-500", position: "-top-5 -right-3", floatDuration: 4 },
+      { label: "Employees paid", value: "1,189 / 1,247", color: "from-emerald-400 to-emerald-500", position: "-bottom-4 -left-3", floatDuration: 5 },
+    ],
+  },
+};
+
 export default function FeatureDeepDive() {
   const t = useTranslations("deepDive");
+  const locale = useLocale();
+  const FEATURE_SCREENS =
+    locale === "en" ? FEATURE_SCREENS_EN : FEATURE_SCREENS_VI;
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

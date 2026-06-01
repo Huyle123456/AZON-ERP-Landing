@@ -39,6 +39,7 @@ export default function FeaturesGrid() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    const cleanupFns: Array<() => void> = [];
     const ctx = gsap.context(() => {
       const cards = gsap.utils.toArray<HTMLElement>(".feature-card");
 
@@ -56,6 +57,13 @@ export default function FeaturesGrid() {
         },
       });
 
+      // Track listeners so we can detach them on cleanup. gsap.context only
+      // reverts gsap tweens — plain DOM listeners leak unless removed manually.
+      const listeners: Array<{
+        el: HTMLElement;
+        type: "mouseenter" | "mouseleave";
+        fn: () => void;
+      }> = [];
       cards.forEach((card) => {
         const onEnter = () =>
           gsap.to(card, { y: -8, scale: 1.02, duration: 1, ease: "power2.out" });
@@ -63,6 +71,11 @@ export default function FeaturesGrid() {
           gsap.to(card, { y: 0, scale: 1, duration: 1, ease: "power2.out" });
         card.addEventListener("mouseenter", onEnter);
         card.addEventListener("mouseleave", onLeave);
+        listeners.push({ el: card, type: "mouseenter", fn: onEnter });
+        listeners.push({ el: card, type: "mouseleave", fn: onLeave });
+      });
+      cleanupFns.push(() => {
+        for (const l of listeners) l.el.removeEventListener(l.type, l.fn);
       });
 
       const floatingIcons = gsap.utils.toArray<HTMLElement>(".floating-icon");
@@ -126,7 +139,10 @@ export default function FeaturesGrid() {
       }
     }, sectionRef);
 
-    return () => ctx.revert();
+    return () => {
+      for (const fn of cleanupFns) fn();
+      ctx.revert();
+    };
   }, []);
 
   return (

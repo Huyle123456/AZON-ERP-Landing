@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /* ══════════════════════════════════════
    SLIDE 1 — Floating Icon Cards (original)
@@ -369,44 +369,60 @@ const TOTAL_SLIDES = ILLUSTRATIONS.length + 1 + 1;
 
 export default function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+  const sectionRef = useRef<HTMLElement>(null);
   const t = useTranslations("hero");
   const locale = useLocale();
 
+  // Pause the rotator when the tab is hidden OR the hero scrolls out of
+  // view. Re-mounting FloatingCardsSlide/BrowserSlide every 5s thrashes
+  // Framer Motion subscriptions and leaks listeners; stopping when invisible
+  // cuts that out entirely.
   useEffect(() => {
+    if (!isVisible) return;
     const timer = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % TOTAL_SLIDES);
     }, 5000);
     return () => clearInterval(timer);
+  }, [isVisible]);
+
+  useEffect(() => {
+    const onVisibility = () => {
+      if (document.hidden) setIsVisible(false);
+      else setIsVisible(true);
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    return () =>
+      document.removeEventListener("visibilitychange", onVisibility);
+  }, []);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting && !document.hidden),
+      { threshold: 0 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
-      {/* Mobile background — blurred office photo */}
-      <div className="absolute inset-0 lg:hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover blur-sm scale-110"
-          aria-hidden
-          priority
-        />
-        <div className="absolute inset-0 bg-linear-to-b from-primary-900/85 via-primary-800/75 to-primary-700/85" />
-      </div>
-
-      {/* Desktop — blurred office photo layer behind the blob */}
-      <div className="hidden lg:block absolute inset-0 pointer-events-none">
-        <Image
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover blur-xs scale-105"
-          aria-hidden
-          priority
-        />
-      </div>
+    <section ref={sectionRef} className="relative min-h-screen flex items-center overflow-hidden bg-white">
+      {/* Shared background photo — single Image instance shown to both
+          mobile (blurred + dark overlay) and desktop (slight blur behind the
+          blob). One priority download, one decode. */}
+      <Image
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover blur-sm scale-105 lg:blur-xs"
+        aria-hidden
+        priority
+      />
+      {/* Mobile-only dark overlay (desktop uses the curved blob below) */}
+      <div className="absolute inset-0 lg:hidden bg-linear-to-b from-primary-900/85 via-primary-800/75 to-primary-700/85 pointer-events-none" />
 
       {/* Desktop — Large curved blob shape (darkens the photo, shaped edge on the right) */}
       <motion.svg

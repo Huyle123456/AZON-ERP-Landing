@@ -1,3 +1,4 @@
+import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 import FloatingContact from "@/components/layout/FloatingContact";
 import Footer from "@/components/layout/Footer";
 import FooterBackdrop from "@/components/layout/FooterBackdrop";
@@ -137,6 +138,7 @@ export default async function RootLayout({
           </FooterBackdrop>
           <FloatingContact />
         </NextIntlClientProvider>
+        <ServiceWorkerRegister />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(ORG_JSON_LD) }}
