@@ -7,7 +7,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   const doc = getTerms(locale);
   return {
-    title: `${doc.title} – AZON`,
+    title: `${doc.title} – AZOERP`,
     description: doc.intro,
   };
 }

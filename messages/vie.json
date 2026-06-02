@@ -31,7 +31,7 @@
     "browserMock": {
       "title": "Phòng ban",
       "breadcrumb": "Nhân sự › Cơ cấu tổ chức › Phòng ban",
-      "url": "app.azon.vn/phong-ban",
+      "url": "app.azoerp.vn/phong-ban",
       "headers": ["TÊN", "MÃ", "CHI NHÁNH", "TRỰC THUỘC", "CẤP BẬC", "TRẠNG THÁI"],
       "statusActive": "Hoạt động",
       "rows": [
@@ -44,7 +44,7 @@
     }
   },
   "socialProof": {
-    "heading": "Vì sao bạn nên chọn AZON ngay hôm nay",
+    "heading": "Vì sao bạn nên chọn AZOERP ngay hôm nay",
     "subheading": "Mới ra mắt — được xây dựng từ nền tảng đầu tiên dành riêng cho doanh nghiệp Việt Nam.",
     "items": [
       {
@@ -71,94 +71,96 @@
   },
   "features": {
     "title": "Tất cả trong một nền tảng",
-    "subtitle": "9 module cốt lõi giúp doanh nghiệp vận hành nhân sự hiệu quả",
+    "subtitle": "9 phân hệ cốt lõi tối ưu hóa toàn bộ quy trình HR của bạn.",
     "items": {
       "dashboard": {
-        "title": "Dashboard",
-        "description": "Bảng điều khiển trực quan, tổng hợp số liệu realtime, quản lý việc cần làm"
+        "title": "Bảng điều khiển",
+        "description": "Trung tâm giám sát chỉ số theo thời gian thực và quản lý công việc tập trung."
       },
       "organization": {
-        "title": "Cơ cấu tổ chức",
-        "description": "Quản lý chi nhánh, phòng ban, chức vụ theo cấu trúc phân cấp"
+        "title": "Sơ đồ tổ chức",
+        "description": "Quản lý phân cấp hệ thống chi nhánh, phòng ban và chức vụ."
       },
       "hr": {
         "title": "Quản lý nhân sự",
-        "description": "Hồ sơ nhân viên, điều chuyển, khen thưởng/kỷ luật, đề xuất tăng lương"
+        "description": "Lưu trữ hồ sơ, xử lý điều chuyển, khen thưởng và đề xuất lương."
       },
       "contract": {
         "title": "Hợp đồng lao động",
-        "description": "Mẫu hợp đồng tùy chỉnh, ký điện tử, phụ lục, nhật ký thay đổi"
+        "description": "Tạo mẫu hợp đồng, ký số tiện lợi và theo dõi phụ lục."
       },
       "timekeeping": {
         "title": "Chấm công & Ca làm việc",
-        "description": "Check-in/out đa phương thức, quản lý ca, phân công, tăng ca, bảng công"
+        "description": "Linh hoạt hình thức chấm công, xếp ca và tự động hóa bảng công."
       },
       "leave": {
-        "title": "Nghỉ phép",
-        "description": "Tạo đơn nghỉ, phê duyệt đa cấp, quản lý phép năm tự động"
+        "title": "Quản lý phép",
+        "description": "Duyệt đơn từ đa cấp và tự động theo dõi hạn mức phép năm."
       },
       "payroll": {
-        "title": "Lương & Thu nhập",
-        "description": "Tính lương tự động, BHXH, thuế TNCN, phụ cấp/khấu trừ, xuất phiếu lương"
+        "title": "Tính lương & Bảo hiểm",
+        "description": "Tự động tính lương, BHXH, thuế TNCN và gửi phiếu lương bảo mật."
       },
       "ess": {
         "title": "Cổng nhân viên (ESS)",
-        "description": "Nhân viên tự xem hồ sơ, chấm công, nghỉ phép, lương, hợp đồng"
+        "description": "Cho phép nhân sự tự tra cứu công, phép, lương và hợp đồng."
       },
       "reports": {
-        "title": "Báo cáo & Thống kê",
-        "description": "Phân tích cơ cấu nhân sự, biến động, chi phí lương, hiệu suất"
+        "title": "Báo cáo & Phân tích",
+        "description": "Đo lường biến động nhân sự, chi phí vận hành và hiệu suất làm việc."
       }
     }
   },
   "deepDive": {
     "title": "Chi tiết tính năng",
-    "subtitle": "Khám phá sâu hơn các module cốt lõi của AZON",
+    "subtitle": "Khám phá sâu hơn các phân hệ cốt lõi của AZOERP",
+    "showMore": "Xem thêm",
+    "showLess": "Thu gọn",
     "hr": {
       "title": "Quản lý nhân sự",
       "bullets": [
-        "Hồ sơ nhân viên đầy đủ (thông tin cá nhân, CMND/CCCD, liên hệ khẩn cấp)",
-        "Theo dõi giai đoạn làm việc (thử việc → chính thức → nghỉ việc)",
-        "Điều chuyển nhân sự (thăng chức, chuyển phòng ban, tái cấu trúc)",
-        "Quyết định khen thưởng / kỷ luật với số quyết định",
-        "Đề xuất tăng lương — phê duyệt 3 cấp: HR → Giám đốc → Thi hành",
-        "Đợt tăng lương định kỳ toàn công ty",
-        "Đăng ký người phụ thuộc giảm trừ thuế TNCN"
+        "Hồ sơ điện tử: Quản lý thông tin cá nhân, CMND/CCCD và các liên hệ khẩn cấp.",
+        "Lộ trình nhân sự: Theo dõi xuyên suốt trạng thái từ thử việc, chính thức đến thủ tục nghỉ việc.",
+        "Điều chuyển nhân sự: Cập nhật nhanh lịch sử thăng chức, chuyển bộ phận, đổi vị trí.",
+        "Khen thưởng & Kỷ luật: Quản lý hệ thống quyết định nội bộ kèm mã số hiệu văn bản.",
+        "Duyệt đề xuất lương theo cấp: Chuẩn hóa quy trình phê duyệt khép kín từ HR đến Ban Giám đốc.",
+        "Tăng lương định kỳ: Thiết lập và thực hiện các đợt điều chỉnh thu nhập quy mô toàn công ty.",
+        "Giảm trừ gia cảnh: Đăng ký người phụ thuộc, tự động đồng bộ để tối ưu Thuế TNCN."
       ]
     },
     "contract": {
       "title": "Hợp đồng lao động",
       "bullets": [
-        "Tạo mẫu hợp đồng với biến động (tên, lương, phòng ban tự fill)",
-        "5 loại hợp đồng: Thử việc, Xác định thời hạn, Vô thời hạn, Thời vụ, Theo dự án",
-        "Quy trình ký điện tử nội bộ (Draft → Ký → Duyệt → Active)",
-        "Phụ lục hợp đồng sửa đổi/bổ sung",
-        "Nhật ký theo dõi mọi thay đổi",
-        "Xuất hợp đồng PDF chuyên nghiệp"
+        "Mẫu hợp đồng thông minh: Tự động điền dữ liệu động dựa trên hồ sơ nhân sự (Tên, mức lương, phòng ban, vị trí).",
+        "Đa dạng loại hình hợp đồng: Hỗ trợ đầy đủ 5 loại hợp đồng tiêu chuẩn: Thử việc, Xác định thời hạn, Không xác định thời hạn, Thời vụ và Theo dự án.",
+        "Quy trình ký số nội bộ: Chuẩn hóa luồng ký điện tử khép kín trực quan qua các trạng thái: Nháp → Ký số → Phê duyệt → Hiệu lực.",
+        "Quản lý phụ lục hợp đồng: Dễ dàng tạo và theo dõi các phụ lục sửa đổi, bổ sung điều khoản hợp đồng.",
+        "Nhật ký thay đổi (Audit Log): Ghi vết chi tiết toàn bộ lịch sử chỉnh sửa, cập nhật trạng thái hợp đồng để đảm bảo tính minh bạch.",
+        "Xuất tài liệu chuyên nghiệp: Hỗ trợ xuất hợp đồng sang định dạng PDF chuẩn hóa, sẵn sàng in ấn hoặc lưu trữ."
       ]
     },
     "timekeeping": {
       "title": "Chấm công & Ca làm việc",
       "bullets": [
-        "Check-in/out đa phương thức: GPS, WiFi, IP, vân tay, khuôn mặt, thẻ từ, app",
-        "Tạo ca linh hoạt (sáng, chiều, đêm, custom)",
-        "Phân công nhân viên vào ca theo tuần/tháng",
-        "Yêu cầu đổi ca với quy trình phê duyệt",
-        "Bảng chấm công tổng hợp theo phòng ban/chi nhánh",
-        "Quản lý ngày lễ, tết — tự động tính công",
-        "Đăng ký & duyệt tăng ca"
+        "Chấm công đa phương thức: Linh hoạt check-in/out qua nhiều hình thức: GPS định vị, Wi-Fi nội bộ, địa chỉ IP, nhận diện khuôn mặt (FaceID), vân tay, thẻ từ hoặc ứng dụng di động.",
+        "Thiết lập ca linh hoạt: Khởi tạo không giới hạn các loại ca làm việc: Ca sáng, ca chiều, ca đêm hoặc tùy chỉnh khung giờ linh hoạt theo đặc thù doanh nghiệp.",
+        "Xếp lịch ca thông minh: Dễ dàng phân công, lên lịch làm việc và chia ca cho nhân viên theo tuần hoặc theo tháng chỉ với vài cú nhấp chuột.",
+        "Đổi ca & Duyệt đơn từ: Chuẩn hóa quy trình gửi yêu cầu đổi ca giữa các nhân viên kèm luồng phê duyệt trực tuyến từ quản lý.",
+        "Bảng công tổng hợp realtime: Tự động đồng bộ và xuất bảng chấm công tổng hợp theo thời gian thực cho từng phòng ban, cửa hàng hoặc chi nhánh.",
+        "Tự động hóa lịch lễ, Tết: Tích hợp sẵn lịch nghỉ lễ, Tết theo quy định nhà nước và tự động cấu hình hệ số tính công/lương đặc biệt.",
+        "Quản lý tăng ca: Hệ thống hóa quy trình đăng ký, xét duyệt và theo dõi giờ làm thêm (OT) của nhân sự một cách minh bạch."
       ]
     },
     "payroll": {
-      "title": "Lương & Thu nhập",
+      "title": "Tính lương & Thu nhập",
       "bullets": [
-        "Tính lương tự động theo kỳ (tháng)",
-        "Cấu hình BHXH/BHYT/BHTN theo quy định pháp luật Việt Nam",
-        "Thuế TNCN lũy tiến, giảm trừ gia cảnh + người phụ thuộc",
-        "Phụ cấp linh hoạt: cố định / theo ngày / theo giờ / phần trăm",
-        "Quy trình duyệt lương: Draft → Tính lương → Duyệt → Trả lương → Khóa kỳ",
-        "Lịch sử tăng lương toàn bộ nhân viên",
-        "Xuất phiếu lương PDF chi tiết"
+        "Tự động hóa kỳ tính lương: Hệ thống tự động xử lý và tính toán bảng lương chính xác theo từng kỳ (tháng) dựa trên dữ liệu công, phép.",
+        "Trích đóng Bảo hiểm bắt buộc: Tự động cấu hình và cập nhật tỷ lệ đóng BHXH, BHYT, BHTN chuẩn xác theo quy định của pháp luật Việt Nam.",
+        "Khấu trừ Thuế TNCN & Gia cảnh: Tự động áp dụng biểu thuế lũy tiến từng phần, tính toán giảm trừ gia cảnh cho bản thân và danh sách người phụ thuộc.",
+        "Cơ chế phụ cấp linh hoạt: Dễ dàng thiết lập các loại phụ cấp và phúc lợi: cố định theo tháng, tính theo ngày công thực tế, theo giờ hoặc theo tỷ lệ phần trăm.",
+        "Quy trình duyệt lương khép kín: Chuẩn hóa luồng vận hành kỳ lương chặt chẽ: Khởi tạo nháp → Tính toán → Phê duyệt → Chi trả → Khóa kỳ lương.",
+        "Lịch sử biến động thu nhập: Lưu trữ và theo dõi xuyên suốt toàn bộ lịch sử tăng lương, điều chỉnh thu nhập của từng nhân sự.",
+        "Xuất phiếu lương: Hỗ trợ xuất và gửi phiếu lương điện tử định dạng PDF chi tiết, trực quan đến từng nhân viên."
       ]
     }
   },
@@ -179,10 +181,9 @@
   "appFeatures": {
     "appLabel": "App",
     "title": "App Dành Riêng Cho Nhân Viên",
-    "subtitle": "Mọi thao tác nhân sự ngay trên điện thoại — chấm công, xin nghỉ phép, xem lương, quản lý hợp đồng — không cần qua HR",
+    "subtitle": "HR trong túi bạn — chấm công, nghỉ phép, lương, hợp đồng",
     "smartCheckIn": {
       "title": "Chấm Công Thông Minh",
-      "subtitle": "Smart Check-in",
       "bullets": [
         "Thực hiện chấm công Vào/Ra chỉ với một chạm ngay tại màn hình chính.",
         "Theo dõi thời gian làm việc thực tế theo thời gian thực.",
@@ -227,7 +228,7 @@
   },
   "midCta": {
     "titleLine1": "Tối ưu vận hành nhân sự",
-    "titleLine2": "bền vững cùng AZON",
+    "titleLine2": "bền vững cùng AZOERP",
     "description": "Hợp nhất các tính năng chấm công, nghỉ phép, lương thưởng, hợp đồng và báo cáo — tất cả trong một nền tảng duy nhất, vận hành tinh gọn!",
     "button": "Bắt đầu với tài khoản miễn phí",
     "totalEmployees": "Tổng nhân viên",
@@ -238,7 +239,7 @@
     "payrollCost": "Chi phí lương"
   },
   "differentiators": {
-    "title": "Tại sao chọn AZON?",
+    "title": "Tại sao chọn AZOERP?",
     "multiTenant": {
       "title": "Multi-tenant",
       "bullets": [
@@ -252,7 +253,7 @@
       "bullets": [
         "Tạo nhóm quyền (Roles) không giới hạn",
         "Phân quyền đến từng hành động: Xem, Tạo, Sửa, Xóa, Phê duyệt, Thi hành",
-        "Mỗi module đều có quyền riêng biệt"
+        "Mỗi phân hệ đều có quyền riêng biệt"
       ]
     },
     "multilingual": {
@@ -278,7 +279,7 @@
         "description": "Dành cho doanh nghiệp/tổ chức dưới 5 nhân viên",
         "features": [
           "Tối đa 5 nhân viên",
-          "Đầy đủ tất cả module cốt lõi",
+          "Đầy đủ tất cả phân hệ cốt lõi",
           "Chấm công GPS, WiFi",
           "Quản lý nghỉ phép & tăng ca",
           "Phiếu lương điện tử",
@@ -314,7 +315,7 @@
           "Tất cả tính năng gói Tiêu Chuẩn",
           "Triển khai on-premise hoặc private cloud",
           "Tích hợp API với hệ thống nội bộ (ERP, CRM)",
-          "Phân quyền chi tiết theo module & hành động",
+          "Phân quyền chi tiết theo phân hệ & hành động",
           "Quản lý multi-tenant cho tập đoàn",
           "SLA cam kết uptime 99.9%",
           "Đào tạo & onboarding riêng",
@@ -333,41 +334,41 @@
   },
   "blog": {
     "pageTitle": "Tin tức & Bài viết",
-    "pageSubtitle": "Cập nhật mới nhất từ AZON — chính sách, giải thưởng, hợp tác và khuyến mãi",
+    "pageSubtitle": "Cập nhật mới nhất từ AZOERP — chính sách, giải thưởng, hợp tác và khuyến mãi",
     "readMore": "Xem thêm",
     "backToList": "Quay lại",
     "publishedOn": "Đăng ngày",
     "relatedTitle": "Bài viết liên quan",
     "posts": {
       "notice": {
-        "title": "Thông báo của AZON về việc miễn phí hóa đơn điện tử và chữ ký số",
+        "title": "Thông báo của AZOERP về việc miễn phí hóa đơn điện tử và chữ ký số",
         "excerpt": "Quý Khách hàng thân mến, trong bối cảnh Nghị định 70/2025/NĐ-CP có hiệu lực từ ngày 01/06/2026...",
-        "content": "<p>Quý Khách hàng thân mến,</p><p>Trong bối cảnh Nghị định 70/2025/NĐ-CP có hiệu lực từ ngày 01/06/2026, AZON trân trọng thông báo chính sách <strong>miễn phí hoàn toàn</strong> dịch vụ hóa đơn điện tử và chữ ký số cho tất cả khách hàng đang sử dụng nền tảng.</p><h2>Đối tượng áp dụng</h2><ul><li>Tất cả doanh nghiệp đang sử dụng gói AZON Tiêu Chuẩn trở lên</li><li>Doanh nghiệp mới đăng ký trong thời gian khuyến mãi</li><li>Hộ kinh doanh có nhu cầu chuyển đổi số theo quy định của Nghị định</li></ul><h2>Quyền lợi</h2><ul><li>Miễn phí 100% phí phát hành hóa đơn điện tử trong năm đầu tiên</li><li>Miễn phí dịch vụ chữ ký số doanh nghiệp</li><li>Hỗ trợ triển khai và đào tạo sử dụng miễn phí</li></ul><p>Để biết thêm thông tin chi tiết, vui lòng liên hệ đội ngũ tư vấn của AZON qua hotline hoặc email được ghi trong phần Liên hệ.</p><p>Trân trọng,<br/>Đội ngũ AZON</p>"
+        "content": "<p>Quý Khách hàng thân mến,</p><p>Trong bối cảnh Nghị định 70/2025/NĐ-CP có hiệu lực từ ngày 01/06/2026, AZOERP trân trọng thông báo chính sách <strong>miễn phí hoàn toàn</strong> dịch vụ hóa đơn điện tử và chữ ký số cho tất cả khách hàng đang sử dụng nền tảng.</p><h2>Đối tượng áp dụng</h2><ul><li>Tất cả doanh nghiệp đang sử dụng gói AZOERP Tiêu Chuẩn trở lên</li><li>Doanh nghiệp mới đăng ký trong thời gian khuyến mãi</li><li>Hộ kinh doanh có nhu cầu chuyển đổi số theo quy định của Nghị định</li></ul><h2>Quyền lợi</h2><ul><li>Miễn phí 100% phí phát hành hóa đơn điện tử trong năm đầu tiên</li><li>Miễn phí dịch vụ chữ ký số doanh nghiệp</li><li>Hỗ trợ triển khai và đào tạo sử dụng miễn phí</li></ul><p>Để biết thêm thông tin chi tiết, vui lòng liên hệ đội ngũ tư vấn của AZOERP qua hotline hoặc email được ghi trong phần Liên hệ.</p><p>Trân trọng,<br/>Đội ngũ AZOERP</p>"
       },
       "award": {
-        "title": "AZON đạt TOP 10 sản phẩm & dịch vụ tin dùng 2025 - Nhóm ngành sản phẩm, dịch vụ công nghệ",
+        "title": "AZOERP đạt TOP 10 sản phẩm & dịch vụ tin dùng 2025 - Nhóm ngành sản phẩm, dịch vụ công nghệ",
         "excerpt": "Ngày 20/12 vừa qua, tại chương trình Tin Dùng Việt Nam 2025 do Tạp chí Kinh tế Việt Nam tổ chức...",
-        "content": "<p>Ngày 20/12 vừa qua, tại chương trình <strong>Tin Dùng Việt Nam 2025</strong> do Tạp chí Kinh tế Việt Nam phối hợp cùng VnEconomy tổ chức, AZON vinh dự được xướng tên trong TOP 10 sản phẩm và dịch vụ tin dùng thuộc nhóm ngành công nghệ.</p><h2>Giải thưởng được bình chọn bởi</h2><ul><li>Hơn 20.000 người tiêu dùng và doanh nghiệp trên cả nước</li><li>Hội đồng chuyên gia của Tạp chí Kinh tế Việt Nam</li><li>Tiêu chí đánh giá bao gồm chất lượng sản phẩm, độ tin cậy và mức độ ảnh hưởng tới thị trường</li></ul><h2>Ý nghĩa với AZON</h2><p>Đây là cột mốc ghi nhận nỗ lực của AZON trong hành trình chuyển đổi số ngành nhân sự tại Việt Nam. Trong năm 2025, AZON đã phục vụ hơn <strong>500+</strong> doanh nghiệp với hơn 200.000 nhân viên sử dụng nền tảng hàng ngày.</p><p>Chúng tôi xin gửi lời cảm ơn chân thành đến tất cả khách hàng, đối tác và đội ngũ nhân sự đã tin tưởng, đồng hành cùng AZON.</p>"
+        "content": "<p>Ngày 20/12 vừa qua, tại chương trình <strong>Tin Dùng Việt Nam 2025</strong> do Tạp chí Kinh tế Việt Nam phối hợp cùng VnEconomy tổ chức, AZOERP vinh dự được xướng tên trong TOP 10 sản phẩm và dịch vụ tin dùng thuộc nhóm ngành công nghệ.</p><h2>Giải thưởng được bình chọn bởi</h2><ul><li>Hơn 20.000 người tiêu dùng và doanh nghiệp trên cả nước</li><li>Hội đồng chuyên gia của Tạp chí Kinh tế Việt Nam</li><li>Tiêu chí đánh giá bao gồm chất lượng sản phẩm, độ tin cậy và mức độ ảnh hưởng tới thị trường</li></ul><h2>Ý nghĩa với AZOERP</h2><p>Đây là cột mốc ghi nhận nỗ lực của AZOERP trong hành trình chuyển đổi số ngành nhân sự tại Việt Nam. Trong năm 2025, AZOERP đã phục vụ hơn <strong>500+</strong> doanh nghiệp với hơn 200.000 nhân viên sử dụng nền tảng hàng ngày.</p><p>Chúng tôi xin gửi lời cảm ơn chân thành đến tất cả khách hàng, đối tác và đội ngũ nhân sự đã tin tưởng, đồng hành cùng AZOERP.</p>"
       },
       "partnerBank1": {
-        "title": "Chủ tài khoản Vietinbank đã được nhận thông báo thanh toán trên AZON",
-        "excerpt": "AZON chính thức tích hợp dịch vụ nhận thông báo thanh toán qua tài khoản Vietinbank trực tiếp trên ứng dụng.",
-        "content": "<p>AZON chính thức tích hợp dịch vụ nhận thông báo thanh toán qua tài khoản Vietinbank trực tiếp trên ứng dụng.</p><h2>Tính năng mới</h2><ul><li>Nhận thông báo biến động số dư real-time ngay trên app AZON</li><li>Đối soát tự động với bảng lương, hoá đơn nội bộ</li><li>Bảo mật theo chuẩn của ngân hàng, không cần chia sẻ mật khẩu</li></ul><p>Người dùng chỉ cần liên kết tài khoản Vietinbank một lần duy nhất để sử dụng tính năng này.</p>"
+        "title": "Chủ tài khoản Vietinbank đã được nhận thông báo thanh toán trên AZOERP",
+        "excerpt": "AZOERP chính thức tích hợp dịch vụ nhận thông báo thanh toán qua tài khoản Vietinbank trực tiếp trên ứng dụng.",
+        "content": "<p>AZOERP chính thức tích hợp dịch vụ nhận thông báo thanh toán qua tài khoản Vietinbank trực tiếp trên ứng dụng.</p><h2>Tính năng mới</h2><ul><li>Nhận thông báo biến động số dư real-time ngay trên app AZOERP</li><li>Đối soát tự động với bảng lương, hoá đơn nội bộ</li><li>Bảo mật theo chuẩn của ngân hàng, không cần chia sẻ mật khẩu</li></ul><p>Người dùng chỉ cần liên kết tài khoản Vietinbank một lần duy nhất để sử dụng tính năng này.</p>"
       },
       "partnerBank2": {
-        "title": "Tích hợp giải pháp nhận thông báo biến động tài khoản Vietcombank ngay trên AZON",
-        "excerpt": "Sau Vietinbank, AZON tiếp tục mở rộng hệ sinh thái ngân hàng với Vietcombank.",
-        "content": "<p>Sau thành công với Vietinbank, AZON tiếp tục mở rộng hệ sinh thái ngân hàng tích hợp với Vietcombank — một trong những ngân hàng thương mại lớn nhất Việt Nam.</p><h2>Lợi ích cho doanh nghiệp</h2><ul><li>Tự động đối soát giao dịch thu chi của công ty</li><li>Thông báo tức thì khi có biến động số dư</li><li>Kết nối với module Lương & Thu nhập để đối chiếu việc chi lương</li></ul>"
+        "title": "Tích hợp giải pháp nhận thông báo biến động tài khoản Vietcombank ngay trên AZOERP",
+        "excerpt": "Sau Vietinbank, AZOERP tiếp tục mở rộng hệ sinh thái ngân hàng với Vietcombank.",
+        "content": "<p>Sau thành công với Vietinbank, AZOERP tiếp tục mở rộng hệ sinh thái ngân hàng tích hợp với Vietcombank — một trong những ngân hàng thương mại lớn nhất Việt Nam.</p><h2>Lợi ích cho doanh nghiệp</h2><ul><li>Tự động đối soát giao dịch thu chi của công ty</li><li>Thông báo tức thì khi có biến động số dư</li><li>Kết nối với phân hệ Lương & Thu nhập để đối chiếu việc chi lương</li></ul>"
       },
       "promo": {
-        "title": "Giảm ngay 5.370.000đ khi mua combo 3 năm AZON chuyên nghiệp",
-        "excerpt": "Ưu đãi lớn nhất năm dành cho các doanh nghiệp cam kết đồng hành dài hạn cùng AZON.",
-        "content": "<p>Ưu đãi lớn nhất năm dành cho các doanh nghiệp cam kết đồng hành dài hạn cùng AZON.</p><h2>Chi tiết ưu đãi</h2><ul><li>Giảm trực tiếp <strong>5.370.000đ</strong> khi đăng ký combo 3 năm gói Tiêu Chuẩn</li><li>Tặng kèm 12 tháng bảo trì kỹ thuật nâng cao</li><li>Miễn phí triển khai và onboarding cho toàn bộ nhân viên</li></ul><p>Chương trình áp dụng đến hết ngày 31/12/2025.</p>"
+        "title": "Giảm ngay 5.370.000đ khi mua combo 3 năm AZOERP chuyên nghiệp",
+        "excerpt": "Ưu đãi lớn nhất năm dành cho các doanh nghiệp cam kết đồng hành dài hạn cùng AZOERP.",
+        "content": "<p>Ưu đãi lớn nhất năm dành cho các doanh nghiệp cam kết đồng hành dài hạn cùng AZOERP.</p><h2>Chi tiết ưu đãi</h2><ul><li>Giảm trực tiếp <strong>5.370.000đ</strong> khi đăng ký combo 3 năm gói Tiêu Chuẩn</li><li>Tặng kèm 12 tháng bảo trì kỹ thuật nâng cao</li><li>Miễn phí triển khai và onboarding cho toàn bộ nhân viên</li></ul><p>Chương trình áp dụng đến hết ngày 31/12/2025.</p>"
       },
       "partnerMb": {
-        "title": "AZON hợp tác MBBank giải ngân gói vay 1.000 tỷ tiếp sức doanh nghiệp",
-        "excerpt": "AZON và MBBank ký kết hợp tác chiến lược, cung cấp gói vay ưu đãi 1.000 tỷ cho doanh nghiệp SME.",
-        "content": "<p>AZON và MBBank chính thức ký kết hợp tác chiến lược, cung cấp gói vay ưu đãi lên tới <strong>1.000 tỷ đồng</strong> dành cho các doanh nghiệp SME đang sử dụng nền tảng AZON.</p><h2>Điều kiện tham gia</h2><ul><li>Doanh nghiệp đã sử dụng AZON ít nhất 3 tháng</li><li>Có lịch sử trả lương rõ ràng trên hệ thống</li><li>Thủ tục vay rút gọn — giải ngân trong 48 giờ</li></ul><p>Chi tiết vui lòng liên hệ đội ngũ tư vấn AZON hoặc chi nhánh MBBank gần nhất.</p>"
+        "title": "AZOERP hợp tác MBBank giải ngân gói vay 1.000 tỷ tiếp sức doanh nghiệp",
+        "excerpt": "AZOERP và MBBank ký kết hợp tác chiến lược, cung cấp gói vay ưu đãi 1.000 tỷ cho doanh nghiệp SME.",
+        "content": "<p>AZOERP và MBBank chính thức ký kết hợp tác chiến lược, cung cấp gói vay ưu đãi lên tới <strong>1.000 tỷ đồng</strong> dành cho các doanh nghiệp SME đang sử dụng nền tảng AZOERP.</p><h2>Điều kiện tham gia</h2><ul><li>Doanh nghiệp đã sử dụng AZOERP ít nhất 3 tháng</li><li>Có lịch sử trả lương rõ ràng trên hệ thống</li><li>Thủ tục vay rút gọn — giải ngân trong 48 giờ</li></ul><p>Chi tiết vui lòng liên hệ đội ngũ tư vấn AZOERP hoặc chi nhánh MBBank gần nhất.</p>"
       }
     }
   },
@@ -376,24 +377,24 @@
     "readMore": "Xem thêm",
     "items": {
       "notice": {
-        "title": "Thông báo của AZON về việc miễn phí hóa đơn điện tử và chữ ký số",
+        "title": "Thông báo của AZOERP về việc miễn phí hóa đơn điện tử và chữ ký số",
         "excerpt": "Quý Khách hàng thân mến, trong bối cảnh Nghị định 70/2025/NĐ-CP có hiệu lực từ ngày..."
       },
       "award": {
-        "title": "AZON đạt TOP 10 sản phẩm & dịch vụ tin dùng 2025 - Nhóm ngành sản phẩm, dịch vụ công nghệ",
+        "title": "AZOERP đạt TOP 10 sản phẩm & dịch vụ tin dùng 2025 - Nhóm ngành sản phẩm, dịch vụ công nghệ",
         "excerpt": "Ngày 20/12 vừa qua, tại chương trình Tin Dùng Việt Nam 2025 do Tạp chí Kinh tế Việt..."
       },
       "partnerBank1": {
-        "title": "Chủ tài khoản Vietinbank đã được nhận thông báo thanh toán trên AZON"
+        "title": "Chủ tài khoản Vietinbank đã được nhận thông báo thanh toán trên AZOERP"
       },
       "partnerBank2": {
-        "title": "Tích hợp giải pháp nhận thông báo biến động tài khoản Vietcombank ngay trên AZON"
+        "title": "Tích hợp giải pháp nhận thông báo biến động tài khoản Vietcombank ngay trên AZOERP"
       },
       "promo": {
-        "title": "Giảm ngay 5.370.000đ khi mua combo 3 năm AZON chuyên nghiệp"
+        "title": "Giảm ngay 5.370.000đ khi mua combo 3 năm AZOERP chuyên nghiệp"
       },
       "partnerMb": {
-        "title": "AZON hợp tác MBBank giải ngân gói vay 1.000 tỷ tiếp sức"
+        "title": "AZOERP hợp tác MBBank giải ngân gói vay 1.000 tỷ tiếp sức"
       }
     }
   },
@@ -416,7 +417,7 @@
         ]
       },
       "company": {
-        "title": "AZON",
+        "title": "AZOERP",
         "links": [
           { "label": "Blog & Tin tức", "href": "/blog" },
           { "label": "Đăng nhập", "href": "/login" },
@@ -438,7 +439,7 @@
     "hotline": "+84 329 300 677",
     "addressLabel": "Địa chỉ",
     "address": "TP. Hồ Chí Minh, Việt Nam",
-    "copyright": "© 2026 AZON. All rights reserved."
+    "copyright": "© 2026 AZOERP. All rights reserved."
   },
   "languageSwitch": {
     "vi": "Tiếng Việt",
@@ -452,7 +453,7 @@
     "home": "Về Trang chủ"
   },
   "notFound": {
-    "metaTitle": "Không tìm thấy trang · AZON ERP",
+    "metaTitle": "Không tìm thấy trang · AZOERP",
     "metaDescription": "Trang bạn tìm không tồn tại hoặc đã bị di chuyển.",
     "title": "Không tìm thấy trang",
     "description": "Trang bạn yêu cầu không tồn tại hoặc đã được di chuyển. Vui lòng kiểm tra lại đường dẫn hoặc quay về trang chủ.",
@@ -467,7 +468,7 @@
     },
     "login": {
       "metaTitle": "Đăng nhập",
-      "metaDescription": "Đăng nhập vào hệ thống AZON ERP",
+      "metaDescription": "Đăng nhập vào hệ thống AZOERP",
       "title": "Chào mừng trở lại",
       "subtitle": "Đăng nhập để tiếp tục quản lý hệ thống của bạn",
       "domainLabel": "Tên domain",
@@ -479,7 +480,7 @@
     },
     "register": {
       "metaTitle": "Đăng ký",
-      "metaDescription": "Đăng ký tài khoản AZON ERP miễn phí",
+      "metaDescription": "Đăng ký tài khoản AZOERP miễn phí",
       "title": "Tạo tài khoản",
       "subtitle": "Khởi tạo hệ thống quản lý nhân sự của riêng bạn trong vài phút",
       "stepPlanTitle": "Chọn gói",
@@ -561,7 +562,7 @@
       "eNetwork": "Không kết nối được tới máy chủ. Vui lòng thử lại.",
       "doneFreeTitle": "Yêu cầu khởi tạo hệ thống đã được tiếp nhận",
       "doneFreeBodyPre": "Vui lòng chờ vài phút để được duyệt. Thông tin tài khoản và hướng dẫn truy cập sẽ được gửi tới email ",
-      "donePaidTitle": "Cảm ơn bạn đã quan tâm tới AZON ERP",
+      "donePaidTitle": "Cảm ơn bạn đã quan tâm tới AZOERP",
       "donePaidBodyPre": "Đội ngũ tư vấn sẽ liên hệ với bạn qua email ",
       "donePaidBodySuf": " trong thời gian sớm nhất để tư vấn gói phù hợp.",
       "doneFallbackEmail": "của bạn"

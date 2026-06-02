@@ -38,7 +38,7 @@ function BrowserMockup({ screen }: { screen: MockScreen }) {
         </div>
         <div className="flex-1 mx-3">
           <div className="bg-white rounded-md border border-gray-200 px-3 py-1 text-[9px] text-gray-400 truncate">
-            app.azon.vn/{screen.title.toLowerCase().replace(/\s/g, "-")}
+            app.azoerp.vn/{screen.title.toLowerCase().replace(/\s/g, "-")}
           </div>
         </div>
       </div>

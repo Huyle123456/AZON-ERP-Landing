@@ -17,12 +17,12 @@ const PRIVACY_VI: LegalDoc = {
   updatedLabel: "Cập nhật lần cuối",
   updatedDate: "15/05/2026",
   intro:
-    "AZON (\"chúng tôi\") cam kết bảo vệ quyền riêng tư của Người dùng khi sử dụng nền tảng quản lý nhân sự AZON, bao gồm ứng dụng web và ứng dụng di động (\"Dịch vụ\"). Chính sách này mô tả cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân của Người dùng.",
+    "AZOERP (\"chúng tôi\") cam kết bảo vệ quyền riêng tư của Người dùng khi sử dụng nền tảng quản lý nhân sự AZOERP, bao gồm ứng dụng web và ứng dụng di động (\"Dịch vụ\"). Chính sách này mô tả cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân của Người dùng.",
   sections: [
     {
       heading: "1. Thông tin chúng tôi thu thập",
       paragraphs: [
-        "Để cung cấp đầy đủ chức năng của Dịch vụ, AZON có thể thu thập các loại thông tin sau:",
+        "Để cung cấp đầy đủ chức năng của Dịch vụ, AZOERP có thể thu thập các loại thông tin sau:",
       ],
       bullets: [
         "Thông tin tài khoản: họ tên, email, số điện thoại, mã nhân viên, ảnh đại diện, chức vụ, phòng ban.",
@@ -46,7 +46,7 @@ const PRIVACY_VI: LegalDoc = {
     {
       heading: "3. Quyền sinh trắc học & quyền truy cập trên thiết bị",
       paragraphs: [
-        "Ứng dụng di động AZON có thể yêu cầu một số quyền sau, mỗi quyền đều có mục đích rõ ràng và Người dùng có thể từ chối/hủy bất cứ lúc nào trong cài đặt thiết bị:",
+        "Ứng dụng di động AZOERP có thể yêu cầu một số quyền sau, mỗi quyền đều có mục đích rõ ràng và Người dùng có thể từ chối/hủy bất cứ lúc nào trong cài đặt thiết bị:",
       ],
       bullets: [
         "Vị trí (GPS): xác minh chấm công đúng địa điểm làm việc do doanh nghiệp cấu hình.",
@@ -60,7 +60,7 @@ const PRIVACY_VI: LegalDoc = {
     {
       heading: "4. Chia sẻ dữ liệu",
       paragraphs: [
-        "AZON KHÔNG bán dữ liệu cá nhân của Người dùng. Dữ liệu chỉ được chia sẻ trong các trường hợp sau:",
+        "AZOERP KHÔNG bán dữ liệu cá nhân của Người dùng. Dữ liệu chỉ được chia sẻ trong các trường hợp sau:",
       ],
       bullets: [
         "Trong nội bộ doanh nghiệp (tenant) của Người dùng, theo phân quyền do quản trị viên cấu hình.",
@@ -118,12 +118,12 @@ const PRIVACY_EN: LegalDoc = {
   updatedLabel: "Last updated",
   updatedDate: "May 15, 2026",
   intro:
-    "AZON (\"we\", \"us\") is committed to protecting the privacy of Users of the AZON HR platform, including our web and mobile applications (the \"Service\"). This Policy describes how we collect, use, store, and protect Users' personal information.",
+    "AZOERP (\"we\", \"us\") is committed to protecting the privacy of Users of the AZOERP HR platform, including our web and mobile applications (the \"Service\"). This Policy describes how we collect, use, store, and protect Users' personal information.",
   sections: [
     {
       heading: "1. Information we collect",
       paragraphs: [
-        "To deliver the full functionality of the Service, AZON may collect the following types of information:",
+        "To deliver the full functionality of the Service, AZOERP may collect the following types of information:",
       ],
       bullets: [
         "Account information: full name, email, phone number, employee ID, avatar, job title, department.",
@@ -147,7 +147,7 @@ const PRIVACY_EN: LegalDoc = {
     {
       heading: "3. Biometric & device permissions",
       paragraphs: [
-        "The AZON mobile app may request the following permissions. Each has a clear purpose and may be revoked at any time in the device settings:",
+        "The AZOERP mobile app may request the following permissions. Each has a clear purpose and may be revoked at any time in the device settings:",
       ],
       bullets: [
         "Location (GPS): verify attendance at the worksite configured by the employer.",
@@ -161,7 +161,7 @@ const PRIVACY_EN: LegalDoc = {
     {
       heading: "4. Data sharing",
       paragraphs: [
-        "AZON does NOT sell User personal data. Data is shared only in the following cases:",
+        "AZOERP does NOT sell User personal data. Data is shared only in the following cases:",
       ],
       bullets: [
         "Within the User's organization (tenant), subject to permissions configured by the admin.",
@@ -217,13 +217,13 @@ const TERMS_VI: LegalDoc = {
   updatedLabel: "Cập nhật lần cuối",
   updatedDate: "15/05/2026",
   intro:
-    "Vui lòng đọc kỹ Điều khoản & Điều kiện sử dụng này trước khi đăng ký tài khoản và sử dụng nền tảng AZON. Việc bạn tạo tài khoản, đăng nhập hoặc tiếp tục sử dụng Dịch vụ đồng nghĩa với việc bạn chấp nhận đầy đủ các điều khoản dưới đây.",
+    "Vui lòng đọc kỹ Điều khoản & Điều kiện sử dụng này trước khi đăng ký tài khoản và sử dụng nền tảng AZOERP. Việc bạn tạo tài khoản, đăng nhập hoặc tiếp tục sử dụng Dịch vụ đồng nghĩa với việc bạn chấp nhận đầy đủ các điều khoản dưới đây.",
   sections: [
     {
       heading: "1. Định nghĩa",
       bullets: [
-        "\"AZON\", \"chúng tôi\" — nền tảng quản lý nhân sự AZON và đơn vị vận hành.",
-        "\"Dịch vụ\" — toàn bộ tính năng web và ứng dụng di động AZON.",
+        "\"AZOERP\", \"chúng tôi\" — nền tảng quản lý nhân sự AZOERP và đơn vị vận hành.",
+        "\"Dịch vụ\" — toàn bộ tính năng web và ứng dụng di động AZOERP.",
         "\"Người dùng\" — cá nhân sử dụng Dịch vụ, bao gồm quản trị viên doanh nghiệp và nhân viên.",
         "\"Doanh nghiệp\" / \"Tenant\" — tổ chức đăng ký sử dụng Dịch vụ.",
       ],
@@ -251,8 +251,8 @@ const TERMS_VI: LegalDoc = {
     {
       heading: "4. Quyền sở hữu trí tuệ",
       paragraphs: [
-        "Toàn bộ giao diện, mã nguồn, thương hiệu, logo, tài liệu của AZON thuộc sở hữu của chúng tôi và được bảo hộ theo pháp luật. Người dùng chỉ được sử dụng trong phạm vi quyền sử dụng Dịch vụ.",
-        "Dữ liệu do doanh nghiệp/nhân viên tải lên (\"Nội dung của Người dùng\") thuộc sở hữu của doanh nghiệp đó. AZON chỉ xử lý theo phạm vi cần thiết để cung cấp Dịch vụ.",
+        "Toàn bộ giao diện, mã nguồn, thương hiệu, logo, tài liệu của AZOERP thuộc sở hữu của chúng tôi và được bảo hộ theo pháp luật. Người dùng chỉ được sử dụng trong phạm vi quyền sử dụng Dịch vụ.",
+        "Dữ liệu do doanh nghiệp/nhân viên tải lên (\"Nội dung của Người dùng\") thuộc sở hữu của doanh nghiệp đó. AZOERP chỉ xử lý theo phạm vi cần thiết để cung cấp Dịch vụ.",
       ],
     },
     {
@@ -275,8 +275,8 @@ const TERMS_VI: LegalDoc = {
     {
       heading: "7. Giới hạn trách nhiệm",
       paragraphs: [
-        "Trong phạm vi tối đa pháp luật cho phép, AZON không chịu trách nhiệm về các thiệt hại gián tiếp, mất lợi nhuận, mất cơ hội kinh doanh, hư hỏng dữ liệu do nguyên nhân ngoài ý muốn (bất khả kháng, lỗi của nhà cung cấp bên thứ ba, hành vi của Người dùng).",
-        "Tổng trách nhiệm bồi thường (nếu có) không vượt quá tổng phí Người dùng/Doanh nghiệp đã trả cho AZON trong 12 tháng liền kề.",
+        "Trong phạm vi tối đa pháp luật cho phép, AZOERP không chịu trách nhiệm về các thiệt hại gián tiếp, mất lợi nhuận, mất cơ hội kinh doanh, hư hỏng dữ liệu do nguyên nhân ngoài ý muốn (bất khả kháng, lỗi của nhà cung cấp bên thứ ba, hành vi của Người dùng).",
+        "Tổng trách nhiệm bồi thường (nếu có) không vượt quá tổng phí Người dùng/Doanh nghiệp đã trả cho AZOERP trong 12 tháng liền kề.",
       ],
     },
     {
@@ -295,7 +295,7 @@ const TERMS_VI: LegalDoc = {
     {
       heading: "10. Thay đổi điều khoản",
       paragraphs: [
-        "AZON có thể cập nhật Điều khoản. Phiên bản mới có hiệu lực kể từ ngày công bố tại trang này. Việc tiếp tục sử dụng Dịch vụ đồng nghĩa với việc chấp nhận bản cập nhật.",
+        "AZOERP có thể cập nhật Điều khoản. Phiên bản mới có hiệu lực kể từ ngày công bố tại trang này. Việc tiếp tục sử dụng Dịch vụ đồng nghĩa với việc chấp nhận bản cập nhật.",
       ],
     },
     {
@@ -314,13 +314,13 @@ const TERMS_EN: LegalDoc = {
   updatedLabel: "Last updated",
   updatedDate: "May 15, 2026",
   intro:
-    "Please read these Terms & Conditions carefully before registering and using the AZON platform. By creating an account, signing in, or continuing to use the Service, you accept all the terms below.",
+    "Please read these Terms & Conditions carefully before registering and using the AZOERP platform. By creating an account, signing in, or continuing to use the Service, you accept all the terms below.",
   sections: [
     {
       heading: "1. Definitions",
       bullets: [
-        "\"AZON\", \"we\", \"us\" — the AZON HR platform and its operating entity.",
-        "\"Service\" — all features of AZON web and mobile applications.",
+        "\"AZOERP\", \"we\", \"us\" — the AZOERP HR platform and its operating entity.",
+        "\"Service\" — all features of AZOERP web and mobile applications.",
         "\"User\" — any individual using the Service, including company admins and employees.",
         "\"Company\" / \"Tenant\" — the organization subscribing to the Service.",
       ],
@@ -348,8 +348,8 @@ const TERMS_EN: LegalDoc = {
     {
       heading: "4. Intellectual property",
       paragraphs: [
-        "All UI, source code, trademarks, logos, and documentation of AZON are owned by us and protected by law. Users may use them only within the scope of their right to use the Service.",
-        "Data uploaded by the Company/employees (\"User Content\") belongs to that Company. AZON processes it only as needed to deliver the Service.",
+        "All UI, source code, trademarks, logos, and documentation of AZOERP are owned by us and protected by law. Users may use them only within the scope of their right to use the Service.",
+        "Data uploaded by the Company/employees (\"User Content\") belongs to that Company. AZOERP processes it only as needed to deliver the Service.",
       ],
     },
     {
@@ -372,8 +372,8 @@ const TERMS_EN: LegalDoc = {
     {
       heading: "7. Limitation of liability",
       paragraphs: [
-        "To the maximum extent permitted by law, AZON is not liable for indirect damages, lost profits, lost business opportunity, or data corruption caused by force majeure, third-party providers, or User actions.",
-        "Total aggregate liability (if any) will not exceed the total fees paid to AZON by the User/Company in the preceding 12 months.",
+        "To the maximum extent permitted by law, AZOERP is not liable for indirect damages, lost profits, lost business opportunity, or data corruption caused by force majeure, third-party providers, or User actions.",
+        "Total aggregate liability (if any) will not exceed the total fees paid to AZOERP by the User/Company in the preceding 12 months.",
       ],
     },
     {
@@ -392,7 +392,7 @@ const TERMS_EN: LegalDoc = {
     {
       heading: "10. Changes",
       paragraphs: [
-        "AZON may update these Terms. The new version is effective from its publication date on this page. Continued use of the Service constitutes acceptance.",
+        "AZOERP may update these Terms. The new version is effective from its publication date on this page. Continued use of the Service constitutes acceptance.",
       ],
     },
     {

@@ -8,13 +8,13 @@ export function safeJsonLd(obj: unknown): string {
   return JSON.stringify(obj).replace(/</g, "\\u003c");
 }
 
-export const SITE_NAME = "AZON";
+export const SITE_NAME = "AZOERP";
 
 export const SITE_DESCRIPTION_VI =
-  "AZON là nền tảng quản lý nhân sự toàn diện: chấm công GPS/WiFi/khuôn mặt, nghỉ phép đa cấp, tính lương tự động, hợp đồng điện tử và cổng nhân viên (ESS) — tất cả trong một.";
+  "AZOERP là nền tảng quản lý nhân sự toàn diện: chấm công GPS/WiFi/khuôn mặt, nghỉ phép đa cấp, tính lương tự động, hợp đồng điện tử và cổng nhân viên (ESS) — tất cả trong một.";
 
 export const SITE_DESCRIPTION_EN =
-  "AZON is an all-in-one HR platform: GPS/WiFi/face attendance, multi-level leave approvals, automated payroll, e-contracts, and employee self-service (ESS).";
+  "AZOERP is an all-in-one HR platform: GPS/WiFi/face attendance, multi-level leave approvals, automated payroll, e-contracts, and employee self-service (ESS).";
 
 export const SITE_KEYWORDS_VI = [
   "phần mềm quản lý nhân sự",
@@ -27,7 +27,7 @@ export const SITE_KEYWORDS_VI = [
   "ESS",
   "phần mềm HR cloud",
   "phần mềm chấm công online",
-  "AZON",
+  "AZOERP",
 ];
 
 export const SITE_KEYWORDS_EN = [
@@ -40,14 +40,14 @@ export const SITE_KEYWORDS_EN = [
   "face check-in",
   "Employee Self Service",
   "cloud HR",
-  "AZON",
+  "AZOERP",
 ];
 
 export const ORG_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: SITE_NAME,
-  alternateName: "AZON HRM",
+  alternateName: "AZOERP HRM",
   url: SITE_URL,
   logo: `${SITE_URL}/logo/logo2.svg`,
   email: "support@azonsolution.com",

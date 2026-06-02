@@ -70,7 +70,7 @@ export default function SocialProof() {
         >
           <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-50 border border-primary-100 px-3 py-1 text-xs font-semibold text-primary-700 mb-4">
             <span className="h-1.5 w-1.5 rounded-full bg-primary-500 animate-pulse" />
-            AZON ERP
+            AZOERP
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 tracking-tight">
             {t("heading")}

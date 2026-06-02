@@ -43,7 +43,7 @@ export default function Footer() {
             >
               <Image
                 src="/logo/logo2.svg"
-                alt="AZON ERP"
+                alt="AZOERP"
                 width={120}
                 height={40}
                 className="brightness-0 invert"

@@ -14,8 +14,18 @@ const FLOATING_CARDS = [
   {
     key: "attendance",
     icon: (
-      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-5 h-5 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     color: "bg-linear-to-br from-primary-400 to-primary-500",
@@ -24,8 +34,18 @@ const FLOATING_CARDS = [
   {
     key: "leave",
     icon: (
-      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      <svg
+        className="w-5 h-5 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+        />
       </svg>
     ),
     color: "bg-linear-to-br from-emerald-400 to-emerald-500",
@@ -34,8 +54,18 @@ const FLOATING_CARDS = [
   {
     key: "payslip",
     icon: (
-      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      <svg
+        className="w-5 h-5 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
       </svg>
     ),
     color: "bg-linear-to-br from-violet-400 to-purple-500",
@@ -44,8 +74,18 @@ const FLOATING_CARDS = [
   {
     key: "hr",
     icon: (
-      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      <svg
+        className="w-5 h-5 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+        />
       </svg>
     ),
     color: "bg-linear-to-br from-orange-400 to-orange-500",
@@ -54,8 +94,18 @@ const FLOATING_CARDS = [
   {
     key: "contract",
     icon: (
-      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      <svg
+        className="w-5 h-5 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
       </svg>
     ),
     color: "bg-linear-to-br from-pink-400 to-rose-500",
@@ -64,8 +114,18 @@ const FLOATING_CARDS = [
   {
     key: "notification",
     icon: (
-      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+      <svg
+        className="w-5 h-5 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+        />
       </svg>
     ),
     color: "bg-linear-to-br from-amber-400 to-amber-500",
@@ -74,8 +134,18 @@ const FLOATING_CARDS = [
   {
     key: "report",
     icon: (
-      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      <svg
+        className="w-5 h-5 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+        />
       </svg>
     ),
     color: "bg-linear-to-br from-cyan-400 to-cyan-500",
@@ -94,9 +164,31 @@ function FloatingCardsSlide() {
   return (
     <div className="relative h-112 w-full">
       {/* Decorative dashed orbit circles */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 550 450" preserveAspectRatio="xMidYMid meet">
-        <circle cx="275" cy="225" r="120" fill="none" stroke="#d1d5db" strokeWidth="1" strokeDasharray="4 8" opacity="0.4" />
-        <circle cx="275" cy="225" r="200" fill="none" stroke="#d1d5db" strokeWidth="1" strokeDasharray="4 8" opacity="0.25" />
+      <svg
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        viewBox="0 0 550 450"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <circle
+          cx="275"
+          cy="225"
+          r="120"
+          fill="none"
+          stroke="#d1d5db"
+          strokeWidth="1"
+          strokeDasharray="4 8"
+          opacity="0.4"
+        />
+        <circle
+          cx="275"
+          cy="225"
+          r="200"
+          fill="none"
+          stroke="#d1d5db"
+          strokeWidth="1"
+          strokeDasharray="4 8"
+          opacity="0.25"
+        />
       </svg>
 
       {/* Center app icon */}
@@ -107,7 +199,13 @@ function FloatingCardsSlide() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
       >
         <div className="relative">
-          <Image src="/logo/logo3.png" alt="AZON Logo" width={140} height={140} className="rounded-3xl shadow-xl shadow-primary-500/25" />
+          <Image
+            src="/logo/logo3.svg"
+            alt="AZOERP Logo"
+            width={140}
+            height={140}
+            className="rounded-3xl shadow-xl shadow-primary-500/25"
+          />
 
           {/* Mini notification popup anchored to top-right of logo */}
           <motion.div
@@ -121,7 +219,11 @@ function FloatingCardsSlide() {
             className="absolute -top-2 -right-2 bg-white rounded-xl shadow-lg shadow-gray-200/60 border border-gray-100 px-2.5 py-1.5 flex items-center gap-2 z-20 translate-x-1/3"
           >
             <div className="w-6 h-6 rounded-lg bg-linear-to-br from-primary-400 to-primary-500 flex items-center justify-center shrink-0 relative">
-              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <svg
+                className="w-3 h-3 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
@@ -168,15 +270,18 @@ function FloatingCardsSlide() {
             style={{ translateX: "-50%", translateY: "-50%" }}
           >
             <div className="bg-white rounded-xl shadow-lg shadow-gray-200/50 border border-gray-100 px-4 py-3 flex items-center gap-3 cursor-default whitespace-nowrap">
-              <div className={`w-9 h-9 ${card.color} rounded-lg flex items-center justify-center shrink-0`}>
+              <div
+                className={`w-9 h-9 ${card.color} rounded-lg flex items-center justify-center shrink-0`}
+              >
                 {card.icon}
               </div>
-              <span className="text-sm font-medium text-gray-700">{t(`cards.${card.key}`)}</span>
+              <span className="text-sm font-medium text-gray-700">
+                {t(`cards.${card.key}`)}
+              </span>
             </div>
           </motion.div>
         );
       })}
-
     </div>
   );
 }
@@ -235,13 +340,25 @@ function BrowserMockup({ screen }: { screen: ScreenData }) {
         </div>
 
         <div className="flex-1 p-3 min-w-0">
-          <p className="text-[7px] text-gray-400 mb-1 truncate">{screen.breadcrumb}</p>
-          <h3 className="text-[11px] font-bold text-gray-800 mb-2">{screen.title}</h3>
+          <p className="text-[7px] text-gray-400 mb-1 truncate">
+            {screen.breadcrumb}
+          </p>
+          <h3 className="text-[11px] font-bold text-gray-800 mb-2">
+            {screen.title}
+          </h3>
 
           <div className="border border-gray-100 rounded-lg overflow-hidden">
-            <div className="grid gap-0" style={{ gridTemplateColumns: `repeat(${screen.headers.length}, 1fr)` }}>
+            <div
+              className="grid gap-0"
+              style={{
+                gridTemplateColumns: `repeat(${screen.headers.length}, 1fr)`,
+              }}
+            >
               {screen.headers.map((h) => (
-                <div key={h} className="bg-gray-50 px-1.5 py-1 text-[6px] font-semibold text-gray-500 truncate border-b border-gray-100">
+                <div
+                  key={h}
+                  className="bg-gray-50 px-1.5 py-1 text-[6px] font-semibold text-gray-500 truncate border-b border-gray-100"
+                >
                   {h}
                 </div>
               ))}
@@ -253,10 +370,15 @@ function BrowserMockup({ screen }: { screen: ScreenData }) {
                 <div
                   key={ri}
                   className="grid gap-0 border-b border-gray-50 last:border-0"
-                  style={{ gridTemplateColumns: `repeat(${screen.headers.length}, 1fr)` }}
+                  style={{
+                    gridTemplateColumns: `repeat(${screen.headers.length}, 1fr)`,
+                  }}
                 >
                   {cells.map((cell, ci) => (
-                    <div key={ci} className="px-1.5 py-1.5 text-[7px] text-gray-600 truncate">
+                    <div
+                      key={ci}
+                      className="px-1.5 py-1.5 text-[7px] text-gray-600 truncate"
+                    >
                       {ci === cells.length - 1 ? (
                         <span className="inline-block px-1.5 py-0.5 rounded text-[6px] font-medium bg-emerald-50 text-emerald-600">
                           {cell}
@@ -290,8 +412,18 @@ function BrowserSlide({ screenIndex: _screenIndex }: { screenIndex: number }) {
         className="absolute -top-6 -left-4 z-20 bg-white rounded-xl shadow-lg shadow-gray-200/60 border border-gray-100 px-3 py-2 flex items-center gap-2"
       >
         <div className="w-7 h-7 rounded-lg bg-linear-to-br from-primary-400 to-primary-500 flex items-center justify-center">
-          <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <svg
+            className="w-3.5 h-3.5 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
           </svg>
         </div>
         <div>
@@ -302,11 +434,20 @@ function BrowserSlide({ screenIndex: _screenIndex }: { screenIndex: number }) {
 
       <motion.div
         animate={{ y: [0, -6, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
         className="absolute -bottom-4 -right-2 z-20 bg-white rounded-xl shadow-lg border border-gray-100 px-3 py-2 flex items-center gap-2"
       >
         <div className="w-7 h-7 rounded-lg bg-linear-to-br from-emerald-400 to-emerald-500 flex items-center justify-center relative">
-          <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <svg
+            className="w-3.5 h-3.5 text-white"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
           </svg>
@@ -315,7 +456,7 @@ function BrowserSlide({ screenIndex: _screenIndex }: { screenIndex: number }) {
           </span>
         </div>
         <div>
-          <p className="text-[9px] font-bold text-gray-800">AZON</p>
+          <p className="text-[9px] font-bold text-gray-800">AZOERP</p>
           <p className="text-[7px] text-gray-400">{t("notificationNew")}</p>
         </div>
       </motion.div>
@@ -392,8 +533,7 @@ export default function HeroSection() {
       else setIsVisible(true);
     };
     document.addEventListener("visibilitychange", onVisibility);
-    return () =>
-      document.removeEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
   }, []);
 
   useEffect(() => {
@@ -408,7 +548,10 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen flex items-center overflow-hidden bg-white">
+    <section
+      ref={sectionRef}
+      className="relative min-h-screen flex items-center overflow-hidden bg-white"
+    >
       {/* Shared background photo — single Image instance shown to both
           mobile (blurred + dark overlay) and desktop (slight blur behind the
           blob). One priority download, one decode. */}
@@ -435,7 +578,13 @@ export default function HeroSection() {
         aria-hidden
       >
         <defs>
-          <linearGradient id="hero-blob-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient
+            id="hero-blob-gradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
             <stop offset="0%" stopColor="#0f1f33" stopOpacity="0.92" />
             <stop offset="50%" stopColor="#1f3f65" stopOpacity="0.88" />
             <stop offset="100%" stopColor="#2F5E97" stopOpacity="0.82" />
@@ -449,8 +598,26 @@ export default function HeroSection() {
         />
 
         {/* Decorative concentric circles (bottom-left corner) */}
-        <circle cx="120" cy="780" r="140" fill="none" stroke="white" strokeWidth="1" opacity="0.1" strokeDasharray="4 8" />
-        <circle cx="120" cy="780" r="90" fill="none" stroke="white" strokeWidth="1" opacity="0.12" strokeDasharray="4 8" />
+        <circle
+          cx="120"
+          cy="780"
+          r="140"
+          fill="none"
+          stroke="white"
+          strokeWidth="1"
+          opacity="0.1"
+          strokeDasharray="4 8"
+        />
+        <circle
+          cx="120"
+          cy="780"
+          r="90"
+          fill="none"
+          stroke="white"
+          strokeWidth="1"
+          opacity="0.12"
+          strokeDasharray="4 8"
+        />
       </motion.svg>
 
       {/* Floating decorative dots */}
@@ -468,7 +635,13 @@ export default function HeroSection() {
               transition={{ duration: 1 }}
               className="flex items-center gap-3 mb-6"
             >
-              <Image src="/logo/logo3.png" alt="AZON Logo" width={40} height={40} className="w-8 h-8 md:w-10 md:h-10 rounded-xl shadow-md" />
+              <Image
+                src="/logo/logo3.svg"
+                alt="AZOERP Logo"
+                width={40}
+                height={40}
+                className="w-8 h-8 md:w-10 md:h-10 rounded-xl shadow-md"
+              />
               <span className="text-xs md:text-sm font-semibold text-white">
                 {t("badge")}
               </span>

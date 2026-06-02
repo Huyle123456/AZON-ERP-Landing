@@ -9,7 +9,10 @@ import Image from "next/image";
 export default function AppFeatures() {
   const t = useTranslations("appFeatures");
   return (
-    <section id="app-features" className="relative py-16 md:py-24 overflow-hidden">
+    <section
+      id="app-features"
+      className="relative py-16 md:py-24 overflow-hidden"
+    >
       {/* Background image — employees working in an office with blue tones */}
       <div className="absolute inset-0">
         <Image
@@ -47,15 +50,27 @@ export default function AppFeatures() {
               <div className="w-20 h-36 bg-gray-900 rounded-2xl p-1.5 shadow-xl relative">
                 <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-8 h-1.5 bg-gray-800 rounded-full z-10" />
                 <div className="w-full h-full bg-white rounded-xl flex flex-col items-center justify-center gap-1.5 overflow-hidden">
-                  <Image src="/logo/logo3.png" alt="AZON" width={32} height={32} className="rounded-lg" />
-                  <span className="text-[7px] font-bold text-gray-800">AZON</span>
+                  <Image
+                    src="/logo/logo3.svg"
+                    alt="AZOERP"
+                    width={32}
+                    height={32}
+                    className="rounded-lg"
+                  />
+                  <span className="text-[7px] font-bold text-gray-800">
+                    AZOERP
+                  </span>
                   <span className="text-[5px] text-gray-400">Employee App</span>
                 </div>
               </div>
               {/* Floating badge */}
               <motion.div
                 animate={{ y: [0, -4, 0] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="absolute -top-3 -right-8 bg-primary-500 text-white text-[7px] font-bold px-2 py-1 rounded-full shadow-md"
               >
                 <Smartphone className="w-3 h-3 inline mr-0.5" />
@@ -67,7 +82,9 @@ export default function AppFeatures() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {t("title")}
           </h2>
-          <p className="text-lg text-gray-700">{t("subtitle")}</p>
+          <p className="text-lg text-gray-700 whitespace-nowrap overflow-x-auto">
+            {t("subtitle")}
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -91,11 +108,6 @@ export default function AppFeatures() {
                     <h3 className="text-lg font-semibold text-gray-900">
                       {t(`${feature.key}.title`)}
                     </h3>
-                    {hasSubtitle && (
-                      <p className="text-sm text-gray-500">
-                        {t(`${feature.key}.subtitle`)}
-                      </p>
-                    )}
                   </div>
                 </div>
                 <ul className="space-y-3">

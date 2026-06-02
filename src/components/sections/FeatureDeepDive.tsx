@@ -4,8 +4,81 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import ScreenSlider from "@/components/ui/ScreenSlider";
 import { DEEP_DIVE_BLOCKS } from "@/lib/constants";
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
+
+/** Split a bullet "Label: Description" → { title, body }. */
+function splitBullet(raw: string) {
+  const idx = raw.indexOf(":");
+  if (idx === -1) return { title: raw, body: "" };
+  return { title: raw.slice(0, idx).trim(), body: raw.slice(idx + 1).trim() };
+}
+
+function BulletItem({ bullet }: { bullet: string }) {
+  const { title, body } = splitBullet(bullet);
+  return (
+    <li className="flex gap-3 items-start">
+      <CheckCircle2 className="w-5 h-5 text-primary-500 shrink-0 mt-0.5" />
+      <div className="flex-1 min-w-0 text-sm leading-relaxed">
+        <span className="font-semibold text-gray-900">{title}</span>
+        {body && (
+          <>
+            {": "}
+            <span className="text-gray-600">{body}</span>
+          </>
+        )}
+      </div>
+    </li>
+  );
+}
+
+/**
+ * Renders the first `previewCount` bullets immediately. Anything past that
+ * stays collapsed behind a "Show more / less" toggle so each block stays
+ * compact on the page.
+ */
+function CollapsibleBulletList({
+  bullets,
+  previewCount = 3,
+  showMoreLabel,
+  showLessLabel,
+}: {
+  bullets: string[];
+  previewCount?: number;
+  showMoreLabel: string;
+  showLessLabel: string;
+}) {
+  const [open, setOpen] = useState(false);
+  const hasMore = bullets.length > previewCount;
+  const visible = hasMore && !open ? bullets.slice(0, previewCount) : bullets;
+  const hiddenCount = bullets.length - previewCount;
+
+  return (
+    <>
+      <ul className="space-y-3">
+        {visible.map((b) => (
+          <BulletItem key={b} bullet={b} />
+        ))}
+      </ul>
+      {hasMore && (
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 cursor-pointer"
+        >
+          {open ? showLessLabel : `${showMoreLabel} (${hiddenCount})`}
+          <ChevronDown
+            className={`h-4 w-4 transition-transform duration-300 ${
+              open ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+      )}
+    </>
+  );
+}
 
 type FeatureScreensMap = Record<
   string,
@@ -425,16 +498,11 @@ export default function FeatureDeepDive() {
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                     {title}
                   </h3>
-                  <ul className="space-y-3">
-                    {bullets.map((bullet) => (
-                      <li key={bullet} className="flex gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-primary-500 shrink-0 mt-0.5" />
-                        <span className="text-gray-600 text-sm leading-relaxed">
-                          {bullet}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
+                  <CollapsibleBulletList
+                    bullets={bullets}
+                    showMoreLabel={t("showMore")}
+                    showLessLabel={t("showLess")}
+                  />
                 </div>
               </motion.div>
             );

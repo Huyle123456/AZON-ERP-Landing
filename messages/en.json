@@ -31,7 +31,7 @@
     "browserMock": {
       "title": "Departments",
       "breadcrumb": "HR › Organization › Departments",
-      "url": "app.azon.vn/departments",
+      "url": "app.azoerp.vn/departments",
       "headers": ["NAME", "CODE", "BRANCH", "REPORTS TO", "LEVEL", "STATUS"],
       "statusActive": "Active",
       "rows": [
@@ -44,7 +44,7 @@
     }
   },
   "socialProof": {
-    "heading": "Why teams choose AZON today",
+    "heading": "Why teams choose AZOERP today",
     "subheading": "Newly launched — engineered from the ground up for Vietnamese businesses.",
     "items": [
       {
@@ -113,52 +113,54 @@
   },
   "deepDive": {
     "title": "Feature deep dive",
-    "subtitle": "Explore AZON's core modules in detail",
+    "subtitle": "Explore AZOERP's core modules in detail",
+    "showMore": "Show more",
+    "showLess": "Show less",
     "hr": {
       "title": "HR Management",
       "bullets": [
-        "Complete employee profiles (personal info, ID, emergency contacts)",
-        "Track work stages (probation → official → offboarding)",
-        "Employee transitions (promotions, department changes, restructuring)",
-        "Rewards & discipline decisions with decision numbers",
-        "Salary proposal workflow — 3-level approval: HR → Director → Execution",
-        "Company-wide periodic salary increases",
-        "Register dependents for personal income tax deduction"
+        "Digital Employee Profiles: Manage personal information, National IDs (CMND/CCCD), and emergency contacts.",
+        "Employment Lifecycle Tracking: Seamlessly monitor employee status from probation to official placement and offboarding procedures.",
+        "Personnel Transitions: Quickly update the history of promotions, department transfers, and role changes.",
+        "Rewards & Disciplinary Actions: Manage internal corporate decisions complete with official document reference numbers.",
+        "Multi-Tier Salary Approvals: Standardize a closed-loop approval workflow spanning from HR to the Board of Directors.",
+        "Periodic Salary Adjustments: Configure and execute scheduled, company-wide income adjustment cycles.",
+        "Tax Dependents & Deductions: Register dependents with automated data sync to optimize Personal Income Tax (PIT) calculations."
       ]
     },
     "contract": {
       "title": "Labor Contracts",
       "bullets": [
-        "Template builder with dynamic variables (name, salary, department auto-filled)",
-        "5 contract types: Probation, Fixed-term, Indefinite, Seasonal, Project-based",
-        "Internal e-signing workflow (Draft → Sign → Approve → Active)",
-        "Addendums for amendments and additions",
-        "Audit log tracking every change",
-        "Export professional PDF contracts"
+        "Dynamic Contract Templates: Auto-fill variable placeholders directly from employee profiles (Name, salary, department, role).",
+        "5 Standard Contract Types: Fully support Probation, Fixed-term, Indefinite-term, Seasonal, and Project-based contracts.",
+        "Internal E-Signing Workflow: Standardize a seamless digital signature lifecycle: Draft → Sign → Approve → Active.",
+        "Contract Addendums: Easily create, issue, and manage addendums for any contract modifications or amendments.",
+        "Comprehensive Audit Logs: Track and log every single modification and status update for absolute transparency.",
+        "Professional PDF Export: Generate and export fully formatted, presentation-ready PDF contracts with a single click."
       ]
     },
     "timekeeping": {
-      "title": "Time & Shifts",
+      "title": "Time & Attendance",
       "bullets": [
-        "Multi-method check-in/out: GPS, WiFi, IP, fingerprint, face, card, app",
-        "Flexible shift creation (morning, afternoon, night, custom)",
-        "Assign employees to shifts by week/month",
-        "Shift-change requests with approval workflow",
-        "Aggregate timesheets by department/branch",
-        "Holiday management — automatic workday calculation",
-        "Register & approve overtime"
+        "Multi-Method Check-In/Out: Support flexible attendance tracking via GPS geofencing, office Wi-Fi, IP white-listing, facial recognition, fingerprints, RFID cards, or a mobile app.",
+        "Flexible Shift Creation: Easily configure any shift type, including morning, afternoon, night, or fully customized working hours.",
+        "Shift Planning & Scheduling: Streamline workforce scheduling by assigning and deploying shifts to employees on a weekly or monthly basis.",
+        "Shift Swapping Workflows: Allow employees to submit shift-swap requests with an automated online approval flow for managers.",
+        "Unified Timesheets: Generate and aggregate real-time timesheets filtered by specific departments, stores, or branches.",
+        "Automated Holiday Handling: Built-in calendar for public holidays that automatically calculates special attendance rates and multipliers.",
+        "Overtime (OT) Management: Simplify the entire overtime lifecycle from request and multi-level approval to automated hours tracking."
       ]
     },
     "payroll": {
       "title": "Payroll & Income",
       "bullets": [
-        "Automatic monthly payroll calculation",
-        "Configure social/health/unemployment insurance per Vietnam regulations",
-        "Progressive personal income tax, family & dependent deductions",
-        "Flexible allowances: fixed / daily / hourly / percentage",
-        "Payroll approval flow: Draft → Calculate → Approve → Pay → Close period",
-        "Full salary-increase history across employees",
-        "Export detailed payslip PDFs"
+        "Automated Payroll Runs: Automatically process and calculate precise salary payouts per payment period (monthly) based on timesheet data.",
+        "Statutory Insurance Compliance: Configure and auto-update mandatory insurance contribution rates (Social, Health, and Unemployment) in strict compliance with Vietnamese labor laws.",
+        "Progressive PIT & Deductions: Apply progressive Personal Income Tax (PIT) tax brackets and automatically factor in personal and dependent tax reliefs.",
+        "Flexible Allowances & Benefits: Easily configure custom allowances based on flat monthly rates, daily attendance, hourly calculations, or specific percentages.",
+        "Closed-Loop Payroll Workflow: Standardize secure payroll operations through clear stages: Draft → Calculate → Approve → Disburse → Lock Period.",
+        "Compensation History Tracking: Maintain a comprehensive chronological log of all salary increments and compensation adjustments for every employee.",
+        "Detailed Payslip Export: Generate and distribute itemized, presentation-ready digital payslips in secure PDF format."
       ]
     }
   },
@@ -179,10 +181,9 @@
   "appFeatures": {
     "appLabel": "App",
     "title": "A dedicated app for employees",
-    "subtitle": "Every HR action on your phone — time tracking, leave requests, payslips, contracts — without going through HR",
+    "subtitle": "HR in your pocket — clock in, leave, payslips, contracts",
     "smartCheckIn": {
       "title": "Smart Check-in",
-      "subtitle": "Smart Check-in",
       "bullets": [
         "Clock in/out with a single tap right from the home screen.",
         "Track real working hours in real time.",
@@ -227,7 +228,7 @@
   },
   "midCta": {
     "titleLine1": "Optimize HR operations",
-    "titleLine2": "sustainably with AZON",
+    "titleLine2": "sustainably with AZOERP",
     "description": "Unify time tracking, leave, payroll, contracts, and reporting — all in a single platform that runs lean!",
     "button": "Start with a free account",
     "totalEmployees": "Total employees",
@@ -238,7 +239,7 @@
     "payrollCost": "Payroll cost"
   },
   "differentiators": {
-    "title": "Why choose AZON?",
+    "title": "Why choose AZOERP?",
     "multiTenant": {
       "title": "Multi-tenant",
       "bullets": [
@@ -333,41 +334,41 @@
   },
   "blog": {
     "pageTitle": "News & Articles",
-    "pageSubtitle": "Latest updates from AZON — policies, awards, partnerships and promotions",
+    "pageSubtitle": "Latest updates from AZOERP — policies, awards, partnerships and promotions",
     "readMore": "Read more",
     "backToList": "Back",
     "publishedOn": "Published on",
     "relatedTitle": "Related posts",
     "posts": {
       "notice": {
-        "title": "AZON announcement — free e-invoice and digital signature",
+        "title": "AZOERP announcement — free e-invoice and digital signature",
         "excerpt": "Dear customers, in the context of Decree 70/2025/NĐ-CP taking effect on June 1, 2026...",
-        "content": "<p>Dear customers,</p><p>In the context of Decree 70/2025/NĐ-CP taking effect on June 1, 2026, AZON is pleased to announce <strong>fully free</strong> e-invoice and digital signature services for all customers on our platform.</p><h2>Eligibility</h2><ul><li>All businesses on AZON Standard plan or above</li><li>New sign-ups during the promotion period</li><li>Household businesses needing digital transformation per the Decree</li></ul><h2>Benefits</h2><ul><li>100% fee waiver for e-invoice issuance in the first year</li><li>Free business digital signature service</li><li>Free implementation and onboarding support</li></ul><p>For details, please contact AZON's consulting team via hotline or email listed in the Contact section.</p><p>Best regards,<br/>The AZON team</p>"
+        "content": "<p>Dear customers,</p><p>In the context of Decree 70/2025/NĐ-CP taking effect on June 1, 2026, AZOERP is pleased to announce <strong>fully free</strong> e-invoice and digital signature services for all customers on our platform.</p><h2>Eligibility</h2><ul><li>All businesses on AZOERP Standard plan or above</li><li>New sign-ups during the promotion period</li><li>Household businesses needing digital transformation per the Decree</li></ul><h2>Benefits</h2><ul><li>100% fee waiver for e-invoice issuance in the first year</li><li>Free business digital signature service</li><li>Free implementation and onboarding support</li></ul><p>For details, please contact AZOERP's consulting team via hotline or email listed in the Contact section.</p><p>Best regards,<br/>The AZOERP team</p>"
       },
       "award": {
-        "title": "AZON ranked TOP 10 products & services of 2025 — Technology category",
+        "title": "AZOERP ranked TOP 10 products & services of 2025 — Technology category",
         "excerpt": "On December 20, at the Vietnam Trusted Products & Services 2025 program hosted by Vietnam Economic Magazine...",
-        "content": "<p>On December 20, at the <strong>Vietnam Trusted Products & Services 2025</strong> program hosted by Vietnam Economic Magazine in partnership with VnEconomy, AZON was proudly named among the TOP 10 trusted products and services in the technology category.</p><h2>The award was voted by</h2><ul><li>More than 20,000 consumers and businesses nationwide</li><li>Expert council of Vietnam Economic Magazine</li><li>Evaluation criteria including product quality, reliability, and market impact</li></ul><h2>What this means for AZON</h2><p>This milestone recognizes AZON's efforts in digitally transforming Vietnam's HR industry. In 2025, AZON has served <strong>500+</strong> businesses with over 200,000 employees using the platform daily.</p><p>We sincerely thank all our customers, partners, and team members for trusting and walking this journey with us.</p>"
+        "content": "<p>On December 20, at the <strong>Vietnam Trusted Products & Services 2025</strong> program hosted by Vietnam Economic Magazine in partnership with VnEconomy, AZOERP was proudly named among the TOP 10 trusted products and services in the technology category.</p><h2>The award was voted by</h2><ul><li>More than 20,000 consumers and businesses nationwide</li><li>Expert council of Vietnam Economic Magazine</li><li>Evaluation criteria including product quality, reliability, and market impact</li></ul><h2>What this means for AZOERP</h2><p>This milestone recognizes AZOERP's efforts in digitally transforming Vietnam's HR industry. In 2025, AZOERP has served <strong>500+</strong> businesses with over 200,000 employees using the platform daily.</p><p>We sincerely thank all our customers, partners, and team members for trusting and walking this journey with us.</p>"
       },
       "partnerBank1": {
-        "title": "Vietinbank account holders now receive payment notifications on AZON",
-        "excerpt": "AZON officially integrates the payment notification service via Vietinbank accounts directly in the app.",
-        "content": "<p>AZON officially integrates the payment notification service via Vietinbank accounts directly in the app.</p><h2>New features</h2><ul><li>Receive real-time balance change notifications in AZON</li><li>Automatic reconciliation with payroll and internal invoices</li><li>Bank-grade security — no password sharing required</li></ul><p>Users only need to link their Vietinbank account once to start using this feature.</p>"
+        "title": "Vietinbank account holders now receive payment notifications on AZOERP",
+        "excerpt": "AZOERP officially integrates the payment notification service via Vietinbank accounts directly in the app.",
+        "content": "<p>AZOERP officially integrates the payment notification service via Vietinbank accounts directly in the app.</p><h2>New features</h2><ul><li>Receive real-time balance change notifications in AZOERP</li><li>Automatic reconciliation with payroll and internal invoices</li><li>Bank-grade security — no password sharing required</li></ul><p>Users only need to link their Vietinbank account once to start using this feature.</p>"
       },
       "partnerBank2": {
-        "title": "Vietcombank balance change notifications integrated directly on AZON",
-        "excerpt": "After Vietinbank, AZON continues to expand its banking ecosystem with Vietcombank.",
-        "content": "<p>After the success with Vietinbank, AZON expands its integrated banking ecosystem with Vietcombank — one of Vietnam's largest commercial banks.</p><h2>Benefits for businesses</h2><ul><li>Automatic reconciliation of company cash flows</li><li>Instant notifications on balance changes</li><li>Connected to the Payroll module for salary disbursement cross-check</li></ul>"
+        "title": "Vietcombank balance change notifications integrated directly on AZOERP",
+        "excerpt": "After Vietinbank, AZOERP continues to expand its banking ecosystem with Vietcombank.",
+        "content": "<p>After the success with Vietinbank, AZOERP expands its integrated banking ecosystem with Vietcombank — one of Vietnam's largest commercial banks.</p><h2>Benefits for businesses</h2><ul><li>Automatic reconciliation of company cash flows</li><li>Instant notifications on balance changes</li><li>Connected to the Payroll module for salary disbursement cross-check</li></ul>"
       },
       "promo": {
-        "title": "Save 5,370,000đ instantly with the 3-year AZON Professional combo",
-        "excerpt": "Our biggest promotion of the year for businesses committing to a long-term partnership with AZON.",
-        "content": "<p>Our biggest promotion of the year for businesses committing to a long-term partnership with AZON.</p><h2>Offer details</h2><ul><li>Instant discount of <strong>5,370,000đ</strong> when signing up for the 3-year Standard plan</li><li>Includes 12 months of premium technical support</li><li>Free implementation and onboarding for all employees</li></ul><p>Promotion runs through December 31, 2025.</p>"
+        "title": "Save 5,370,000đ instantly with the 3-year AZOERP Professional combo",
+        "excerpt": "Our biggest promotion of the year for businesses committing to a long-term partnership with AZOERP.",
+        "content": "<p>Our biggest promotion of the year for businesses committing to a long-term partnership with AZOERP.</p><h2>Offer details</h2><ul><li>Instant discount of <strong>5,370,000đ</strong> when signing up for the 3-year Standard plan</li><li>Includes 12 months of premium technical support</li><li>Free implementation and onboarding for all employees</li></ul><p>Promotion runs through December 31, 2025.</p>"
       },
       "partnerMb": {
-        "title": "AZON partners with MBBank on a 1,000 billion VND loan package",
-        "excerpt": "AZON and MBBank sign a strategic partnership offering preferential loans worth 1,000 billion VND to SMEs.",
-        "content": "<p>AZON and MBBank have officially signed a strategic partnership, providing preferential loans of up to <strong>1,000 billion VND</strong> for SMEs using the AZON platform.</p><h2>Eligibility</h2><ul><li>Businesses using AZON for at least 3 months</li><li>Clear payroll history on the system</li><li>Streamlined loan process — disbursement within 48 hours</li></ul><p>For details, please contact AZON's consulting team or your nearest MBBank branch.</p>"
+        "title": "AZOERP partners with MBBank on a 1,000 billion VND loan package",
+        "excerpt": "AZOERP and MBBank sign a strategic partnership offering preferential loans worth 1,000 billion VND to SMEs.",
+        "content": "<p>AZOERP and MBBank have officially signed a strategic partnership, providing preferential loans of up to <strong>1,000 billion VND</strong> for SMEs using the AZOERP platform.</p><h2>Eligibility</h2><ul><li>Businesses using AZOERP for at least 3 months</li><li>Clear payroll history on the system</li><li>Streamlined loan process — disbursement within 48 hours</li></ul><p>For details, please contact AZOERP's consulting team or your nearest MBBank branch.</p>"
       }
     }
   },
@@ -376,24 +377,24 @@
     "readMore": "Read more",
     "items": {
       "notice": {
-        "title": "AZON announcement — free e-invoice and digital signature",
+        "title": "AZOERP announcement — free e-invoice and digital signature",
         "excerpt": "Dear customers, in the context of Decree 70/2025/NĐ-CP taking effect..."
       },
       "award": {
-        "title": "AZON ranked TOP 10 products & services of 2025 — Technology category",
+        "title": "AZOERP ranked TOP 10 products & services of 2025 — Technology category",
         "excerpt": "On December 20, at the Vietnam Trusted Products & Services 2025 program hosted by Vietnam Economic Magazine..."
       },
       "partnerBank1": {
-        "title": "Vietinbank account holders now receive payment notifications on AZON"
+        "title": "Vietinbank account holders now receive payment notifications on AZOERP"
       },
       "partnerBank2": {
-        "title": "Vietcombank balance change notifications integrated directly on AZON"
+        "title": "Vietcombank balance change notifications integrated directly on AZOERP"
       },
       "promo": {
-        "title": "Save 5,370,000đ instantly with the 3-year AZON Professional combo"
+        "title": "Save 5,370,000đ instantly with the 3-year AZOERP Professional combo"
       },
       "partnerMb": {
-        "title": "AZON partners with MBBank on a 1,000 billion VND loan package"
+        "title": "AZOERP partners with MBBank on a 1,000 billion VND loan package"
       }
     }
   },
@@ -416,7 +417,7 @@
         ]
       },
       "company": {
-        "title": "AZON",
+        "title": "AZOERP",
         "links": [
           { "label": "Blog & News", "href": "/blog" },
           { "label": "Sign in", "href": "/login" },
@@ -438,7 +439,7 @@
     "hotline": "+84 329 300 677",
     "addressLabel": "Address",
     "address": "Ho Chi Minh City, Vietnam",
-    "copyright": "© 2026 AZON. All rights reserved."
+    "copyright": "© 2026 AZOERP. All rights reserved."
   },
   "languageSwitch": {
     "vi": "Tiếng Việt",
@@ -452,7 +453,7 @@
     "home": "Back to home"
   },
   "notFound": {
-    "metaTitle": "Page not found · AZON ERP",
+    "metaTitle": "Page not found · AZOERP",
     "metaDescription": "The page you’re looking for doesn’t exist or has been moved.",
     "title": "Page not found",
     "description": "The page you requested doesn’t exist or has been moved. Please double-check the URL or return to the home page.",
@@ -467,7 +468,7 @@
     },
     "login": {
       "metaTitle": "Sign in",
-      "metaDescription": "Sign in to AZON ERP",
+      "metaDescription": "Sign in to AZOERP",
       "title": "Welcome back",
       "subtitle": "Sign in to keep managing your system",
       "domainLabel": "Domain name",
@@ -479,7 +480,7 @@
     },
     "register": {
       "metaTitle": "Sign up",
-      "metaDescription": "Create a free AZON ERP account",
+      "metaDescription": "Create a free AZOERP account",
       "title": "Create your account",
       "subtitle": "Spin up your own HR management system in minutes",
       "stepPlanTitle": "Plan",
@@ -494,7 +495,7 @@
       "stepContactDesc": "Contact details",
       "stepDonePaidDesc": "Awaiting sales",
       "planIntroLead": "Sign up now",
-      "planIntroMiddle": " and try AZON ERP — ",
+      "planIntroMiddle": " and try AZOERP — ",
       "planIntroFree": "free",
       "planIntroSuffix": " for systems with ",
       "planIntroLimit": "≤ 4 employees",
@@ -561,7 +562,7 @@
       "eNetwork": "Can’t reach the server. Please try again.",
       "doneFreeTitle": "Your system request has been received",
       "doneFreeBodyPre": "Please wait a few minutes for approval. Your account credentials and access instructions will be sent to ",
-      "donePaidTitle": "Thanks for your interest in AZON ERP",
+      "donePaidTitle": "Thanks for your interest in AZOERP",
       "donePaidBodyPre": "Our sales team will reach out to you at ",
       "donePaidBodySuf": " soon to help you pick the right plan.",
       "doneFallbackEmail": "your email"

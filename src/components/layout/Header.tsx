@@ -80,7 +80,7 @@ export default function Header() {
           {/* Mobile logo — invert to white when hero background is dark */}
           <Image
             src="/logo/logo1.svg"
-            alt="AZON Logo"
+            alt="AZOERP Logo"
             width={40}
             height={40}
             className={`inline-block mr-2 md:hidden transition-[filter] duration-500 ${
@@ -90,7 +90,7 @@ export default function Header() {
           {/* Desktop logo — invert color when hero background is dark */}
           <Image
             src="/logo/logo2.svg"
-            alt="AZON Logo"
+            alt="AZOERP Logo"
             width={120}
             height={64}
             className={`hidden md:inline-block mr-2 transition-[filter] duration-500 ${

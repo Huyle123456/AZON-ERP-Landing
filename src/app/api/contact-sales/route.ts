@@ -81,13 +81,13 @@ export async function POST(req: Request) {
     .join("\n");
 
   const payload = {
-    username: "Azon ERP",
+    username: "AzoERP",
     icon_emoji: ":briefcase:",
     attachments: [
       {
-        fallback: `Azon ERP — khách hàng đã chọn gói ${planLabel}, hãy liên hệ để tư vấn ngay`,
+        fallback: `AzoERP — khách hàng đã chọn gói ${planLabel}, hãy liên hệ để tư vấn ngay`,
         color: "#2F5E97",
-        title: "Azon ERP",
+        title: "AzoERP",
         pretext: headline,
         text,
       },

@@ -33,8 +33,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = isVi ? SITE_DESCRIPTION_VI : SITE_DESCRIPTION_EN;
   const keywords = isVi ? SITE_KEYWORDS_VI : SITE_KEYWORDS_EN;
   const title = isVi
-    ? "AZON – Nền tảng quản lý nhân sự toàn diện"
-    : "AZON – All-in-one HR Management Platform";
+    ? "AZOERP – Nền tảng quản lý nhân sự toàn diện"
+    : "AZOERP – All-in-one HR Management Platform";
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -71,7 +71,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       images: [
         {
-          url: "/logo/logo3.png",
+          url: "/logo/logo3.svg",
           width: 1200,
           height: 630,
           alt: SITE_NAME,
@@ -82,7 +82,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      images: ["/logo/logo3.png"],
+      images: ["/logo/logo3.svg"],
     },
     robots: {
       index: true,
