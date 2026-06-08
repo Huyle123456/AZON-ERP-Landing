@@ -339,6 +339,17 @@
     "backToList": "Back",
     "publishedOn": "Published on",
     "relatedTitle": "Related posts",
+    "empty": "No posts yet.",
+    "prev": "Prev",
+    "next": "Next",
+    "pinned": "Pinned",
+    "tocTitle": "On this page",
+    "shareTitle": "Share",
+    "copyLink": "Copy link",
+    "ctaTitle": "Ready to digitize HR for your business?",
+    "ctaSubtitle": "The AZOERP team is here to help — from implementation to training, all on the house.",
+    "ctaButton": "Talk to sales",
+    "ctaSecondary": "Try it free",
     "posts": {
       "notice": {
         "title": "AZOERP announcement — free e-invoice and digital signature",
@@ -375,6 +386,7 @@
   "news": {
     "title": "Latest news",
     "readMore": "Read more",
+    "viewAll": "View all posts",
     "items": {
       "notice": {
         "title": "AZOERP announcement — free e-invoice and digital signature",

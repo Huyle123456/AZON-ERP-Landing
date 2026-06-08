@@ -16,6 +16,10 @@ export default function Header() {
   // Strip any leading /en or /vie segment for "is this the home page?" logic.
   const localelessPath =
     pathname.replace(/^\/(en|vie)(?=\/|$)/, "") || "/";
+  // On a blog detail page we hide the locale toggle — language switching
+  // there needs the matching translated slug from `available_translations`,
+  // so the article's own inline switcher handles it instead.
+  const isBlogDetail = /^\/blog\/[^/]+/.test(localelessPath);
   const isHome = localelessPath === "/";
 
   const [scrollY, setScrollY] = useState(false);
@@ -118,17 +122,19 @@ export default function Header() {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-3 ml-auto">
-          <button
-            onClick={() => changeLocale(locale === "vie" ? "en" : "vie")}
-            className={`text-xs font-medium cursor-pointer px-3 py-2 rounded-lg transition-colors ${
-              scrolled
-                ? "text-gray-500 hover:bg-gray-100 hover:text-primary-500"
-                : "text-white hover:bg-white/10 hover:text-yellow-300"
-            }`}
-            aria-label="Đổi ngôn ngữ"
-          >
-            {locale === "vie" ? "VI" : "EN"}
-          </button>
+          {!isBlogDetail && (
+            <button
+              onClick={() => changeLocale(locale === "vie" ? "en" : "vie")}
+              className={`text-xs font-medium cursor-pointer px-3 py-2 rounded-lg transition-colors ${
+                scrolled
+                  ? "text-gray-500 hover:bg-gray-100 hover:text-primary-500"
+                  : "text-white hover:bg-white/10 hover:text-yellow-300"
+              }`}
+              aria-label="Đổi ngôn ngữ"
+            >
+              {locale === "vie" ? "VI" : "EN"}
+            </button>
+          )}
           <Button
             href={`/${locale}/login`}
             variant={scrolled ? "outline" : "outline-white"}
@@ -155,17 +161,19 @@ export default function Header() {
 
         {/* Mobile Hamburger */}
         <div className="flex md:hidden items-center gap-2 ml-auto">
-          <button
-            onClick={() => changeLocale(locale === "vie" ? "en" : "vie")}
-            className={`text-xs font-medium p-2 rounded-lg transition-colors ${
-              scrolled
-                ? "text-gray-600 hover:bg-gray-100"
-                : "text-white hover:bg-white/10"
-            }`}
-            aria-label="Đổi ngôn ngữ"
-          >
-            {locale === "vie" ? "VI" : "EN"}
-          </button>
+          {!isBlogDetail && (
+            <button
+              onClick={() => changeLocale(locale === "vie" ? "en" : "vie")}
+              className={`text-xs font-medium p-2 rounded-lg transition-colors ${
+                scrolled
+                  ? "text-gray-600 hover:bg-gray-100"
+                  : "text-white hover:bg-white/10"
+              }`}
+              aria-label="Đổi ngôn ngữ"
+            >
+              {locale === "vie" ? "VI" : "EN"}
+            </button>
+          )}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className={`p-2 rounded-lg transition-colors ${

@@ -1,3 +1,4 @@
+import { fetchPosts } from "@/lib/blog-api";
 import { SITE_URL } from "@/lib/seo";
 import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -21,7 +22,42 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function BlogIndexPage() {
-  await getLocale();
-  return <BlogListClient />;
+interface SearchParams {
+  page?: string;
+  q?: string;
+  category?: string;
+  tag?: string;
+}
+
+export default async function BlogIndexPage({
+  searchParams,
+}: {
+  searchParams: Promise<SearchParams>;
+}) {
+  const locale = await getLocale();
+  const sp = await searchParams;
+  const page = Number(sp.page) > 0 ? Number(sp.page) : 1;
+
+  const envelope = await fetchPosts(
+    {
+      page,
+      per_page: 12,
+      q: sp.q,
+      category: sp.category,
+      tag: sp.tag,
+    },
+    locale,
+  ).catch(() => ({
+    success: false,
+    data: [] as Awaited<ReturnType<typeof fetchPosts>>["data"],
+    meta: null,
+  }));
+
+  return (
+    <BlogListClient
+      posts={envelope.data ?? []}
+      meta={envelope.meta ?? null}
+      query={{ q: sp.q ?? "", category: sp.category ?? "", tag: sp.tag ?? "" }}
+    />
+  );
 }

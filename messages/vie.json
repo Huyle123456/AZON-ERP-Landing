@@ -339,6 +339,17 @@
     "backToList": "Quay lại",
     "publishedOn": "Đăng ngày",
     "relatedTitle": "Bài viết liên quan",
+    "empty": "Chưa có bài viết nào.",
+    "prev": "Trước",
+    "next": "Sau",
+    "pinned": "Ghim",
+    "tocTitle": "Mục lục",
+    "shareTitle": "Chia sẻ",
+    "copyLink": "Sao chép liên kết",
+    "ctaTitle": "Sẵn sàng số hoá quy trình nhân sự cho doanh nghiệp của bạn?",
+    "ctaSubtitle": "Đội ngũ AZOERP luôn sẵn sàng tư vấn — từ triển khai đến đào tạo, hoàn toàn miễn phí.",
+    "ctaButton": "Liên hệ tư vấn ngay",
+    "ctaSecondary": "Dùng thử miễn phí",
     "posts": {
       "notice": {
         "title": "Thông báo của AZOERP về việc miễn phí hóa đơn điện tử và chữ ký số",
@@ -375,6 +386,7 @@
   "news": {
     "title": "Tin tức nổi bật",
     "readMore": "Xem thêm",
+    "viewAll": "Xem tất cả bài viết",
     "items": {
       "notice": {
         "title": "Thông báo của AZOERP về việc miễn phí hóa đơn điện tử và chữ ký số",

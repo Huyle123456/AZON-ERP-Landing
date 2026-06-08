@@ -3,7 +3,7 @@
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScreenSlider from "@/components/ui/ScreenSlider";
 import { DEEP_DIVE_BLOCKS } from "@/lib/constants";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
@@ -51,16 +51,52 @@ function CollapsibleBulletList({
 }) {
   const [open, setOpen] = useState(false);
   const hasMore = bullets.length > previewCount;
-  const visible = hasMore && !open ? bullets.slice(0, previewCount) : bullets;
-  const hiddenCount = bullets.length - previewCount;
+  const previewBullets = bullets.slice(0, previewCount);
+  const hiddenBullets = bullets.slice(previewCount);
+  const hiddenCount = hiddenBullets.length;
 
   return (
     <>
       <ul className="space-y-3">
-        {visible.map((b) => (
+        {previewBullets.map((b) => (
           <BulletItem key={b} bullet={b} />
         ))}
+
+        {/* Animated reveal of the rest — height + opacity so the layout
+            grows smoothly instead of snapping open. */}
+        <AnimatePresence initial={false}>
+          {open && hasMore && (
+            <motion.div
+              key="extra"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{
+                height: "auto",
+                opacity: 1,
+                transition: {
+                  height: { duration: 0.45, ease: [0.4, 0, 0.2, 1] },
+                  opacity: { duration: 0.3, delay: 0.1 },
+                },
+              }}
+              exit={{
+                height: 0,
+                opacity: 0,
+                transition: {
+                  height: { duration: 0.35, ease: [0.4, 0, 0.2, 1] },
+                  opacity: { duration: 0.15 },
+                },
+              }}
+              className="overflow-hidden"
+            >
+              <ul className="space-y-3 ">
+                {hiddenBullets.map((b) => (
+                  <BulletItem key={b} bullet={b} />
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </ul>
+
       {hasMore && (
         <button
           type="button"

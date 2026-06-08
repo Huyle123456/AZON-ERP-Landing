@@ -30,9 +30,10 @@ const securityHeaders = [
       "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' data: https://fonts.gstatic.com",
-      "img-src 'self' data: blob: https://images.unsplash.com",
-      "connect-src 'self'",
-      "media-src 'self'",
+      "img-src 'self' data: blob: https://images.unsplash.com https://*.backblazeb2.com https://*.ftech.ltd",
+      "connect-src 'self' https://*.backblazeb2.com https://*.ftech.ltd",
+      "media-src 'self' blob: https://*.backblazeb2.com https://*.ftech.ltd",
+      "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com",
       "manifest-src 'self'",
       "upgrade-insecure-requests",
     ].join("; "),
@@ -47,6 +48,10 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
+      // Backblaze B2 / S3-compatible storage for blog post images.
+      { protocol: 'https', hostname: '**.backblazeb2.com' },
+      // FTECH CMS + future subdomains.
+      { protocol: 'https', hostname: '**.ftech.ltd' },
     ],
   },
   async headers() {
