@@ -94,19 +94,40 @@ export async function POST(req: Request) {
     ],
   };
 
-  const res = await fetch(webhook, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
+  const started = Date.now();
+  console.log("[contact-sales proxy] → POST Mattermost webhook", {
+    plan: safePlan,
+    email: safeEmail,
   });
 
+  let res: Response;
+  try {
+    res = await fetch(webhook, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+  } catch (e) {
+    console.error(
+      `[contact-sales proxy] ✗ network/error (${Date.now() - started}ms)`,
+      e,
+    );
+    return NextResponse.json(
+      { error: "Mattermost webhook unreachable" },
+      { status: 502 },
+    );
+  }
+
+  const ms = Date.now() - started;
   if (!res.ok) {
     const err = await res.text().catch(() => "");
+    console.error(`[contact-sales proxy] ✗ ${res.status} (${ms}ms)`, err);
     return NextResponse.json(
       { error: `Mattermost webhook failed: ${res.status} ${err}` },
       { status: 502 },
     );
   }
 
+  console.log(`[contact-sales proxy] ✓ ${res.status} (${ms}ms)`);
   return NextResponse.json({ ok: true });
 }

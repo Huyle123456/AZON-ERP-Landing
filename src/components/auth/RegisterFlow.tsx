@@ -495,26 +495,79 @@ export default function RegisterFlow() {
 
     setSubmitError(null);
     setSubmitting(true);
+
+    const name = customerName.trim();
+    const email = customerEmail.trim();
+    const phone = customerPhone.trim();
+
+    // Two endpoints fire in parallel:
+    //   - /api/contact-sales       → Mattermost webhook (team notification)
+    //   - /api/consultation-requests → persisted consultation record
+    // We use Promise.allSettled so a flaky webhook never blocks the API
+    // call from succeeding (and vice versa). UX success = either succeeded.
+    const webhookPayload = { name, email, phone, plan };
+    const consultationPayload: {
+      name: string;
+      email: string;
+      phone: string;
+      package?: string;
+    } = { name, email, phone };
+    if (plan === "standard" || plan === "enterprise") {
+      consultationPayload.package = plan;
+    }
+
+    console.log("[contact-sales] → request", webhookPayload);
+    console.log("[consultation-requests] → request", consultationPayload);
+
+    // Webhook is fire-and-forget: a Mattermost outage / latency should NOT
+    // block the form. The consultation API is the source-of-truth that
+    // determines success/error.
+    fetch("/api/contact-sales", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(webhookPayload),
+      // Give the slow Mattermost host at most 8s. If it times out we don't
+      // care — the consultation record already saved the data.
+      signal: AbortSignal.timeout(8000),
+    })
+      .then(async (res) => {
+        const body = await res.json().catch(() => null);
+        if (res.ok) {
+          console.log("[contact-sales] ✓ success", { status: res.status, body });
+        } else {
+          console.error("[contact-sales] ✗ failed", {
+            status: res.status,
+            body,
+          });
+        }
+      })
+      .catch((e) => {
+        console.error("[contact-sales] ✗ network/timeout", e);
+      });
+
     try {
-      const res = await fetch("/api/contact-sales", {
+      const res = await fetch("/api/consultation-requests", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: customerName.trim(),
-          email: customerEmail.trim(),
-          phone: customerPhone.trim(),
-          plan,
-        }),
+        body: JSON.stringify(consultationPayload),
       });
+      const body = await res.json().catch(() => null);
       if (!res.ok) {
-        const body = await res.json().catch(() => null);
-        throw new Error(body?.error ?? t("eGeneric"));
+        console.error("[consultation-requests] ✗ failed", {
+          status: res.status,
+          body,
+        });
+        setSubmitError(body?.message ?? body?.error ?? t("eGeneric"));
+        return;
       }
+      console.log("[consultation-requests] ✓ success", {
+        status: res.status,
+        body,
+      });
       setStep(2);
     } catch (e) {
-      setSubmitError(
-        e instanceof Error ? e.message : t("eNetwork"),
-      );
+      console.error("[consultation-requests] ✗ network/error", e);
+      setSubmitError(e instanceof Error ? e.message : t("eNetwork"));
     } finally {
       setSubmitting(false);
     }
