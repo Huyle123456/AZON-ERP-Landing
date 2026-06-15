@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 
-const UPSTREAM_BASE =
-  process.env.TENANT_API_URL ?? "https://fterp.test/api/tenant-requests";
-const UPSTREAM = `${UPSTREAM_BASE.replace(/\/+$/, "")}/check-domain`;
+const API_BASE = process.env.API_URL ?? "https://fterp.test/api/";
+const UPSTREAM = `${API_BASE.replace(/\/+$/, "")}/tenant-requests/check-domain`;
 
 export async function GET(req: Request) {
   const url = new URL(req.url);

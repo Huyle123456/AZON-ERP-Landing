@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 
-const UPSTREAM =
-  process.env.TENANT_API_URL ?? "https://fterp.test/api/tenant-requests";
+// Endpoint path is hardcoded; only the API base host comes from env so the
+// same proxy works against staging / prod by swapping API_URL.
+const API_BASE = process.env.API_URL ?? "https://fterp.test/api/";
+const UPSTREAM = `${API_BASE.replace(/\/+$/, "")}/tenant-requests`;
 
 const MAX_BODY = 16 * 1024; // 16 KB
 

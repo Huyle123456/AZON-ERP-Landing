@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 
-const UPSTREAM =
-  process.env.CONSULTATION_API_URL ??
-  "https://fterp.test/api/consultation-requests";
+const API_BASE = process.env.API_URL ?? "https://fterp.test/api/";
+const UPSTREAM = `${API_BASE.replace(/\/+$/, "")}/consultation-requests`;
 
 const MAX_BODY = 8 * 1024;
 
