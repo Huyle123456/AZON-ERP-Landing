@@ -2,7 +2,7 @@ import { getRequestConfig } from "next-intl/server";
 import { cookies, headers } from "next/headers";
 
 export const SUPPORTED_LOCALES = ["en", "vie"] as const;
-export const DEFAULT_LOCALE: Locale = "en";
+export const DEFAULT_LOCALE: Locale = "vie";
 export const LOCALE_COOKIE = "NEXT_LOCALE";
 
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
