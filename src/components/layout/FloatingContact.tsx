@@ -26,23 +26,7 @@ export default function FloatingContact() {
       </Link>
 
       <Link
-        href="https://zalo.me/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform"
-        aria-label="Zalo"
-      >
-        <Image
-          src="/logo/zalo.png"
-          alt="Zalo"
-          width={48}
-          height={48}
-          className="w-full h-full object-cover"
-        />
-      </Link>
-
-      <Link
-        href="https://m.me/"
+        href="https://www.facebook.com/ftech.ltd"
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 rounded-full  shadow-lg hover:scale-110 transition-transform"

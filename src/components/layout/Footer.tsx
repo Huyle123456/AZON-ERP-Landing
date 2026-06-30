@@ -88,21 +88,21 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-2.5">
                 <Mail className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />
-                <a
+                <Link
                   href={`mailto:${t("email")}`}
                   className="hover:text-white transition-colors break-all"
                 >
                   {t("email")}
-                </a>
+                </Link>
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />
-                <a
+                <Link
                   href={`tel:${t("hotline").replace(/\s/g, "")}`}
                   className="hover:text-white transition-colors"
                 >
                   {t("hotline")}
-                </a>
+                </Link>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />

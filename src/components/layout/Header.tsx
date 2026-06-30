@@ -10,6 +10,51 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
+/**
+ * Prefix internal anchor hrefs with the active locale so client-side
+ * navigation stays soft. Without the prefix, `/#pricing` triggers the
+ * middleware redirect (`/` → `/{locale}`) which drops the hash on the way.
+ *  - "/#pricing" → "/vie#pricing"
+ *  - "/"         → "/vie"
+ *  - "/blog"     → "/vie/blog"
+ *  - "https://…" / "mailto:…" → unchanged
+ */
+function localizeNavHref(href: string, locale: string): string {
+  if (!href.startsWith("/")) return href;
+  if (href === "/") return `/${locale}`;
+  if (href.startsWith("/#")) return `/${locale}${href.slice(1)}`;
+  return `/${locale}${href}`;
+}
+
+/**
+ * When a Link target lands on the same pathname but with a different hash
+ * (e.g. user is on /vie clicking /vie#pricing), Next.js's router skips the
+ * navigation entirely → no scroll happens. Detect that case and scroll
+ * manually so anchor links from the header always work.
+ */
+function handleAnchorClick(
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string,
+) {
+  if (typeof window === "undefined") return;
+  if (!href.includes("#")) return;
+  // Ignore modifier clicks (open in new tab etc.)
+  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+  try {
+    const url = new URL(href, window.location.origin);
+    if (url.pathname !== window.location.pathname || !url.hash) return;
+    const id = decodeURIComponent(url.hash.slice(1));
+    const target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    history.pushState(null, "", url.toString());
+  } catch {
+    // not a parseable URL — let the browser handle it
+  }
+}
+
 export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
@@ -105,19 +150,23 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10 ml-10">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`text-sm font-medium transition-colors ${
-                scrolled
-                  ? "text-gray-700 hover:text-primary-500"
-                  : "text-white hover:text-yellow-300"
-              }`}
-            >
-              {tNav(link.key)}
-            </Link>
-          ))}
+          {NAV_LINKS.map((link) => {
+            const href = localizeNavHref(link.href, locale);
+            return (
+              <Link
+                key={link.href}
+                href={href}
+                onClick={(e) => handleAnchorClick(e, href)}
+                className={`text-sm font-medium transition-colors ${
+                  scrolled
+                    ? "text-gray-700 hover:text-primary-500"
+                    : "text-white hover:text-yellow-300"
+                }`}
+              >
+                {tNav(link.key)}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Desktop Actions */}
@@ -196,16 +245,22 @@ export default function Header() {
             className="md:hidden bg-white border-t border-gray-100"
           >
             <div className="px-4 py-4 space-y-3">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block text-sm font-medium text-gray-700 py-2"
-                >
-                  {tNav(link.key)}
-                </Link>
-              ))}
+              {NAV_LINKS.map((link) => {
+                const href = localizeNavHref(link.href, locale);
+                return (
+                  <Link
+                    key={link.href}
+                    href={href}
+                    onClick={(e) => {
+                      handleAnchorClick(e, href);
+                      setMobileOpen(false);
+                    }}
+                    className="block text-sm font-medium text-gray-700 py-2"
+                  >
+                    {tNav(link.key)}
+                  </Link>
+                );
+              })}
               <div className="flex gap-3 pt-2">
                 <Button href={`/${locale}/login`} variant="outline" className="flex-1 py-2 text-xs">
                   {tHeader("login")}
